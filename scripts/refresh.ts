@@ -5,6 +5,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
+import { scrapeArsNova } from "../src/scrapers/ars-nova";
 import { scrapeChrisJazzCafe } from "../src/scrapers/chris-jazz-cafe";
 import { scrapeJazzPhiladelphia } from "../src/scrapers/jazz-philadelphia";
 import { scrapeSouthJazzKitchen } from "../src/scrapers/south-jazz-kitchen";
@@ -21,6 +22,7 @@ const scrapers = [
   { slug: "chris-jazz-cafe", run: scrapeChrisJazzCafe },
   { slug: "south-jazz-kitchen", run: scrapeSouthJazzKitchen },
   { slug: "jazz-philadelphia", run: scrapeJazzPhiladelphia },
+  { slug: "ars-nova", run: scrapeArsNova },
 ];
 
 async function main() {
