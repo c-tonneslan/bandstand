@@ -1,6 +1,6 @@
 import { DayHeader } from "@/components/DayHeader";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
-import { addDays, todayInPhilly } from "@/lib/dates";
+import { addDays, dayLabelFromYmd, todayInPhilly } from "@/lib/dates";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
 
 // Jam-sessions-only view across the next two weeks. The goal: a musician
@@ -15,22 +15,37 @@ export default function SessionsPage() {
 
   return (
     <div>
-      <p className="font-mono uppercase tracking-widest text-xs text-muted mb-2">
-        for musicians + listeners
+      <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
+        <div className="md:col-span-9">
+          <p className="caps-wide mb-3">For musicians + listeners</p>
+          <h1 className="font-serif italic text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight">
+            Jams.
+          </h1>
+        </div>
+        <div className="md:col-span-3 self-end text-xs caps leading-[1.8]">
+          <p>Two weeks ahead,</p>
+          <p>{jams.length} sessions,</p>
+          <p>sit-in policy on each.</p>
+        </div>
+      </header>
+
+      <p className="font-serif text-lg md:text-xl leading-snug max-w-3xl mt-8 mb-12">
+        Every recurring open session bandstand knows about. The sit-in policy line tells you
+        whether to bring your horn, sign up at the door, or just hang and listen.
       </p>
-      <h1 className="font-serif text-4xl mb-3">Jam sessions</h1>
-      <p className="text-muted max-w-2xl mb-10">
-        Every recurring open session bandstand knows about, two weeks ahead. The sit-in policy
-        line tells you whether to bring your horn, sign up at the door, or just hang and listen.
-      </p>
+
       {dates.length === 0 ? (
         <p className="text-muted">No jam sessions in the index for the next two weeks.</p>
       ) : (
-        <div className="space-y-12">
+        <div className="space-y-14">
           {dates.map((d) => (
             <section key={d}>
-              <DayHeader date={d} isToday={d === start} />
-              <div className="grid gap-3">
+              <DayHeader
+                date={d}
+                isToday={d === start}
+                weekdayChip={dayLabelFromYmd(d).slice(0, 3)}
+              />
+              <div className="divide-y divide-line">
                 {(byDate.get(d) ?? []).map((o) => (
                   <OccurrenceCard key={o.id} o={o} />
                 ))}

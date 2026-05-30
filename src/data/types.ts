@@ -9,7 +9,18 @@ export type EventKind =
   | "residency" // recurring weekly band, no cover or small cover
   | "jam" // open jam session, sit-ins welcome
   | "brunch" // weekend jazz brunch
-  | "open-mic"; // open-mic with jazz focus
+  | "open-mic" // open-mic with jazz focus
+  | "dj"; // DJ-driven night, often jazz/soul/funk vinyl
+
+// What kind of room this is. A venue can wear several hats: a vinyl bar can
+// also host occasional live, a listening room can run DJ nights, etc.
+export type VenueTag =
+  | "live-jazz" // hosts live jazz on the regular
+  | "jam-session" // known for hosting jams musicians sit in on
+  | "listening-room" // seated listening room, silence during sets
+  | "vinyl-bar" // records on the system, often selectors curating
+  | "dj-set" // DJ-driven jazz / soul / funk nights
+  | "jazz-on-system"; // restaurant/bar that plays real jazz, not Spotify slop
 
 export type SitInPolicy =
   | "open" // anyone can sign up
@@ -35,6 +46,8 @@ export interface Venue {
   vibe: string;
   // "free" / "cover varies" / "ticketed" / "two-drink minimum" etc.
   cover: string;
+  // What this place does, in order of how strongly it's that thing.
+  tags: VenueTag[];
 }
 
 export interface Series {

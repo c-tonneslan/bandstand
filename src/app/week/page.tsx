@@ -1,6 +1,6 @@
 import { DayHeader } from "@/components/DayHeader";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
-import { addDays, todayInPhilly } from "@/lib/dates";
+import { addDays, dayLabelFromYmd, todayInPhilly } from "@/lib/dates";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
 
 export default function WeekPage() {
@@ -15,22 +15,38 @@ export default function WeekPage() {
     days.push({ date: d, items: byDate.get(d) ?? [] });
   }
 
+  const total = days.reduce((n, d) => n + d.items.length, 0);
+
   return (
     <div>
-      <p className="font-mono uppercase tracking-widest text-xs text-muted mb-2">
-        seven nights ahead
-      </p>
-      <h1 className="font-serif text-4xl mb-10">This week</h1>
-      <div className="space-y-12">
+      <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
+        <div className="md:col-span-9">
+          <p className="caps-wide mb-3">Week of {dayLabelFromYmd(start).slice(0, 3)} {start.slice(5).replace("-", "/")}</p>
+          <h1 className="font-serif italic text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight">
+            The Week.
+          </h1>
+        </div>
+        <div className="md:col-span-3 self-end text-xs caps leading-[1.8]">
+          <p>Seven nights,</p>
+          <p>{total} listings,</p>
+          <p>one city.</p>
+        </div>
+      </header>
+
+      <div className="mt-12 space-y-14">
         {days.map(({ date, items }) => (
           <section key={date}>
-            <DayHeader date={date} isToday={date === start} />
+            <DayHeader
+              date={date}
+              isToday={date === start}
+              weekdayChip={dayLabelFromYmd(date).slice(0, 3)}
+            />
             {items.length === 0 ? (
-              <p className="text-muted text-sm border border-line rounded-md p-4">
+              <p className="text-muted text-sm border border-foreground/30 p-4 mt-4">
                 No listings indexed for this date yet.
               </p>
             ) : (
-              <div className="grid gap-3">
+              <div className="divide-y divide-line">
                 {items.map((o) => (
                   <OccurrenceCard key={o.id} o={o} />
                 ))}

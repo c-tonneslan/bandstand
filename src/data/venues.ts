@@ -1,8 +1,13 @@
 import type { Venue } from "./types";
 
-// Hand-curated as of v0 seed (2026-05-29). Each `website` is the canonical
-// place to verify what's actually on tonight before showing up.
+// Hand-curated as of v0 seed (updated 2026-05-30). Every venue carries a
+// `website` link as the source of truth — bandstand is editorial, not
+// authoritative, so the link back matters more than the blurb.
+//
+// Tag order matters: the primary tag is the first one. The map page
+// colors markers by primary tag.
 export const venues: Venue[] = [
+  // -- live jazz rooms ----------------------------------------------------
   {
     slug: "chris-jazz-cafe",
     name: "Chris' Jazz Cafe",
@@ -16,6 +21,7 @@ export const venues: Venue[] = [
       "The downtown jazz room. Two sets a night, real food, real sound system, the place touring rhythm sections come through.",
     vibe: "Tables, dim lights, a real stage. People listen.",
     cover: "Ticketed, two-set nights, varies by act.",
+    tags: ["live-jazz", "jam-session", "listening-room"],
   },
   {
     slug: "south-jazz-kitchen",
@@ -30,6 +36,7 @@ export const venues: Venue[] = [
       "Supper-club room from the Warmdaddy's family. Southern menu, full bar, the band's right in front of you.",
     vibe: "Dinner-show seating, dress nice-ish.",
     cover: "Cover + minimum, varies by show.",
+    tags: ["live-jazz", "jam-session"],
   },
   {
     slug: "heritage",
@@ -44,6 +51,7 @@ export const venues: Venue[] = [
       "Neighborhood bar that turned its back room into one of the city's most consistent jazz programs. Where the jams happen.",
     vibe: "Loud bar in front, listening room in back.",
     cover: "Mostly free, tips for the band.",
+    tags: ["live-jazz", "jam-session"],
   },
   {
     slug: "solar-myth",
@@ -58,6 +66,7 @@ export const venues: Venue[] = [
       "Ars Nova Workshop's listening room. Avant, free, contemporary jazz, plus the more interesting touring acts. Programming lives on Ars Nova's What's On calendar.",
     vibe: "Seated listening room, no chatter during sets.",
     cover: "Ticketed, prices vary.",
+    tags: ["listening-room", "live-jazz"],
   },
   {
     slug: "time",
@@ -72,6 +81,7 @@ export const venues: Venue[] = [
       "Upstairs whiskey bar with a piano, a stage, and a late-night Monday tradition. Smaller room, closer to the band.",
     vibe: "Whiskey bar with a tight stage. Walk-in.",
     cover: "Mostly free or low cover.",
+    tags: ["live-jazz"],
   },
   {
     slug: "la-rose-jazz-club",
@@ -86,6 +96,7 @@ export const venues: Venue[] = [
       "North Philly institution. Locals' room, deep history, runs jams and weekend shows that go late.",
     vibe: "Neighborhood lounge, regulars know each other.",
     cover: "Cover varies, cash often.",
+    tags: ["live-jazz", "jam-session"],
   },
   {
     slug: "clef-club",
@@ -100,6 +111,7 @@ export const venues: Venue[] = [
       "Black-led jazz institution founded by Local 274 members. Concerts, workshops, jam nights, and the building itself.",
     vibe: "Listening-room mode for ticketed nights, community mode for jams.",
     cover: "Ticketed shows, free community events.",
+    tags: ["live-jazz", "jam-session", "listening-room"],
   },
   {
     slug: "world-cafe-live",
@@ -114,6 +126,7 @@ export const venues: Venue[] = [
       "Larger venue downstairs, smaller upstairs lounge. Jazz dates land here when a touring act needs a real PA.",
     vibe: "Downstairs is a proper concert room. Upstairs is loose.",
     cover: "Ticketed, set times posted on the calendar.",
+    tags: ["live-jazz"],
   },
   {
     slug: "kimmel-center-jazz-series",
@@ -128,6 +141,7 @@ export const venues: Venue[] = [
       "Big-room jazz when a marquee act comes through. Verizon Hall or Perelman, depending on the date.",
     vibe: "Concert hall. Suits and sneakers both.",
     cover: "Ticketed, full concert-hall pricing.",
+    tags: ["live-jazz", "listening-room"],
   },
   {
     slug: "annenberg-center",
@@ -142,20 +156,7 @@ export const venues: Venue[] = [
       "Penn's presenting house. Programs a smart jazz line every season alongside dance and theater.",
     vibe: "Theater seats, lights down, full attention.",
     cover: "Ticketed.",
-  },
-  {
-    slug: "trestle-inn",
-    name: "Trestle Inn",
-    neighborhood: "Callowhill",
-    address: "339 N 11th St, Philadelphia, PA 19107",
-    lat: 39.9602,
-    lng: -75.1554,
-    website: "https://thetrestleinn.com/",
-    instagram: "https://www.instagram.com/thetrestleinn/",
-    blurb:
-      "Soul-funk DJ bar with a real jukebox sensibility. Lands on this list for the occasional live combo nights and the post-set crowd from Heritage.",
-    vibe: "Dance bar, dim, narrow.",
-    cover: "Cover after 10p on weekends.",
+    tags: ["live-jazz", "listening-room"],
   },
   {
     slug: "ortliebs",
@@ -170,5 +171,158 @@ export const venues: Venue[] = [
       "Lounge in the old Ortlieb's brewery footprint. Jazz lands here on occasional weeknights, mixed with indie booking the rest of the time.",
     vibe: "Rock-club geometry, jazz nights are seated.",
     cover: "Cover varies, see calendar.",
+    tags: ["live-jazz"],
+  },
+
+  // -- vinyl bars, listening rooms, DJ-driven nights ----------------------
+  {
+    slug: "trestle-inn",
+    name: "Trestle Inn",
+    neighborhood: "Callowhill",
+    address: "339 N 11th St, Philadelphia, PA 19107",
+    lat: 39.9602,
+    lng: -75.1554,
+    website: "https://thetrestleinn.com/",
+    instagram: "https://www.instagram.com/thetrestleinn/",
+    blurb:
+      "Soul-funk DJ bar with a real jukebox sensibility. Weeknights for the spinners, weekends for the dance floor. Funk-jazz vinyl lands here.",
+    vibe: "Dance bar, dim, narrow. Whiskey list does the heavy lifting.",
+    cover: "Cover after 10p on weekends.",
+    tags: ["dj-set", "vinyl-bar"],
+  },
+  {
+    slug: "brewerytown-beats",
+    name: "Brewerytown Beats",
+    neighborhood: "Brewerytown",
+    address: "1551 W Girard Ave, Philadelphia, PA 19130",
+    lat: 39.9776,
+    lng: -75.1798,
+    website: "https://www.brewerytownbeats.com/",
+    instagram: "https://www.instagram.com/brewerytownbeats/",
+    blurb:
+      "Record store and listening space. Soul, funk, jazz, Philly International deep cuts. Hosts occasional in-store sets and listening parties.",
+    vibe: "Store hours plus event nights. Crate-dig friendly.",
+    cover: "Free for in-store, ticketed for events.",
+    tags: ["vinyl-bar", "listening-room", "dj-set"],
+  },
+  {
+    slug: "bok-bar",
+    name: "Bok Bar",
+    neighborhood: "South Philly",
+    address: "800 Mifflin St, Philadelphia, PA 19148",
+    lat: 39.929,
+    lng: -75.1581,
+    website: "https://bokbar.com/",
+    instagram: "https://www.instagram.com/bokbarphilly/",
+    blurb:
+      "Rooftop on top of the old Bok vocational school. Seasonal, DJ-heavy programming through summer with regular soul/funk/disco nights.",
+    vibe: "Open-air, sunset crowd, DJs over real speakers.",
+    cover: "Free for early, lines later.",
+    tags: ["dj-set", "vinyl-bar"],
+  },
+  {
+    slug: "royal-boucherie",
+    name: "Royal Boucherie",
+    neighborhood: "Old City",
+    address: "52 S 2nd St, Philadelphia, PA 19106",
+    lat: 39.9494,
+    lng: -75.1442,
+    website: "https://www.royalboucherie.com/",
+    instagram: "https://www.instagram.com/royalboucherie/",
+    blurb:
+      "French brasserie with a curated music program — actual jazz, soul, and funk records on the system. Not airline-magazine ambient.",
+    vibe: "Dinner-and-cocktails room with music you'd notice.",
+    cover: "Restaurant pricing, no music cover.",
+    tags: ["jazz-on-system"],
+  },
+  {
+    slug: "friday-saturday-sunday",
+    name: "Friday Saturday Sunday",
+    neighborhood: "Rittenhouse",
+    address: "261 S 21st St, Philadelphia, PA 19103",
+    lat: 39.9492,
+    lng: -75.1764,
+    website: "https://www.fridaysaturdaysunday.com/",
+    instagram: "https://www.instagram.com/fridaysaturdaysunday/",
+    blurb:
+      "Marbled-bar bistro with one of the most thoughtful soundtracks in the city. Real jazz, real soul, played at human volume.",
+    vibe: "Bar seats are the best seats. Quiet enough to actually hear the music.",
+    cover: "Restaurant + bar pricing.",
+    tags: ["jazz-on-system"],
+  },
+  {
+    slug: "hop-sing-laundromat",
+    name: "Hop Sing Laundromat",
+    neighborhood: "Chinatown",
+    address: "1029 Race St, Philadelphia, PA 19107",
+    lat: 39.9554,
+    lng: -75.1561,
+    website: "https://www.instagram.com/hopsinglaundromat/",
+    instagram: "https://www.instagram.com/hopsinglaundromat/",
+    blurb:
+      "Unlisted-door cocktail speakeasy with a hard rule on phones and a long love affair with jazz vinyl on the system.",
+    vibe: "No photos, no phones, no walk-ins after the line.",
+    cover: "Drink minimum, no music cover.",
+    tags: ["jazz-on-system", "listening-room"],
+  },
+  {
+    slug: "suraya",
+    name: "Suraya",
+    neighborhood: "Fishtown",
+    address: "1528 Frankford Ave, Philadelphia, PA 19125",
+    lat: 39.9744,
+    lng: -75.1334,
+    website: "https://www.surayaphilly.com/",
+    instagram: "https://www.instagram.com/surayaphilly/",
+    blurb:
+      "Levantine cafe, market, and bar that takes its music programming seriously. Regular DJ nights, real jazz and Arabic soul on the cafe system.",
+    vibe: "All-day cafe by light, music room by night.",
+    cover: "Restaurant pricing, occasional ticketed nights.",
+    tags: ["jazz-on-system", "dj-set"],
+  },
+  {
+    slug: "vernick-food-and-drink",
+    name: "Vernick Food & Drink",
+    neighborhood: "Rittenhouse",
+    address: "2031 Walnut St, Philadelphia, PA 19103",
+    lat: 39.9509,
+    lng: -75.1734,
+    website: "https://www.vernickphilly.com/",
+    instagram: "https://www.instagram.com/vernickphilly/",
+    blurb:
+      "American dining room where the kitchen and the playlist both feel deliberate. Jazz and soul on the system, served at conversation level.",
+    vibe: "Restaurant first, but the music isn't filler.",
+    cover: "Restaurant pricing, no music cover.",
+    tags: ["jazz-on-system"],
+  },
+  {
+    slug: "cafe-la-maude",
+    name: "Café La Maude",
+    neighborhood: "Northern Liberties",
+    address: "816 N 4th St, Philadelphia, PA 19123",
+    lat: 39.9658,
+    lng: -75.1431,
+    website: "https://cafelamaude.com/",
+    instagram: "https://www.instagram.com/cafelamaude/",
+    blurb:
+      "Lebanese-French cafe with brunch-into-evening hours and a soft, jazz-leaning soundtrack that actually picks records, not algorithms.",
+    vibe: "Cafe by day, low-light dinner by night.",
+    cover: "Cafe pricing.",
+    tags: ["jazz-on-system"],
+  },
+  {
+    slug: "the-good-king-tavern",
+    name: "The Good King Tavern",
+    neighborhood: "Bella Vista",
+    address: "614 S 7th St, Philadelphia, PA 19147",
+    lat: 39.9402,
+    lng: -75.1532,
+    website: "https://www.thegoodkingtavern.com/",
+    instagram: "https://www.instagram.com/goodkingtavern/",
+    blurb:
+      "French neighborhood bistro with a wine bar downstairs (Le Caveau) where the late-night soundtrack tilts jazz and soul. Curated, not auto-generated.",
+    vibe: "Bistro upstairs, listening cave downstairs.",
+    cover: "Restaurant + bar pricing.",
+    tags: ["jazz-on-system"],
   },
 ];

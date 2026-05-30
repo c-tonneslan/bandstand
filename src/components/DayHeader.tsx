@@ -1,28 +1,27 @@
-import { dayOfWeekInPhilly, formatHumanDate } from "@/lib/dates";
+import { formatHumanDate } from "@/lib/dates";
 
 export function DayHeader({
   date,
   isToday,
   label,
+  weekdayChip,
 }: {
   date: string;
   isToday?: boolean;
   label?: string;
+  weekdayChip?: string;
 }) {
-  const wd = dayOfWeekInPhilly(date);
   return (
-    <div className="flex items-baseline gap-3 mb-4">
-      <h2 className="font-serif text-3xl">
+    <div className="flex items-end gap-4 mb-3 border-b-2 border-foreground/80 pb-1">
+      {weekdayChip && (
+        <span className="hidden md:inline-block caps text-red translate-y-[-2px]">
+          {weekdayChip}
+        </span>
+      )}
+      <h2 className="font-serif italic text-3xl md:text-4xl leading-none">
         {label ?? formatHumanDate(date)}
-        {isToday && <span className="dot ml-3" />}
       </h2>
-      <span className="font-mono text-xs text-muted uppercase tracking-wider">
-        {wd === "fri" || wd === "sat"
-          ? "weekend"
-          : wd === "sun" || wd === "mon" || wd === "tue"
-            ? "early week"
-            : "midweek"}
-      </span>
+      {isToday && <span className="dot mb-1" aria-label="today" />}
     </div>
   );
 }
