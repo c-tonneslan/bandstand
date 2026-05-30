@@ -48,6 +48,33 @@ export default function AboutPage() {
           small site by someone who likes the music.
         </p>
       </div>
+
+      <section className="mt-16 pt-10 border-t-2 border-foreground/80">
+        <p className="caps-wide mb-3">Subscribe</p>
+        <h2 className="font-serif italic text-4xl md:text-5xl mb-6">In your calendar.</h2>
+        <p className="font-sans text-base text-muted max-w-2xl mb-8">
+          Paste any of these into Google Calendar (Add &rarr; From URL), Apple Calendar
+          (File &rarr; New Calendar Subscription), or Fantastical. They re-fetch on their own,
+          so your calendar grows as new shows land in the index.
+        </p>
+        <div className="grid md:grid-cols-2 gap-3 font-mono text-xs">
+          <CalLink href="/cal/today" label="Tonight + tomorrow" />
+          <CalLink href="/cal/week" label="Next seven nights" />
+          <CalLink href="/cal/jams" label="Jam sessions only (4 weeks)" />
+          <CalLink href="/cal/venues/chris-jazz-cafe" label="Per venue (e.g. /cal/venues/chris-jazz-cafe)" />
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function CalLink({ href, label }: { href: string; label: string }) {
+  return (
+    <div className="border border-foreground/30 p-3 flex flex-col gap-1.5 hover:border-red transition">
+      <span className="text-foreground/70 font-sans normal-case tracking-normal text-xs">{label}</span>
+      <a className="text-red break-all hover:text-foreground" href={href}>
+        https://bandstand-bay.vercel.app{href}
+      </a>
     </div>
   );
 }

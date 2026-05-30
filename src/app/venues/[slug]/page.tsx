@@ -45,7 +45,7 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
       <p className="mt-2 max-w-2xl text-sm text-muted">
         <span className="text-foreground/80">{venue.vibe}</span> · {venue.cover}
       </p>
-      <p className="mt-4 flex gap-4 text-sm caps">
+      <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm caps">
         {venue.website && (
           <a className="text-red hover:text-foreground" href={venue.website} target="_blank" rel="noreferrer">
             → Website
@@ -63,6 +63,9 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
           rel="noreferrer"
         >
           → Directions
+        </a>
+        <a className="text-red hover:text-foreground" href={`/cal/venues/${venue.slug}`}>
+          → Calendar feed
         </a>
       </p>
 
