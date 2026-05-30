@@ -52,10 +52,10 @@ export const venues: Venue[] = [
     address: "1131 S Broad St, Philadelphia, PA 19147",
     lat: 39.9322,
     lng: -75.1671,
-    website: "https://solarmythphilly.com/",
-    instagram: "https://www.instagram.com/solarmythphilly/",
+    website: "https://www.arsnovaworkshop.org/whats-on/",
+    instagram: "https://www.instagram.com/arsnovaworkshop/",
     blurb:
-      "Ars Nova Workshop's listening room. Avant, free, contemporary jazz, plus the more interesting touring acts.",
+      "Ars Nova Workshop's listening room. Avant, free, contemporary jazz, plus the more interesting touring acts. Programming lives on Ars Nova's What's On calendar.",
     vibe: "Seated listening room, no chatter during sets.",
     cover: "Ticketed, prices vary.",
   },
