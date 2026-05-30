@@ -380,7 +380,7 @@ export const venues: Venue[] = [
     address: "2101 W Lehigh Ave, Philadelphia, PA 19132",
     lat: 39.9933,
     lng: -75.1788,
-    website: "https://www.instagram.com/louandchooslounge/",
+    website: "https://thelouandchoos.com/",
     instagram: "https://www.instagram.com/louandchooslounge/",
     blurb:
       "Decades-deep North Philly lounge. Live bands, soul-jazz residencies, late jams. The kind of place where the regulars run the room.",
