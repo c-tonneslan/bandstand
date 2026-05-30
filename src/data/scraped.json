@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T11:04:25.915Z",
+  "generatedAt": "2026-05-30T11:14:28.510Z",
   "byVenue": {
     "chris-jazz-cafe": {
       "venueSlug": "chris-jazz-cafe",
@@ -712,7 +712,7 @@
     },
     "south-jazz-kitchen": {
       "venueSlug": "south-jazz-kitchen",
-      "scrapedAt": "2026-05-30T11:04:24.702Z",
+      "scrapedAt": "2026-05-30T11:14:26.502Z",
       "events": [
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-29",
@@ -725,7 +725,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-30",
@@ -738,7 +738,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-31",
@@ -751,7 +751,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-marcus-johnson-thurs-june-4-630pm-900pm-presented-by-unscripted-jazz-2026-06-04",
@@ -764,7 +764,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-05",
@@ -777,7 +777,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-06",
@@ -790,7 +790,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-07",
@@ -803,7 +803,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-lawrence-weas-newton-the-soul-of-jazz-thursday-june-12-630pm-900pm-presented-by-unscripted-jazz-2026-06-11",
@@ -816,7 +816,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-karen-linette-the-karen-linette-experience-celebrating-aretha-friday-june-12-700pm-930pm-2026-06-12",
@@ -829,7 +829,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-jamaaladeen-tacuma-quartet-featuring-tyshawn-sorey-sat-june-13-7pm-930pm-2026-06-13",
@@ -842,7 +842,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-a-healing-soundscape-with-brynn-the-collective-sunday-june-14-600pm-830pm-2026-06-14",
@@ -855,7 +855,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 6pm, 8:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-jackiem-joyner-thurs-june-18-fri-june-19-showtimes-vary-by-day-presented-by-unscripted-jazz-2026-06-18",
@@ -868,7 +868,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-jackiem-joyner-thurs-june-18-fri-june-19-showtimes-vary-by-day-presented-by-unscripted-jazz-2026-06-19",
@@ -881,7 +881,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-seraiah-nicole-shaun-chrisjohn-sat-june-20-700pm-930pm-2026-06-20",
@@ -894,7 +894,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         },
         {
           "id": "south-seraiah-nicole-shaun-chrisjohn-sat-june-20-700pm-930pm-copy-2026-06-21",
@@ -906,10 +906,58 @@
           "kind": "ticketed",
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:04:24.702Z"
+          "verifiedAt": "2026-05-30T11:14:26.502Z"
         }
       ],
       "warnings": []
+    },
+    "jazz-philadelphia": {
+      "venueSlug": "jazz-philadelphia",
+      "scrapedAt": "2026-05-30T11:14:27.696Z",
+      "events": [
+        {
+          "id": "jp-12896",
+          "venueSlug": "mann-center",
+          "date": "2026-07-22",
+          "startTime": "20:00",
+          "endTime": "21:00",
+          "name": "Coltrane 100: Legacy featuring Ravi Coltrane w/ The Philadelphia Orchestra",
+          "kind": "ticketed",
+          "ticketUrl": "https://jazzphiladelphia.org/event/coltrane-100-legacy-featuring-ravi-coltrane-w-the-philadelphia-orchestra/",
+          "notes": "Coltrane 100: Legacy featuring Ravi Coltrane w/ The Philadelphia Orchestra July 22 | 8:00 PM Highmark Mann Center for the Performing Arts 5201 Parkside Avenue Philadelphia, PA 19131",
+          "confidence": "verified",
+          "verifiedAt": "2026-05-30T11:14:27.696Z"
+        },
+        {
+          "id": "jp-12892",
+          "venueSlug": "mann-center",
+          "date": "2026-08-20",
+          "startTime": "20:00",
+          "endTime": "21:00",
+          "name": "Jazz Under The Stars: Marion Meadows",
+          "kind": "ticketed",
+          "ticketUrl": "https://jazzphiladelphia.org/event/jazz-under-the-stars-marion-meadows/",
+          "notes": "Jazz Under The Stars: Marion Meadows August 20 | 8:00 PM Highmark Mann Center for the Performing Arts 5201 Parkside Avenue Philadelphia, PA 19131",
+          "confidence": "verified",
+          "verifiedAt": "2026-05-30T11:14:27.696Z"
+        },
+        {
+          "id": "jp-12898",
+          "venueSlug": "mann-center",
+          "date": "2026-09-30",
+          "startTime": "20:00",
+          "endTime": "21:00",
+          "name": "Jazz Under The Stars: Kirk Whalum",
+          "kind": "ticketed",
+          "ticketUrl": "https://jazzphiladelphia.org/event/jazz-under-the-stars-kirk-whalum/",
+          "notes": "Jazz Under The Stars: Kirk Whalum September 30 | 8:00 PM Highmark Mann Center for the Performing Arts 5201 Parkside Avenue Philadelphia, PA 19131",
+          "confidence": "verified",
+          "verifiedAt": "2026-05-30T11:14:27.696Z"
+        }
+      ],
+      "warnings": [
+        "unmatched venue \"Saunders Park Greene\" for \"Lancaster Avenue Jazz &#038; Arts Festival: Celebrating John Coltrane\""
+      ]
     }
   }
 }
