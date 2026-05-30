@@ -1,21 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  /* repertory-inspired palette: warm cream paper, ink black, signal red */
-  --background: #efe6d2;
-  --foreground: #0c0c0c;
-  --muted: #6a6258;
-  --line: #cbc1a8;
-  --red: #c41e1e;
-  --red-soft: #a3251f;
-  --gold: #b8860b;
-  /* tag chip colors used on the map + filter chips */
-  --tag-live: #c41e1e;
-  --tag-jam: #b8860b;
-  --tag-listening: #3a5a40;
-  --tag-vinyl: #6f5436;
-  --tag-dj: #5b2c6f;
-  --tag-system: #2c3e50;
+  /* warmer earth palette: golden cream paper, warm ink, terracotta accent.
+     softer than the original repertory signal-red, still editorial. */
+  --background: #f0e6cd;
+  --foreground: #1f1a14;
+  --muted: #786b56;
+  --line: #d8ceb1;
+  --red: #a83a2a;
+  --red-soft: #8a2f23;
+  --gold: #c68f2d;
+  /* tag chip + map marker palette — harmonized warm earth tones */
+  --tag-live: #a83a2a; /* terracotta */
+  --tag-jam: #b58a2e; /* mustard */
+  --tag-listening: #4a6b48; /* forest */
+  --tag-vinyl: #7a5a36; /* umber */
+  --tag-dj: #6b3550; /* plum */
+  --tag-system: #2e5a5e; /* teal */
 }
 
 @theme inline {
@@ -54,13 +55,13 @@ body {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.08;
+  opacity: 0.06;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   z-index: 0;
 }
 
-/* Inline brass link */
+/* Inline link with terracotta underline */
 a.inline {
   color: var(--red);
   text-decoration: underline;

@@ -67,32 +67,34 @@ export default function Map({ venues }: Props) {
       const primary = v.tags[0];
       const color = TAG_COLOR[primary] ?? "var(--red)";
 
-      const el = document.createElement("a");
-      el.href = `/venues/${v.slug}`;
+      // Plain div so clicking the marker only toggles the popup; the popup
+      // body still carries a "→ venue page" link for navigation.
+      const el = document.createElement("div");
+      el.setAttribute("role", "button");
       el.setAttribute("aria-label", v.name);
-      el.style.display = "block";
       el.style.width = "16px";
       el.style.height = "16px";
       el.style.borderRadius = "9999px";
       el.style.background = color;
-      el.style.border = "2px solid #efe6d2";
-      el.style.boxShadow = "0 0 0 1.5px #0c0c0c";
+      el.style.border = "2px solid #f0e6cd";
+      el.style.boxShadow = "0 0 0 1.5px #1f1a14";
       el.style.cursor = "pointer";
 
-      const popup = new maplibregl.Popup({ offset: 14, closeButton: false }).setHTML(
-        `<div style="font-family: serif; font-style: italic; font-size: 16px; line-height: 1.2;">${escapeHtml(v.name)}</div>
-         <div style="font-family: monospace; text-transform: uppercase; font-size: 10px; letter-spacing: 0.18em; color: #6a6258; margin-top: 4px;">${escapeHtml(v.neighborhood)}</div>
-         <div style="font-size: 12px; margin-top: 6px; color: #0c0c0c;">${escapeHtml(v.blurb)}</div>
-         <div style="margin-top: 8px;">
-           ${v.tags
-             .map(
-               (t) =>
-                 `<span style="display:inline-block; margin-right:4px; padding:1px 6px; border-radius:9999px; font-size:10px; text-transform:uppercase; letter-spacing:0.18em; color:${TAG_COLOR[t]}; border:1px solid ${TAG_COLOR[t]};">${TAG_LABEL[t]}</span>`,
-             )
-             .join("")}
-         </div>
-         <a href="/venues/${v.slug}" style="display:inline-block; margin-top:8px; font-size:11px; color:#c41e1e; text-decoration:none; letter-spacing:0.18em; text-transform:uppercase;">→ venue page</a>`,
-      );
+      const popup = new maplibregl.Popup({ offset: 14, closeButton: true, maxWidth: "280px" })
+        .setHTML(
+          `<div style="font-family: serif; font-style: italic; font-size: 17px; line-height: 1.2; color: #1f1a14;">${escapeHtml(v.name)}</div>
+           <div style="font-family: monospace; text-transform: uppercase; font-size: 10px; letter-spacing: 0.18em; color: #786b56; margin-top: 4px;">${escapeHtml(v.neighborhood)}</div>
+           <div style="font-size: 12px; margin-top: 8px; color: #1f1a14; line-height: 1.45;">${escapeHtml(v.blurb)}</div>
+           <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px;">
+             ${v.tags
+               .map(
+                 (t) =>
+                   `<span style="display:inline-block; padding:1px 6px; border-radius:9999px; font-size:10px; text-transform:uppercase; letter-spacing:0.18em; color:${TAG_COLOR[t]}; border:1px solid ${TAG_COLOR[t]};">${TAG_LABEL[t]}</span>`,
+               )
+               .join("")}
+           </div>
+           <a href="/venues/${v.slug}" style="display:inline-block; margin-top:10px; font-size:11px; color:#a83a2a; text-decoration:none; letter-spacing:0.18em; text-transform:uppercase;">→ venue page</a>`,
+        );
 
       const marker = new maplibregl.Marker({ element: el })
         .setLngLat([v.lng, v.lat])

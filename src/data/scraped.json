@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-30T10:57:53.192Z",
+  "generatedAt": "2026-05-30T11:03:02.715Z",
   "byVenue": {
     "chris-jazz-cafe": {
       "venueSlug": "chris-jazz-cafe",
-      "scrapedAt": "2026-05-30T10:57:50.784Z",
+      "scrapedAt": "2026-05-30T11:03:00.927Z",
       "events": [
         {
           "id": "chris-132991-2026-05-30",
@@ -16,7 +16,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/362591",
           "notes": "Ben Allison - bass · Steve Cardenas - guitar · Ted Nash - saxophone Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133444-2026-06-02",
@@ -29,7 +29,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363580",
           "notes": "We Get Requests is an engaging live music night led by Philadelphia trumpeter and GRAMMY-nominated artist Josh Lawrence. Each performance features Lawrence and a rotating trio of some of Philadelphia’s most respected musicians, with special guest artists joining the second set. Audience members can submit song requests in person or online between sets, shaping a spontaneous and memorable evening where the band brings those selections to life on stage. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136027-2026-06-03",
@@ -42,7 +42,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369497",
           "notes": "Vocals, Declan Cashman · Piano, Aidan Ward-Richter · Bass, Paul Briggs · Drums, Greg Masters Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136029-2026-06-04",
@@ -55,7 +55,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369500",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133367-2026-06-05",
@@ -68,7 +68,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363370",
           "notes": "Set Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $25 · Dinner & Show package ~ includes 3-course dinner: $100 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $120 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-132988-2026-06-06",
@@ -81,7 +81,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/362586",
           "notes": "Set Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136043-2026-06-09",
@@ -94,7 +94,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369527",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136557-2026-06-10",
@@ -107,7 +107,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/370725",
           "notes": "Josh Klamka - Piano · Emily Rota - Bass · Jacquee Paul - Vocals · Evan Wood - Drums · Rockwell Valentine - Trumpet Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136031-2026-06-11",
@@ -120,7 +120,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369504",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-132986-2026-06-12",
@@ -133,7 +133,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/362580",
           "notes": "Set Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $25 · Dinner & Show package ~ includes 3-course dinner: $100 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $120 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133368-2026-06-13",
@@ -146,7 +146,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363372",
           "notes": "Set Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137877-2026-06-16",
@@ -159,7 +159,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/374059",
           "notes": "Keith Chasin, piano · Andrew Carson, trumpet · Ravi Seenarine, saxophone · Shane Aaserud, bass · Ben Cohen, drums Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136033-2026-06-17",
@@ -172,7 +172,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369508",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136032-2026-06-18",
@@ -185,7 +185,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369506",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-132987-2026-06-19",
@@ -198,7 +198,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/362582",
           "notes": "Admission: Friday - $25, Saturday - $30 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-132987-2026-06-20",
@@ -211,7 +211,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/362584",
           "notes": "Admission: Friday - $25, Saturday - $30 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-130514-2026-06-23",
@@ -224,7 +224,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/356762",
           "notes": "Norman David, saxophone · Tom Lawton, piano · Jason Fraticelli, bass · Dan Monaghan, drums Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136034-2026-06-24",
@@ -237,7 +237,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369510",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137637-2026-06-25",
@@ -250,7 +250,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/373565",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136901-2026-06-26",
@@ -263,7 +263,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/371634",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $25 · Dinner & Show package ~ includes 3-course dinner: $100 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $120 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-135400-2026-06-27",
@@ -276,7 +276,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/367985",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-129379-2026-06-30",
@@ -289,7 +289,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/353957",
           "notes": "Bokani Dyer, piano · Timothy Norton, bass · Lumanyano Mzi, drums Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-138092-2026-07-01",
@@ -302,7 +302,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/374558",
           "notes": "One night only Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137252-2026-07-03",
@@ -315,7 +315,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372497",
           "notes": "V. Shayne Frederick, vocals · Tim Brey, piano · Madison Rast, bass · Khary Abdul-Shaheed, drums · Elliot Bild, trumpet · Yesseh Furaha-Ali, saxophone Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133445-2026-07-07",
@@ -328,7 +328,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363582",
           "notes": "We Get Requests is an engaging live music night led by Philadelphia trumpeter and GRAMMY-nominated artist Josh Lawrence. Each performance features Lawrence and a rotating trio of some of Philadelphia’s most respected musicians, with special guest artists joining the second set. Audience members can submit song requests in person or online between sets, shaping a spontaneous and memorable evening where the band brings those selections to life on stage. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136030-2026-07-09",
@@ -341,7 +341,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369502",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137254-2026-07-10",
@@ -354,7 +354,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372500",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $25 · Dinner & Show package ~ includes 3-course dinner: $100 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $120 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137256-2026-07-11",
@@ -367,7 +367,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372503",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136044-2026-07-14",
@@ -380,7 +380,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369529",
           "notes": "Pianist and composer Daniel Meron and his trio deliver a set of highly melodic, expressive music to celebrate their upcoming release, Live at The Sound Room. Featuring bassist Pablo Menares and drummer Jimmy Macbride, the group presents original modern jazz infused with Middle Eastern and Latin American influences. These three musicians—all fixtures of the New York City jazz scene for over 15 years—perform Meron's compositions in a highly democratic manner, focusing on interplay, self-expression, and spontaneity. As captured on the new album, the show offers a definitive look into Meron’s rich songbook and the band's sophisticated approach to the modern piano trio, resulting in an exhilarating and joyful experience. · · “Meron’s songs are defined by a melodic, lyrical, style that is immediately engaging... his piano sound is crystal clear, precise and beautiful...\" - All About Jazz Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137643-2026-07-16",
@@ -393,7 +393,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/373574",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137257-2026-07-17",
@@ -406,7 +406,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372505",
           "notes": "Mike Raymond - Guitar · Jesse Deems - Trumpet · Matt Miller - Alto Sax · Chris Farr - Tenor Sax · Bill Saurman - Trombone · Tim Brey - Piano · Paul Briggs - Bass · Gusten Rudolph - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137258-2026-07-18",
@@ -419,7 +419,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372507",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136036-2026-07-22",
@@ -432,7 +432,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369514",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137259-2026-07-24",
@@ -445,7 +445,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372509",
           "notes": "Keith Chasin - Piano · Shane Aaserud - Bass · Kevin Blanke - Drums · Andrew Carson - Trumpet · Hailey Brinnel - Vocals Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137262-2026-07-25",
@@ -458,7 +458,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372517",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-132185-2026-07-28",
@@ -471,7 +471,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/360444",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136037-2026-07-29",
@@ -484,7 +484,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369516",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137292-2026-07-31",
@@ -497,7 +497,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372583",
           "notes": "Warren Wolf - Vibraphone · Tony Miceli - Vibraphone · Behn Gillece - Vibraphone · Oliver Mayman - Vibraphone · Morgan Wallbridge - Vibraphone · Neil Podgurski - Piano · Mike Boone - Bass · Dan Monaghan - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137298-2026-08-01",
@@ -510,7 +510,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372604",
           "notes": "Chuck Redd - Vibraphone · Tony Miceli - Vibraphone · Tom Lawton - Piano · Nimrod Speaks - Bass · Dan Monaghan - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133446-2026-08-04",
@@ -523,7 +523,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363584",
           "notes": "We Get Requests is an engaging live music night led by Philadelphia trumpeter and GRAMMY-nominated artist Josh Lawrence. Each performance features Lawrence and a rotating trio of some of Philadelphia’s most respected musicians, with special guest artists joining the second set. Audience members can submit song requests in person or online between sets, shaping a spontaneous and memorable evening where the band brings those selections to life on stage. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136038-2026-08-05",
@@ -536,7 +536,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369518",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137304-2026-08-07",
@@ -549,7 +549,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372629",
           "notes": "Venissa Santí - Vocals · Bart Miltenberger - Trumpet · Michael Stark - Piano · Madison Rast - Bass · Olive Mitra - Drums · Cuco Castellanos - Congas Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-135948-2026-08-08",
@@ -562,7 +562,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369324",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-135497-2026-08-11",
@@ -575,7 +575,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/368316",
           "notes": "Jonathan Paik, piano · Hannah Marks, double bass · Mark Valdes, drums Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136039-2026-08-12",
@@ -588,7 +588,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369520",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136045-2026-08-18",
@@ -601,7 +601,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369531",
           "notes": "Nate Hook, saxophone · Ben Karp, guitar · Ryan Tomski, keys · Jordan Berger, bass · Paolo Canarella, drums Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136041-2026-08-19",
@@ -614,7 +614,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369523",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137306-2026-08-22",
@@ -627,7 +627,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372636",
           "notes": "Ken Fowser - Saxophone · Matthew Rotker-Lynn - Guitar · Brian Charette - Organ · Byron Landham - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-136042-2026-08-26",
@@ -640,7 +640,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/369525",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137307-2026-08-28",
@@ -653,7 +653,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372638",
           "notes": "Peter Bernstein - Guitar · Tyler Henderson - Piano · Alex Claffy - Bass · Byron Landham - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-137307-2026-08-29",
@@ -666,7 +666,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/372640",
           "notes": "Peter Bernstein - Guitar · Tyler Henderson - Piano · Alex Claffy - Bass · Byron Landham - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133447-2026-09-08",
@@ -679,7 +679,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363586",
           "notes": "We Get Requests is an engaging live music night led by Philadelphia trumpeter and GRAMMY-nominated artist Josh Lawrence. Each performance features Lawrence and a rotating trio of some of Philadelphia’s most respected musicians, with special guest artists joining the second set. Audience members can submit song requests in person or online between sets, shaping a spontaneous and memorable evening where the band brings those selections to life on stage. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133448-2026-10-06",
@@ -692,7 +692,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363588",
           "notes": "We Get Requests is an engaging live music night led by Philadelphia trumpeter and GRAMMY-nominated artist Josh Lawrence. Each performance features Lawrence and a rotating trio of some of Philadelphia’s most respected musicians, with special guest artists joining the second set. Audience members can submit song requests in person or online between sets, shaping a spontaneous and memorable evening where the band brings those selections to life on stage. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         },
         {
           "id": "chris-133449-2026-11-10",
@@ -705,14 +705,14 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/363590",
           "notes": "We Get Requests is an engaging live music night led by Philadelphia trumpeter and GRAMMY-nominated artist Josh Lawrence. Each performance features Lawrence and a rotating trio of some of Philadelphia’s most respected musicians, with special guest artists joining the second set. Audience members can submit song requests in person or online between sets, shaping a spontaneous and memorable evening where the band brings those selections to life on stage. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:50.784Z"
+          "verifiedAt": "2026-05-30T11:03:00.927Z"
         }
       ],
       "warnings": []
     },
     "south-jazz-kitchen": {
       "venueSlug": "south-jazz-kitchen",
-      "scrapedAt": "2026-05-30T10:57:51.977Z",
+      "scrapedAt": "2026-05-30T11:03:01.582Z",
       "events": [
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-29",
@@ -725,7 +725,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-30",
@@ -738,7 +738,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-31",
@@ -751,7 +751,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-marcus-johnson-thurs-june-4-630pm-900pm-presented-by-unscripted-jazz-2026-06-04",
@@ -764,7 +764,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-05",
@@ -777,7 +777,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-06",
@@ -790,7 +790,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-07",
@@ -803,7 +803,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-lawrence-weas-newton-the-soul-of-jazz-thursday-june-12-630pm-900pm-presented-by-unscripted-jazz-2026-06-11",
@@ -816,7 +816,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-karen-linette-the-karen-linette-experience-celebrating-aretha-friday-june-12-700pm-930pm-2026-06-12",
@@ -829,7 +829,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-jamaaladeen-tacuma-quartet-featuring-tyshawn-sorey-sat-june-13-7pm-930pm-2026-06-13",
@@ -842,7 +842,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-a-healing-soundscape-with-brynn-the-collective-sunday-june-14-600pm-830pm-2026-06-14",
@@ -855,7 +855,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 6pm, 8:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-jackiem-joyner-thurs-june-18-fri-june-19-showtimes-vary-by-day-presented-by-unscripted-jazz-2026-06-18",
@@ -868,7 +868,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-jackiem-joyner-thurs-june-18-fri-june-19-showtimes-vary-by-day-presented-by-unscripted-jazz-2026-06-19",
@@ -881,7 +881,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-seraiah-nicole-shaun-chrisjohn-sat-june-20-700pm-930pm-2026-06-20",
@@ -894,7 +894,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         },
         {
           "id": "south-seraiah-nicole-shaun-chrisjohn-sat-june-20-700pm-930pm-copy-2026-06-21",
@@ -906,7 +906,7 @@
           "kind": "ticketed",
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T10:57:51.977Z"
+          "verifiedAt": "2026-05-30T11:03:01.582Z"
         }
       ],
       "warnings": []
