@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/refresh.ts || echo 'refresh failed, building with existing scraped.json'",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

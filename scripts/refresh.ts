@@ -6,6 +6,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { scrapeChrisJazzCafe } from "../src/scrapers/chris-jazz-cafe";
+import { scrapeSouthJazzKitchen } from "../src/scrapers/south-jazz-kitchen";
 import type { ScrapeResult } from "../src/scrapers/types";
 
 const OUT_PATH = join(import.meta.dirname, "..", "src", "data", "scraped.json");
@@ -15,7 +16,10 @@ interface ScrapedFile {
   byVenue: Record<string, ScrapeResult>;
 }
 
-const scrapers = [{ slug: "chris-jazz-cafe", run: scrapeChrisJazzCafe }];
+const scrapers = [
+  { slug: "chris-jazz-cafe", run: scrapeChrisJazzCafe },
+  { slug: "south-jazz-kitchen", run: scrapeSouthJazzKitchen },
+];
 
 async function main() {
   const existing: ScrapedFile = existsSync(OUT_PATH)

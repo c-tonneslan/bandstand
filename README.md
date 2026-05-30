@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# bandstand
 
-## Getting Started
+Philly jazz, tonight. Gigs, residencies, jam sessions, and the rooms that host them.
 
-First, run the development server:
+Live at https://bandstand-bay.vercel.app.
+
+## What
+
+A small site that answers one question: where can I go hear jazz, or sit in on a session, in Philadelphia tonight or this week? The Philly jazz calendar lives in twelve places at once (Chris' has a real calendar, Heritage updates on Instagram, La Rose is word of mouth, Solar Myth piggybacks on Ars Nova, Time has a poster on the door). bandstand stitches them together.
+
+## Stack
+
+- Next.js 16 + TypeScript + Tailwind v4 + React 19, static SSG
+- Per-venue scrapers under `src/scrapers/`, runner at `scripts/refresh.ts`
+- All dates resolved in `America/New_York` so "tonight" doesn't drift at midnight UTC
+
+## Local dev
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run refresh    # pull latest from the venues we scrape
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scrapers
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Each scraper exports a `Scraper` thunk that returns `{ events, scrapedAt, warnings }`. A scraper failure keeps the previous batch for that venue so a parse error doesn't blow away good data.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Current scrapers:
 
-## Learn More
+- **chris-jazz-cafe** — `/events` page, ~54 events/week, two-set nights collapsed
+- **south-jazz-kitchen** — `/jazz-club/` index → `/event/SLUG/` JSON-LD blocks, multi-day runs expanded
 
-To learn more about Next.js, take a look at the following resources:
+Hand-curated entries live in `src/data/venues.ts`, `src/data/series.ts`, and `src/data/events.ts`. Once a venue has a working scraper, its hand-curated entries are removed so the scraped data is the single source of truth.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Nightly refresh on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The deploy pipeline runs the scraper before `next build` (see `prebuild` in `package.json`), so every fresh deploy bakes in current data.
 
-## Deploy on Vercel
+To wire up a nightly refresh:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a Vercel Deploy Hook for the project (Vercel → Project → Settings → Git → Deploy Hooks). Save the URL.
+2. In Vercel project Environment Variables, add:
+   - `CRON_SECRET` — any random string. Vercel Cron sends it as `Authorization: Bearer <secret>`.
+   - `VERCEL_DEPLOY_HOOK_URL` — the URL from step 1.
+3. `vercel.json` already schedules `/api/cron/refresh` at `0 10 * * *` (10:00 UTC ≈ 5–6 AM ET). The route verifies the secret, then POSTs the Deploy Hook, which kicks a fresh build that re-runs the scrapers.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The cron path needs `CRON_SECRET` because Vercel Cron public routes are otherwise reachable by anyone.
+
+## License
+
+MIT.
