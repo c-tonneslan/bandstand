@@ -76,15 +76,15 @@ export default function Map({ venues }: Props) {
       el.style.height = "16px";
       el.style.borderRadius = "9999px";
       el.style.background = color;
-      el.style.border = "2px solid #f0e6cd";
-      el.style.boxShadow = "0 0 0 1.5px #1f1a14";
+      el.style.border = "2px solid #eceae3";
+      el.style.boxShadow = "0 0 0 1.5px #1a1a1a";
       el.style.cursor = "pointer";
 
       const popup = new maplibregl.Popup({ offset: 14, closeButton: true, maxWidth: "280px" })
         .setHTML(
-          `<div style="font-family: serif; font-style: italic; font-size: 17px; line-height: 1.2; color: #1f1a14;">${escapeHtml(v.name)}</div>
-           <div style="font-family: monospace; text-transform: uppercase; font-size: 10px; letter-spacing: 0.18em; color: #786b56; margin-top: 4px;">${escapeHtml(v.neighborhood)}</div>
-           <div style="font-size: 12px; margin-top: 8px; color: #1f1a14; line-height: 1.45;">${escapeHtml(v.blurb)}</div>
+          `<div style="font-family: serif; font-style: italic; font-size: 17px; line-height: 1.2; color: #1a1a1a;">${escapeHtml(v.name)}</div>
+           <div style="font-family: monospace; text-transform: uppercase; font-size: 10px; letter-spacing: 0.18em; color: #6e6c66; margin-top: 4px;">${escapeHtml(v.neighborhood)}</div>
+           <div style="font-size: 12px; margin-top: 8px; color: #1a1a1a; line-height: 1.45;">${escapeHtml(v.blurb)}</div>
            <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px;">
              ${v.tags
                .map(

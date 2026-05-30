@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  /* warmer earth palette: golden cream paper, warm ink, terracotta accent.
-     softer than the original repertory signal-red, still editorial. */
-  --background: #f0e6cd;
-  --foreground: #1f1a14;
-  --muted: #786b56;
-  --line: #d8ceb1;
+  /* cool stone palette: neutral paper, near-black ink, terracotta accent.
+     warm tags pop against the cool background. */
+  --background: #eceae3;
+  --foreground: #1a1a1a;
+  --muted: #6e6c66;
+  --line: #cfcdc4;
   --red: #a83a2a;
   --red-soft: #8a2f23;
-  --gold: #c68f2d;
+  --gold: #b8851f;
   /* tag chip + map marker palette — harmonized warm earth tones */
   --tag-live: #a83a2a; /* terracotta */
   --tag-jam: #b58a2e; /* mustard */
