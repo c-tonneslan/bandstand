@@ -4,8 +4,19 @@ import { DayHeader } from "@/components/DayHeader";
 import { Featured } from "@/components/Featured";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
 import { series } from "@/data/series";
+import { venues } from "@/data/venues";
 import { addDays, dayLabelFromYmd, todayInPhilly } from "@/lib/dates";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
+
+const DAY_FULL: Record<string, string> = {
+  mon: "Monday",
+  tue: "Tuesday",
+  wed: "Wednesday",
+  thu: "Thursday",
+  fri: "Friday",
+  sat: "Saturday",
+  sun: "Sunday",
+};
 
 const SERIES_LABEL: Record<string, string> = {
   mon: "Mon",
@@ -87,15 +98,22 @@ export default function TonightPage() {
       <section className="pt-14">
         <p className="caps-wide text-red mb-4">Runs every week</p>
         <div className="grid md:grid-cols-3 gap-4">
-          {series.slice(0, 9).map((s) => (
-            <div key={s.id} className="border border-foreground/30 p-4 hover:border-red transition">
-              <p className="caps-wide text-red mb-2">
-                {s.day} · {s.startTime}
-              </p>
-              <p className="font-serif text-lg leading-tight">{s.name}</p>
-              <p className="text-xs text-muted mt-1">{s.venueSlug.replace(/-/g, " ")}</p>
-            </div>
-          ))}
+          {series.slice(0, 9).map((s) => {
+            const venue = venues.find((v) => v.slug === s.venueSlug);
+            return (
+              <Link
+                key={s.id}
+                href={venue ? `/venues/${venue.slug}` : "/venues"}
+                className="block border border-foreground/30 p-4 hover:border-red transition"
+              >
+                <p className="caps-wide text-red mb-2">
+                  {DAY_FULL[s.day]} · {s.startTime}
+                </p>
+                <p className="font-serif text-lg leading-tight">{s.name}</p>
+                <p className="text-xs text-muted mt-1">{venue?.name ?? s.venueSlug}</p>
+              </Link>
+            );
+          })}
         </div>
         <p className="caps mt-6">
           <Link href="/week" className="text-red hover:text-foreground">

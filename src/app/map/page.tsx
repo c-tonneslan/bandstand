@@ -1,4 +1,6 @@
 import Map from "@/components/Map";
+import { TAG_COLOR, TAG_LABEL } from "@/components/TagChip";
+import type { VenueTag } from "@/data/types";
 import { venues } from "@/data/venues";
 
 export const metadata = {
@@ -6,6 +8,15 @@ export const metadata = {
   description:
     "Live jazz, jam sessions, listening rooms, vinyl bars, DJ nights, and the spots that play real jazz on the system, mapped across Philadelphia.",
 };
+
+const LEGEND_TAGS: VenueTag[] = [
+  "live-jazz",
+  "jam-session",
+  "listening-room",
+  "vinyl-bar",
+  "dj-set",
+  "jazz-on-system",
+];
 
 export default function MapPage() {
   return (
@@ -24,11 +35,24 @@ export default function MapPage() {
         </div>
       </header>
 
-      <p className="font-serif text-lg md:text-xl leading-snug max-w-3xl mt-8 mb-10">
+      <p className="font-serif text-lg md:text-xl leading-snug max-w-3xl mt-8 mb-8">
         Not just stages. Vinyl bars, listening rooms, DJ nights, and the restaurants that
         actually pick records instead of letting the algorithm run. Filter for the kind of
         night you want.
       </p>
+
+      <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6 text-xs caps text-muted">
+        {LEGEND_TAGS.map((t) => (
+          <span key={t} className="inline-flex items-center gap-2">
+            <span
+              aria-hidden
+              className="inline-block w-2.5 h-2.5 rounded-full"
+              style={{ background: TAG_COLOR[t], border: "1.5px solid var(--background)", boxShadow: "0 0 0 1px var(--foreground)" }}
+            />
+            {TAG_LABEL[t]}
+          </span>
+        ))}
+      </div>
 
       <Map venues={venues} />
     </div>
