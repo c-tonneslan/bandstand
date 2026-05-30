@@ -21,6 +21,26 @@ const STYLE_URL =
   process.env.NEXT_PUBLIC_MAP_STYLE_URL ||
   "https://tiles.openfreemap.org/styles/positron";
 
+// Compute a bounding box that comfortably contains every venue, with a small
+// pad so the corner markers aren't sitting on the edge of the viewport.
+function venueBounds(venues: Venue[]): maplibregl.LngLatBoundsLike | null {
+  if (venues.length === 0) return null;
+  let minLng = Infinity;
+  let maxLng = -Infinity;
+  let minLat = Infinity;
+  let maxLat = -Infinity;
+  for (const v of venues) {
+    if (v.lng < minLng) minLng = v.lng;
+    if (v.lng > maxLng) maxLng = v.lng;
+    if (v.lat < minLat) minLat = v.lat;
+    if (v.lat > maxLat) maxLat = v.lat;
+  }
+  return [
+    [minLng, minLat],
+    [maxLng, maxLat],
+  ];
+}
+
 interface Props {
   venues: Venue[];
 }
@@ -32,18 +52,25 @@ export default function Map({ venues }: Props) {
   const [active, setActive] = useState<Set<VenueTag>>(new Set(ALL_TAGS));
   const [error, setError] = useState<string | null>(null);
 
-  // One-time map init.
+  // One-time map init. Fit the initial viewport to every venue so spots in
+  // Olney or out toward the Mann don't drop off the edge.
   useEffect(() => {
     if (mapRef.current || !containerRef.current) return;
     try {
+      const bounds = venueBounds(venues);
       const map = new maplibregl.Map({
         container: containerRef.current,
         style: STYLE_URL,
         center: PHL_CENTER,
-        zoom: 12,
+        zoom: 11,
         attributionControl: { compact: true },
       });
       map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), "top-right");
+      map.on("load", () => {
+        if (bounds) {
+          map.fitBounds(bounds, { padding: 60, maxZoom: 13, duration: 0 });
+        }
+      });
       mapRef.current = map;
     } catch (e) {
       const msg = e instanceof Error ? e.message : "unknown";
@@ -53,7 +80,7 @@ export default function Map({ venues }: Props) {
       mapRef.current?.remove();
       mapRef.current = null;
     };
-  }, []);
+  }, [venues]);
 
   // Re-render markers whenever the filter changes.
   useEffect(() => {

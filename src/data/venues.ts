@@ -348,7 +348,7 @@ export const venues: Venue[] = [
     address: "5132 Walnut St, Philadelphia, PA 19139",
     lat: 39.9583,
     lng: -75.2317,
-    website: "https://www.bookersphilly.com/",
+    website: "https://bookersrestaurantandbar.com/",
     instagram: "https://www.instagram.com/bookersrestaurant/",
     blurb:
       "Cedar Park spot from chef Saquan Black. Soul food + cocktails, real jazz on the system, occasional live nights and jam-leaning Sunday brunches.",
