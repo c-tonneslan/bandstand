@@ -30,15 +30,67 @@ const MONTHS: Record<string, number> = {
   december: 12,
 };
 
-// "Friday, June 12, 2026" → "2026-06-12"
-function parseLongDate(raw: string): string | null {
-  const m = raw.match(/(?:\w+,\s*)?(\w+)\s+(\d{1,2}),\s*(\d{4})/);
-  if (!m) return null;
-  const month = MONTHS[m[1].toLowerCase()];
-  if (!month) return null;
-  const day = parseInt(m[2], 10);
-  const year = parseInt(m[3], 10);
-  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+// Pull (month, day(s), year?) out of an English long-form date phrase.
+// Handles:
+//   "Friday, June 12, 2026"          single day with year
+//   "Saturday, June 13"              single day, year inferred
+//   "Thursday and Friday, July 30-31, 2026"  multi-day range
+//   "June 30 - July 2, 2026"         cross-month range
+// Returns one or more "YYYY-MM-DD" ISO dates.
+function parseLongDates(raw: string, today = new Date()): string[] {
+  // Try month-day-range first: "Month DD-DD" optionally followed by ", YYYY"
+  const range = raw.match(/(\w+)\s+(\d{1,2})\s*[-–]\s*(\d{1,2})(?:,\s*(\d{4}))?/);
+  if (range) {
+    const month = MONTHS[range[1].toLowerCase()];
+    if (month) {
+      const d1 = parseInt(range[2], 10);
+      const d2 = parseInt(range[3], 10);
+      const year = range[4] ? parseInt(range[4], 10) : inferYear(month, today);
+      if (d1 <= d2) {
+        const out: string[] = [];
+        for (let d = d1; d <= d2; d++) {
+          out.push(`${year}-${String(month).padStart(2, "0")}-${String(d).padStart(2, "0")}`);
+        }
+        return out;
+      }
+    }
+  }
+  // Cross-month range: "Month DD - Month DD" (rare but possible)
+  const crossRange = raw.match(/(\w+)\s+(\d{1,2})\s*[-–]\s*(\w+)\s+(\d{1,2})(?:,\s*(\d{4}))?/);
+  if (crossRange) {
+    const m1 = MONTHS[crossRange[1].toLowerCase()];
+    const m2 = MONTHS[crossRange[3].toLowerCase()];
+    if (m1 && m2) {
+      const d1 = parseInt(crossRange[2], 10);
+      const d2 = parseInt(crossRange[4], 10);
+      const year = crossRange[5] ? parseInt(crossRange[5], 10) : inferYear(m1, today);
+      // Emit just the two endpoints; a full expansion across months would need
+      // date arithmetic, and runs rarely span weeks anyway.
+      return [
+        `${year}-${String(m1).padStart(2, "0")}-${String(d1).padStart(2, "0")}`,
+        `${year}-${String(m2).padStart(2, "0")}-${String(d2).padStart(2, "0")}`,
+      ];
+    }
+  }
+  // Single day, optional year.
+  const single = raw.match(/(?:\w+,\s*)?(\w+)\s+(\d{1,2})(?:,\s*(\d{4}))?/);
+  if (single) {
+    const month = MONTHS[single[1].toLowerCase()];
+    if (month) {
+      const day = parseInt(single[2], 10);
+      const year = single[3] ? parseInt(single[3], 10) : inferYear(month, today);
+      return [`${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`];
+    }
+  }
+  return [];
+}
+
+// When a phrase says "June 13" without a year, assume the next occurrence:
+// if the month is on or after this month, current year; otherwise next year.
+function inferYear(month: number, today: Date): number {
+  const yr = today.getFullYear();
+  const m = today.getMonth() + 1;
+  return month >= m ? yr : yr + 1;
 }
 
 // "8PM" → "20:00", "7:30 PM" → "19:30"
@@ -82,10 +134,29 @@ async function fetchProgramUrls(): Promise<string[]> {
 
 interface ProgramInfo {
   title: string;
-  date: string | null;
+  dates: string[];
   startTime: string | null;
   venueName: string | null;
   description: string;
+}
+
+// og:description shows up in three orderings observed in the wild:
+//   "... at VENUE on Friday, June 12, 2026"
+//   "... on Thursday, June 4 at Solar Myth ..."
+//   "... at Solar Myth for two performances on Thursday and Friday, July 30-31, 2026"
+// Find venue and date phrase from whichever pattern matches first.
+function extractVenueAndDate(desc: string): { venue: string | null; datePhrase: string | null } {
+  // Pattern A: at VENUE [for ...] on DATE
+  const a = desc.match(
+    /at\s+([A-Z][\w\s'&.]+?)(?:\s+for\s+[^.]+?)?\s+on\s+((?:\w+(?:\s+and\s+\w+)?,\s*)?[\w\s,–-]+?\d{1,2}(?:\s*[-–]\s*\d{1,2})?(?:,\s*\d{4})?)/,
+  );
+  if (a) return { venue: a[1].trim(), datePhrase: a[2].trim() };
+  // Pattern B: on DATE at VENUE
+  const b = desc.match(
+    /on\s+((?:\w+(?:\s+and\s+\w+)?,\s*)?[\w\s,–-]+?\d{1,2}(?:\s*[-–]\s*\d{1,2})?(?:,\s*\d{4})?)\s+at\s+([A-Z][\w\s'&.]+?)(?=[.,]|$| for )/,
+  );
+  if (b) return { venue: b[2].trim(), datePhrase: b[1].trim() };
+  return { venue: null, datePhrase: null };
 }
 
 function parseProgramPage(html: string): ProgramInfo | null {
@@ -96,14 +167,8 @@ function parseProgramPage(html: string): ProgramInfo | null {
   const title = ogTitle.replace(/\s*-\s*Ars Nova Workshop\s*$/i, "").trim();
 
   const ogDesc = $('meta[property="og:description"]').attr("content") ?? "";
-  // og:description = "Ars Nova Workshop welcomes ... at VENUE on Friday, Month DD, YYYY."
-  let venueName: string | null = null;
-  let date: string | null = null;
-  const m = ogDesc.match(/at\s+([\w\s]+?)\s+on\s+(?:\w+,\s*)?(\w+\s+\d{1,2},\s*\d{4})/i);
-  if (m) {
-    venueName = m[1].trim();
-    date = parseLongDate(m[2]);
-  }
+  const { venue, datePhrase } = extractVenueAndDate(ogDesc);
+  const dates = datePhrase ? parseLongDates(datePhrase) : [];
 
   // Start time comes from the date block on the page. It's usually rendered as
   // bare text like "8PM" inside a div near the date.
@@ -112,7 +177,7 @@ function parseProgramPage(html: string): ProgramInfo | null {
   const timeMatch = bodyText.match(/\b(\d{1,2}(?::\d{2})? ?(?:PM|AM))\b/);
   if (timeMatch) startTime = parseTime(timeMatch[1]);
 
-  return { title, date, startTime, venueName, description: ogDesc };
+  return { title, dates, startTime, venueName: venue, description: ogDesc };
 }
 
 function bumpClock(hhmm: string, minutes: number): string {
@@ -142,7 +207,7 @@ export const scrapeArsNova: Scraper = async () => {
       const html = await res.text();
       const info = parseProgramPage(html);
       if (!info) continue;
-      if (!info.date) {
+      if (info.dates.length === 0) {
         warnings.push(`ars-nova: no date parsed for ${url}`);
         continue;
       }
@@ -157,19 +222,21 @@ export const scrapeArsNova: Scraper = async () => {
       const note = info.description.length > 220
         ? `${info.description.slice(0, 217)}...`
         : info.description;
-      events.push({
-        id: `an-${slug}-${info.date}`,
-        venueSlug,
-        date: info.date,
-        startTime: start,
-        endTime: end,
-        name: info.title,
-        kind: "ticketed",
-        ticketUrl: url,
-        notes: note || undefined,
-        confidence: "verified",
-        verifiedAt: scrapedAt,
-      });
+      for (const date of info.dates) {
+        events.push({
+          id: `an-${slug}-${date}`,
+          venueSlug,
+          date,
+          startTime: start,
+          endTime: end,
+          name: info.title,
+          kind: "ticketed",
+          ticketUrl: url,
+          notes: note || undefined,
+          confidence: "verified",
+          verifiedAt: scrapedAt,
+        });
+      }
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
       warnings.push(`ars-nova: ${url} -> ${msg}`);

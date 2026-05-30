@@ -359,6 +359,21 @@ export const venues: Venue[] = [
 
   // -- North Philly --------------------------------------------------------
   {
+    slug: "the-yard",
+    name: "The Yard on John Coltrane St.",
+    neighborhood: "Strawberry Mansion",
+    address: "1500 N 33rd St, Philadelphia, PA 19121",
+    lat: 39.989,
+    lng: -75.19,
+    website: "https://www.arsnovaworkshop.org/whats-on/",
+    instagram: "https://www.instagram.com/arsnovaworkshop/",
+    blurb:
+      "Outdoor programming space on the block where John Coltrane lived. Home of Ars Nova Workshop's 'Spirits Up' mindfulness + music series.",
+    vibe: "Outdoor, daytime, listening-led.",
+    cover: "Mostly free, see Ars Nova listings.",
+    tags: ["live-jazz", "listening-room"],
+  },
+  {
     slug: "lou-and-choos-lounge",
     name: "Lou + Choo's Lounge",
     neighborhood: "Strawberry Mansion",
