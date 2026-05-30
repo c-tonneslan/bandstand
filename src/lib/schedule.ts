@@ -3,10 +3,33 @@
 // sorts by date + start time. Pages call this and render the result.
 
 import { events as defaultEvents, overrides as defaultOverrides } from "@/data/events";
+import scrapedJson from "@/data/scraped.json";
 import { series as defaultSeries } from "@/data/series";
 import type { Event, Occurrence, Override, Series } from "@/data/types";
 import { venues as defaultVenues } from "@/data/venues";
 import { dayOfWeekInPhilly, rangeOfDays } from "./dates";
+
+interface ScrapedFile {
+  generatedAt: string;
+  byVenue: Record<
+    string,
+    {
+      venueSlug: string;
+      scrapedAt: string;
+      events: Event[];
+      warnings: string[];
+    }
+  >;
+}
+
+function scrapedEvents(): Event[] {
+  const file = scrapedJson as ScrapedFile;
+  return Object.values(file.byVenue).flatMap((b) => b.events);
+}
+
+export function lastScrapedAt(): string {
+  return (scrapedJson as ScrapedFile).generatedAt;
+}
 
 interface ResolveInput {
   start: string;
@@ -19,10 +42,15 @@ interface ResolveInput {
 
 export function resolveOccurrences(input: ResolveInput): Occurrence[] {
   const series = input.series ?? defaultSeries;
-  const events = input.events ?? defaultEvents;
+  // Scraped events come first so explicit hand-curated overrides on the same
+  // id take precedence in the dedup below.
+  const events = input.events ?? [...scrapedEvents(), ...defaultEvents];
   const overrides = input.overrides ?? defaultOverrides;
   const venues = input.venues ?? defaultVenues;
   const venueBySlug = new Map(venues.map((v) => [v.slug, v]));
+  // If two events share an id, the later one wins. dedupeById keeps the
+  // hand-curated entry (later in the events array) over the scraped one.
+  const seenEventIds = new Set<string>();
 
   const out: Occurrence[] = [];
   const days = rangeOfDays(input.start, input.end);
@@ -56,8 +84,10 @@ export function resolveOccurrences(input: ResolveInput): Occurrence[] {
     }
   }
 
-  for (const e of events) {
+  for (const e of [...events].reverse()) {
     if (e.date < input.start || e.date > input.end) continue;
+    if (seenEventIds.has(e.id)) continue;
+    seenEventIds.add(e.id);
     const venue = venueBySlug.get(e.venueSlug);
     if (!venue) continue;
     out.push({

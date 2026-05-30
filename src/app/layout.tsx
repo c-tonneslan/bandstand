@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Source_Serif_4 } from "next/font/google";
 import Link from "next/link";
+
+import { lastScrapedAt } from "@/lib/schedule";
 import "./globals.css";
+
+function freshnessLabel(iso: string): string {
+  if (!iso || iso.startsWith("1970")) return "no scrape yet";
+  const ageMin = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  if (ageMin < 60) return `last refreshed ${Math.max(ageMin, 1)}m ago`;
+  if (ageMin < 60 * 24) return `last refreshed ${Math.round(ageMin / 60)}h ago`;
+  return `last refreshed ${Math.round(ageMin / (60 * 24))}d ago`;
+}
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +38,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const freshness = freshnessLabel(lastScrapedAt());
   return (
     <html lang="en" className={`${inter.variable} ${mono.variable} ${serif.variable}`}>
       <body className="min-h-dvh flex flex-col antialiased">
@@ -59,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 mx-auto max-w-6xl w-full px-5 py-10">{children}</main>
         <footer className="border-t border-line">
           <div className="mx-auto max-w-6xl px-5 py-6 flex items-center justify-between text-xs text-muted font-mono">
-            <span>built by a listener · hand-curated v0 · check the venue before you go</span>
+            <span>built by a listener · {freshness} · check the venue before you go</span>
             <a
               href="https://github.com/c-tonneslan/bandstand"
               className="hover:text-brass"

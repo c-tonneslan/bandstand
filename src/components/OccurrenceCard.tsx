@@ -3,6 +3,18 @@ import Link from "next/link";
 import type { Occurrence } from "@/data/types";
 import { formatHumanTime } from "@/lib/dates";
 
+function formatVerifiedAt(iso: string): string {
+  const d = new Date(iso);
+  const now = Date.now();
+  const ageMin = Math.round((now - d.getTime()) / 60000);
+  if (ageMin < 1) return "just now";
+  if (ageMin < 60) return `${ageMin}m ago`;
+  const ageHr = Math.round(ageMin / 60);
+  if (ageHr < 24) return `${ageHr}h ago`;
+  const ageDay = Math.round(ageHr / 24);
+  return `${ageDay}d ago`;
+}
+
 const KIND_LABEL: Record<Occurrence["kind"], string> = {
   ticketed: "Ticketed",
   residency: "Residency",
@@ -52,6 +64,11 @@ export function OccurrenceCard({ o }: { o: Occurrence }) {
           </p>
         )}
         {o.notes && <p className="text-sm text-muted mt-2">{o.notes}</p>}
+        {o.confidence === "verified" && o.verifiedAt && (
+          <p className="text-[11px] text-brass-soft mt-2 font-mono uppercase tracking-wider">
+            verified {formatVerifiedAt(o.verifiedAt)}
+          </p>
+        )}
         {(o.ticketUrl || o.venue.website) && (
           <p className="text-sm mt-3 flex gap-3 flex-wrap">
             {o.ticketUrl && (
