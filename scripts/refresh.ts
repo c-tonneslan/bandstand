@@ -9,6 +9,7 @@ import { scrapeArsNova } from "../src/scrapers/ars-nova";
 import { scrapeChrisJazzCafe } from "../src/scrapers/chris-jazz-cafe";
 import { scrapeJazzPhiladelphia } from "../src/scrapers/jazz-philadelphia";
 import { scrapeSouthJazzKitchen } from "../src/scrapers/south-jazz-kitchen";
+import { scrapeSquarespaceEvents } from "../src/scrapers/squarespace-events";
 import type { ScrapeResult } from "../src/scrapers/types";
 
 const OUT_PATH = join(import.meta.dirname, "..", "src", "data", "scraped.json");
@@ -23,6 +24,7 @@ const scrapers = [
   { slug: "south-jazz-kitchen", run: scrapeSouthJazzKitchen },
   { slug: "jazz-philadelphia", run: scrapeJazzPhiladelphia },
   { slug: "ars-nova", run: scrapeArsNova },
+  { slug: "squarespace", run: scrapeSquarespaceEvents },
 ];
 
 async function main() {

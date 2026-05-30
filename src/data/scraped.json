@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T11:48:32.131Z",
+  "generatedAt": "2026-05-30T11:59:02.063Z",
   "byVenue": {
     "chris-jazz-cafe": {
       "venueSlug": "chris-jazz-cafe",
@@ -712,7 +712,7 @@
     },
     "south-jazz-kitchen": {
       "venueSlug": "south-jazz-kitchen",
-      "scrapedAt": "2026-05-30T11:48:27.429Z",
+      "scrapedAt": "2026-05-30T11:58:56.768Z",
       "events": [
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-29",
@@ -725,7 +725,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-30",
@@ -738,7 +738,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-nicole-henry-fri-may-29-sun-may-31-showtimes-vary-by-day-2026-05-31",
@@ -751,7 +751,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-marcus-johnson-thurs-june-4-630pm-900pm-presented-by-unscripted-jazz-2026-06-04",
@@ -764,7 +764,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-05",
@@ -777,7 +777,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-06",
@@ -790,7 +790,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-christopher-michael-stevens-fri-sat-sun-june-5-7-showtimes-vary-by-day-2026-06-07",
@@ -803,7 +803,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-lawrence-weas-newton-the-soul-of-jazz-thursday-june-12-630pm-900pm-presented-by-unscripted-jazz-2026-06-11",
@@ -816,7 +816,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-karen-linette-the-karen-linette-experience-celebrating-aretha-friday-june-12-700pm-930pm-2026-06-12",
@@ -829,7 +829,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-jamaaladeen-tacuma-quartet-featuring-tyshawn-sorey-sat-june-13-7pm-930pm-2026-06-13",
@@ -842,7 +842,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-a-healing-soundscape-with-brynn-the-collective-sunday-june-14-600pm-830pm-2026-06-14",
@@ -855,7 +855,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 6pm, 8:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-jackiem-joyner-thurs-june-18-fri-june-19-showtimes-vary-by-day-presented-by-unscripted-jazz-2026-06-18",
@@ -868,7 +868,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-jackiem-joyner-thurs-june-18-fri-june-19-showtimes-vary-by-day-presented-by-unscripted-jazz-2026-06-19",
@@ -881,7 +881,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-seraiah-nicole-shaun-chrisjohn-sat-june-20-700pm-930pm-2026-06-20",
@@ -894,7 +894,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Two sets: 7pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         },
         {
           "id": "south-seraiah-nicole-shaun-chrisjohn-sat-june-20-700pm-930pm-copy-2026-06-21",
@@ -906,14 +906,14 @@
           "kind": "ticketed",
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:27.429Z"
+          "verifiedAt": "2026-05-30T11:58:56.768Z"
         }
       ],
       "warnings": []
     },
     "jazz-philadelphia": {
       "venueSlug": "jazz-philadelphia",
-      "scrapedAt": "2026-05-30T11:48:28.525Z",
+      "scrapedAt": "2026-05-30T11:58:57.900Z",
       "events": [
         {
           "id": "jp-12896",
@@ -926,7 +926,7 @@
           "ticketUrl": "https://jazzphiladelphia.org/event/coltrane-100-legacy-featuring-ravi-coltrane-w-the-philadelphia-orchestra/",
           "notes": "Coltrane 100: Legacy featuring Ravi Coltrane w/ The Philadelphia Orchestra July 22 | 8:00 PM Highmark Mann Center for the Performing Arts 5201 Parkside Avenue Philadelphia, PA 19131",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:28.525Z"
+          "verifiedAt": "2026-05-30T11:58:57.900Z"
         },
         {
           "id": "jp-12892",
@@ -939,7 +939,7 @@
           "ticketUrl": "https://jazzphiladelphia.org/event/jazz-under-the-stars-marion-meadows/",
           "notes": "Jazz Under The Stars: Marion Meadows August 20 | 8:00 PM Highmark Mann Center for the Performing Arts 5201 Parkside Avenue Philadelphia, PA 19131",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:28.525Z"
+          "verifiedAt": "2026-05-30T11:58:57.900Z"
         },
         {
           "id": "jp-12898",
@@ -952,7 +952,7 @@
           "ticketUrl": "https://jazzphiladelphia.org/event/jazz-under-the-stars-kirk-whalum/",
           "notes": "Jazz Under The Stars: Kirk Whalum September 30 | 8:00 PM Highmark Mann Center for the Performing Arts 5201 Parkside Avenue Philadelphia, PA 19131",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:28.525Z"
+          "verifiedAt": "2026-05-30T11:58:57.900Z"
         }
       ],
       "warnings": [
@@ -961,7 +961,7 @@
     },
     "ars-nova": {
       "venueSlug": "ars-nova",
-      "scrapedAt": "2026-05-30T11:48:29.297Z",
+      "scrapedAt": "2026-05-30T11:58:58.815Z",
       "events": [
         {
           "id": "an-wolf-eyes-2-2026-05-30",
@@ -974,7 +974,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/wolf-eyes-2/",
           "notes": "Ars Nova Workshop presents the Detroit-based experimental noise duo Wolf Eyes at Solar Myth on May 30, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-bobby-zankel-cooper-moore-chad-taylor-trio-2026-06-04",
@@ -987,7 +987,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/bobby-zankel-cooper-moore-chad-taylor-trio/",
           "notes": "Please join Ars Nova Workshop on Thursday, June 4 at Solar Myth for Wonderful Sound 3 featuring Bobby Zankel, Cooper-Moore, and Chad Taylor.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-spirits-up-mindfulness-and-music-at-the-yard-on-john-coltrane-st-4-2026-06-06",
@@ -1000,7 +1000,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/spirits-up-mindfulness-and-music-at-the-yard-on-john-coltrane-st-4/",
           "notes": "Ars Nova Workshop is pleased to invite you to Spirits Up!: Mindfulness and Music at The Yard on John Coltrane St. on Saturday, June 6, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-kalia-vandever-2026-06-12",
@@ -1013,7 +1013,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/kalia-vandever/",
           "notes": "Ars Nova Workshop welcomes the Grammy-winning trombonist and composer Kalia Vandever at Solar Myth on Friday, June 12, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-anthony-tidd-quartet-2026-06-13",
@@ -1026,7 +1026,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/anthony-tidd-quartet/",
           "notes": "Ars Nova Workshop is excited to present Anthony Tidd's all-star unit Mono-Stereo at Solar Myth on Saturday, June 13.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-spirits-up-mindfulness-and-music-at-the-yard-on-john-coltrane-st-3-2026-06-06",
@@ -1039,7 +1039,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/spirits-up-mindfulness-and-music-at-the-yard-on-john-coltrane-st-3/",
           "notes": "Ars Nova Workshop is pleased to invite you to Spirits Up!: Mindfulness and Music at The Yard on John Coltrane St. on Saturday, June 6, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-alden-hellmuth-tether-2026-06-20",
@@ -1052,7 +1052,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/alden-hellmuth-tether/",
           "notes": "Ars Nova Workshop presents saxophonist and composer Alden Hellmuth, performing music from her new project Tether at Solar Myth on Saturday, June 20, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-spirits-up-mindfulness-and-music-at-the-yard-on-john-coltrane-st-2-2026-06-06",
@@ -1065,7 +1065,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/spirits-up-mindfulness-and-music-at-the-yard-on-john-coltrane-st-2/",
           "notes": "Ars Nova Workshop is pleased to invite you to Spirits Up!: Mindfulness and Music at The Yard on John Coltrane St. on Saturday, June 6, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-kahil-elzabar-david-murray-duo-2026-06-21",
@@ -1078,7 +1078,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/kahil-elzabar-david-murray-duo/",
           "notes": "Ars Nova Workshop is honored to present a meeting of two avant-garde legends, as percussionist Kahil El’Zabar and saxophonist David Murray join forces at Solar Myth on Sunday, June 21, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-doyeon-kim-quartet-2026-06-24",
@@ -1091,7 +1091,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/doyeon-kim-quartet/",
           "notes": "Ars Nova Workshop presents gayageum innovator DoYeon Kim and her Quartet at Solar Myth on Wednesday, June 24, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-blacktronika-moor-mother-presents-rockers-2026-06-26",
@@ -1104,7 +1104,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/blacktronika-moor-mother-presents-rockers/",
           "notes": "Please join Ars Nova Workshop for a special evening revisiting Moor Mother’s essential Rockers! series, presented as part of King Britt’s Blacktronika: Now & Then series at Solar Myth on Friday, June 26, 2026. ",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-teiku-2026-06-28",
@@ -1117,7 +1117,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/teiku/",
           "notes": "Ars Nova Workshop presents the Chicago and Detroit based creative music ensemble Teiku at Solar Myth on Sunday, June 28, 2026. ",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-resonation-trio-2026-06-30",
@@ -1130,7 +1130,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/resonation-trio/",
           "notes": "Ars Nova Workshop is thrilled to present the return of maverick trumpeter Steven Bernstein with his striking new acoustic trio at Solar Myth on Tuesday, June 30, 2026. ",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-sasha-berliner-2026-07-24",
@@ -1143,7 +1143,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/sasha-berliner/",
           "notes": "Ars Nova Workshop presents the acclaimed vibraphonist Sasha Berliner at Solar Myth on Friday, July 24, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-nduduzo-makhathini-2026-07-30",
@@ -1156,7 +1156,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/nduduzo-makhathini/",
           "notes": "Ars Nova Workshop is excited to present the South African pianist and composer Nduduzo Makhathini at Solar Myth for two performances on Thursday and Friday, July 30-31, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-nduduzo-makhathini-2026-07-31",
@@ -1169,7 +1169,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/nduduzo-makhathini/",
           "notes": "Ars Nova Workshop is excited to present the South African pianist and composer Nduduzo Makhathini at Solar Myth for two performances on Thursday and Friday, July 30-31, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
         },
         {
           "id": "an-immanuel-wilkins-quartet-2026-10-18",
@@ -1182,7 +1182,50 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/immanuel-wilkins-quartet/",
           "notes": "Please join Ars Nova Workshop at Solar Myth on October 18, 2026 for a special closing-night performance by saxophonist Immanuel Wilkins and his remarkable quartet, presented in celebration of the 10th anniversary of P...",
           "confidence": "verified",
-          "verifiedAt": "2026-05-30T11:48:29.297Z"
+          "verifiedAt": "2026-05-30T11:58:58.815Z"
+        }
+      ],
+      "warnings": []
+    },
+    "squarespace": {
+      "venueSlug": "squarespace",
+      "scrapedAt": "2026-05-30T11:59:01.904Z",
+      "events": [
+        {
+          "id": "sq-khyber-pass-pub-events-cured-beats-4-2026-05-30",
+          "venueSlug": "khyber-pass-pub",
+          "date": "2026-05-30",
+          "startTime": "22:00",
+          "endTime": "02:00",
+          "name": "CURED BEATS",
+          "kind": "dj",
+          "ticketUrl": "https://khyberpasspub.com/events/cured-beats-4",
+          "confidence": "verified",
+          "verifiedAt": "2026-05-30T11:59:01.904Z"
+        },
+        {
+          "id": "sq-khyber-pass-pub-events-old-city-eats-2026-06-04",
+          "venueSlug": "khyber-pass-pub",
+          "date": "2026-06-04",
+          "startTime": "17:00",
+          "endTime": "18:30",
+          "name": "OLD CITY EATS",
+          "kind": "ticketed",
+          "ticketUrl": "https://khyberpasspub.com/events/old-city-eats",
+          "confidence": "verified",
+          "verifiedAt": "2026-05-30T11:59:01.904Z"
+        },
+        {
+          "id": "sq-khyber-pass-pub-events-bns2sbg87zd78krgwbnb7nb6b3m9kr-2026-06-06",
+          "venueSlug": "khyber-pass-pub",
+          "date": "2026-06-06",
+          "startTime": "20:00",
+          "endTime": "21:30",
+          "name": "PHILLY SOUL CLUB",
+          "kind": "ticketed",
+          "ticketUrl": "https://khyberpasspub.com/events/bns2sbg87zd78krgwbnb7nb6b3m9kr",
+          "confidence": "verified",
+          "verifiedAt": "2026-05-30T11:59:01.904Z"
         }
       ],
       "warnings": []
