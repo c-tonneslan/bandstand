@@ -24,9 +24,24 @@ const serif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bandstand-bay.vercel.app"),
   title: "The Bandstand — Philly jazz, tonight",
   description:
     "What's on tonight in Philly jazz. Live rooms, jam sessions, listening rooms, vinyl bars, DJ nights, and the spots that play real jazz on the system.",
+  openGraph: {
+    title: "The Bandstand — Philly jazz, tonight",
+    description:
+      "Where to hear jazz in Philadelphia tonight and this week. Hand-curated and scraped from twelve different venue calendars.",
+    type: "website",
+    url: "/",
+    siteName: "The Bandstand",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Bandstand — Philly jazz, tonight",
+    description:
+      "Where to hear jazz in Philadelphia tonight and this week.",
+  },
 };
 
 function freshnessLabel(iso: string): string {
