@@ -61,9 +61,9 @@ export default function SubmitPage() {
       </header>
 
       <p className="font-serif text-lg md:text-xl leading-snug max-w-3xl mt-10 mb-12">
-        The lowest-confidence entries in the index are the "jazz on the system" spots, because
+        The lowest-confidence entries in the index are the &ldquo;jazz on the system&rdquo; spots, because
         whether a venue is actually playing real jazz versus an algorithm depends on someone
-        sitting at the bar last week. If you've been somewhere good — or somewhere we list that
+        sitting at the bar last week. If you&rsquo;ve been somewhere good — or somewhere we list that
         switched to Spotify slop — say so.
       </p>
 
@@ -75,7 +75,7 @@ export default function SubmitPage() {
           </h2>
           <p className="text-sm leading-relaxed mb-6">
             A vinyl bar we missed, a listening room in your neighborhood, a session that runs
-            every other Sunday at someone's pop-up. Submit it as a GitHub issue and we'll vet
+            every other Sunday at someone&rsquo;s pop-up. Submit it as a GitHub issue and we&rsquo;ll vet
             and add it.
           </p>
           <a
@@ -96,7 +96,7 @@ export default function SubmitPage() {
           <p className="text-sm leading-relaxed mb-6">
             You walked in, you heard real jazz / soul / funk / blues, you noted what was on. Or
             the opposite: you walked in and it was Bon Iver covers. Both are useful. We use
-            these to upgrade confidence on the "jazz on the system" entries.
+            these to upgrade confidence on the &ldquo;jazz on the system&rdquo; entries.
           </p>
           <a
             href={newIssueUrl("Vouch: [VENUE NAME] on YYYY-MM-DD", VOUCH_BODY)}
@@ -110,7 +110,7 @@ export default function SubmitPage() {
       </div>
 
       <p className="caps mt-12 text-muted">
-        Don't have GitHub?{" "}
+        Don&rsquo;t have GitHub?{" "}
         <Link href="/about" className="text-red hover:text-foreground">
           About →
         </Link>

@@ -130,10 +130,10 @@ function Empty({ next }: { next?: boolean }) {
     <div className="border border-foreground/30 p-6 text-muted text-sm">
       <p>Nothing in the bandstand index {next ? "for tomorrow" : "tonight"}.</p>
       <p className="mt-2">
-        v0 is hand-curated for the rooms without scrapers, so this is more often "we don't have
-        it yet" than "there's nothing on." Check{" "}
+        v0 is hand-curated for the rooms without scrapers, so this is more often &ldquo;we don&rsquo;t have
+        it yet&rdquo; than &ldquo;there&rsquo;s nothing on.&rdquo; Check{" "}
         <a className="inline" href="https://www.chrisjazzcafe.com/" target="_blank" rel="noreferrer">
-          Chris'
+          Chris&rsquo;
         </a>{" "}
         or{" "}
         <a
@@ -144,7 +144,7 @@ function Empty({ next }: { next?: boolean }) {
         >
           Heritage
         </a>{" "}
-        if you're heading out.
+        if you&rsquo;re heading out.
       </p>
     </div>
   );

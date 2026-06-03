@@ -74,6 +74,7 @@ export default function Map({ venues }: Props) {
       mapRef.current = map;
     } catch (e) {
       const msg = e instanceof Error ? e.message : "unknown";
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- surfacing a synchronous init failure to the UI
       setError(`Map init failed: ${msg}`);
     }
     return () => {

@@ -24,7 +24,7 @@ export default function AboutPage() {
           the system, tonight or this week?
         </p>
         <p>
-          The Philly jazz scene is alive but its calendar lives in twelve places at once. Chris'
+          The Philly jazz scene is alive but its calendar lives in twelve places at once. Chris&rsquo;
           Jazz Cafe has the cleanest listings. Heritage updates on Instagram. La Rose is word of
           mouth. Solar Myth is on the Ars Nova page. Time has a poster taped to the door. The
           Bandstand stitches them into one weekly view, then extends the picture out beyond the
