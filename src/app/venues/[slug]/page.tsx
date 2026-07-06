@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
+import SaveButton from "@/components/SaveButton";
 import { TagChip } from "@/components/TagChip";
 import { venues } from "@/data/venues";
 import { addDays, todayInPhilly } from "@/lib/dates";
@@ -55,7 +56,12 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
       >
         ← The rooms
       </Link>
-      <h1 className="masthead text-[clamp(2.5rem,6vw,4.5rem)] mt-3">{venue.name}</h1>
+      <div className="flex items-start gap-4 mt-3">
+        <h1 className="masthead text-[clamp(2.5rem,6vw,4.5rem)]">{venue.name}</h1>
+        <div className="pt-2">
+          <SaveButton kind="venue" id={venue.slug} label={venue.name} />
+        </div>
+      </div>
       <p className="caps text-muted mt-3">
         {venue.address}
         <span className="mx-2">·</span>

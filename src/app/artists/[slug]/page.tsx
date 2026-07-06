@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
+import SaveButton from "@/components/SaveButton";
 import { getArtist, listArtists } from "@/lib/artists";
 import { formatHumanDate } from "@/lib/dates";
 import { musicEventLd } from "@/lib/jsonld";
@@ -49,7 +50,12 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
       >
         ← The players
       </Link>
-      <h1 className="masthead text-[clamp(2.5rem,6vw,4.5rem)] mt-3">{artist.name}</h1>
+      <div className="flex items-start gap-4 mt-3">
+        <h1 className="masthead text-[clamp(2.5rem,6vw,4.5rem)]">{artist.name}</h1>
+        <div className="pt-2">
+          <SaveButton kind="artist" id={slug} label={artist.name} />
+        </div>
+      </div>
       <p className="caps text-muted mt-3">
         {artist.occurrences.length} {artist.occurrences.length === 1 ? "show" : "shows"} in the next
         60 days

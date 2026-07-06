@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import SaveButton from "@/components/SaveButton";
 import type { Occurrence } from "@/data/types";
 import { formatHumanTime } from "@/lib/dates";
 
@@ -88,6 +89,7 @@ export function OccurrenceCard({ o }: { o: Occurrence }) {
         )}
         {o.notes && <p className="text-sm text-foreground/80 mt-2 leading-relaxed">{o.notes}</p>}
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-3 text-xs">
+          <SaveButton kind="show" id={o.id} label={o.name} size="sm" />
           <span className="md:hidden">{ticket}</span>
           {o.venue.website && (
             <a
