@@ -1,12 +1,22 @@
+import type { Metadata } from "next";
+
 import Map from "@/components/Map";
 import { TAG_COLOR, TAG_LABEL } from "@/components/TagChip";
 import type { VenueTag } from "@/data/types";
 import { venues } from "@/data/venues";
 
-export const metadata = {
-  title: "Map — The Bandstand",
+export const metadata: Metadata = {
+  title: "The Map — The Bandstand",
   description:
     "Live jazz, jam sessions, listening rooms, vinyl bars, DJ nights, and the spots that play real jazz on the system, mapped across Philadelphia.",
+  alternates: { canonical: "/map" },
+  openGraph: {
+    title: "The Map — The Bandstand",
+    description: "Every Philadelphia jazz room mapped, filterable by the kind of night you want.",
+    url: "/map",
+    type: "website",
+    siteName: "The Bandstand",
+  },
 };
 
 const LEGEND_TAGS: VenueTag[] = [

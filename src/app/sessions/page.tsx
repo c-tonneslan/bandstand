@@ -1,7 +1,25 @@
+import type { Metadata } from "next";
+
 import { DayHeader } from "@/components/DayHeader";
+import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
 import { addDays, dayLabelFromYmd, todayInPhilly } from "@/lib/dates";
+import { musicEventLd } from "@/lib/jsonld";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
+
+export const metadata: Metadata = {
+  title: "Jams — The Bandstand",
+  description:
+    "Every recurring open jam session and open mic in Philadelphia jazz over the next two weeks, with the sit-in policy on each.",
+  alternates: { canonical: "/sessions" },
+  openGraph: {
+    title: "Jams — The Bandstand",
+    description: "Philadelphia jazz jam sessions for the next two weeks, sit-in policy on each.",
+    url: "/sessions",
+    type: "website",
+    siteName: "The Bandstand",
+  },
+};
 
 // Jam-sessions-only view across the next two weeks. The goal: a musician
 // who wants to sit in somewhere this week can scan this list and walk in.
@@ -15,6 +33,7 @@ export default function SessionsPage() {
 
   return (
     <div>
+      <JsonLd data={jams.map(musicEventLd)} />
       <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
         <div className="md:col-span-9">
           <p className="caps mb-3">For musicians + listeners</p>

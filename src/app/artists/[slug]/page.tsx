@@ -1,13 +1,35 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
 import { getArtist, listArtists } from "@/lib/artists";
 import { formatHumanDate } from "@/lib/dates";
+import { musicEventLd } from "@/lib/jsonld";
 import { groupByDate } from "@/lib/schedule";
 
 export function generateStaticParams() {
   return listArtists().map((a) => ({ slug: a.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const artist = getArtist(slug);
+  if (!artist) return {};
+  const title = `${artist.name} — The Bandstand`;
+  const description = `${artist.name} on upcoming Philadelphia jazz bills. ${artist.occurrences.length} show${artist.occurrences.length === 1 ? "" : "s"} in the next 60 days.`;
+  const url = `/artists/${slug}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, type: "website", siteName: "The Bandstand" },
+  };
 }
 
 export default async function ArtistPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -20,6 +42,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
   return (
     <div>
+      <JsonLd data={artist.occurrences.map(musicEventLd)} />
       <Link
         href="/artists"
         className="caps text-muted hover:text-accent"

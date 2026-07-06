@@ -1,6 +1,21 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { listArtists } from "@/lib/artists";
+
+export const metadata: Metadata = {
+  title: "The Players — The Bandstand",
+  description:
+    "Everyone we can name on an upcoming Philadelphia jazz bill over the next 60 nights, alphabetized.",
+  alternates: { canonical: "/artists" },
+  openGraph: {
+    title: "The Players — The Bandstand",
+    description: "Performers on upcoming Philadelphia jazz bills, alphabetized.",
+    url: "/artists",
+    type: "website",
+    siteName: "The Bandstand",
+  },
+};
 
 export default function ArtistsPage() {
   const artists = listArtists();

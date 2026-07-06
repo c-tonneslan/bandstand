@@ -1,14 +1,36 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
 import { TagChip } from "@/components/TagChip";
 import { venues } from "@/data/venues";
 import { addDays, todayInPhilly } from "@/lib/dates";
+import { musicEventLd, musicVenueLd } from "@/lib/jsonld";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
 
 export function generateStaticParams() {
   return venues.map((v) => ({ slug: v.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const venue = venues.find((v) => v.slug === slug);
+  if (!venue) return {};
+  const title = `${venue.name} — The Bandstand`;
+  const description = `${venue.blurb} ${venue.neighborhood}, Philadelphia. Upcoming jazz nights, jams, and listings.`;
+  const url = `/venues/${venue.slug}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, type: "website", siteName: "The Bandstand" },
+  };
 }
 
 export default async function VenuePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -22,8 +44,11 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
   const byDate = groupByDate(upcoming);
   const dates = Array.from(byDate.keys()).sort();
 
+  const ld = [musicVenueLd(venue), ...upcoming.map(musicEventLd)];
+
   return (
     <div>
+      <JsonLd data={ld} />
       <Link
         href="/venues"
         className="caps text-muted hover:text-accent"

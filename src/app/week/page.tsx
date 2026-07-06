@@ -1,7 +1,25 @@
+import type { Metadata } from "next";
+
 import { DayHeader } from "@/components/DayHeader";
+import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
 import { addDays, dayLabelFromYmd, todayInPhilly } from "@/lib/dates";
+import { musicEventLd } from "@/lib/jsonld";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
+
+export const metadata: Metadata = {
+  title: "This Week — The Bandstand",
+  description:
+    "Seven nights of Philadelphia jazz: live rooms, jam sessions, listening rooms, and DJ nights, one date at a time.",
+  alternates: { canonical: "/week" },
+  openGraph: {
+    title: "This Week — The Bandstand",
+    description: "Where to hear jazz in Philadelphia over the next seven nights.",
+    url: "/week",
+    type: "website",
+    siteName: "The Bandstand",
+  },
+};
 
 export default function WeekPage() {
   const start = todayInPhilly();
@@ -19,6 +37,7 @@ export default function WeekPage() {
 
   return (
     <div>
+      <JsonLd data={occ.map(musicEventLd)} />
       <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
         <div className="md:col-span-9">
           <p className="caps mb-3">Week of {dayLabelFromYmd(start).slice(0, 3)} {start.slice(5).replace("-", "/")}</p>

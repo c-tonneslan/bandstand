@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About — The Bandstand",
+  description:
+    "The Bandstand is a small, editorial Philadelphia-only site that stitches twelve venue calendars into one weekly jazz view. Plus calendar feeds you can subscribe to.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About — The Bandstand",
+    description: "How and why The Bandstand tracks Philadelphia jazz, plus subscribable calendar feeds.",
+    url: "/about",
+    type: "website",
+    siteName: "The Bandstand",
+  },
+};
 
 export default function AboutPage() {
   return (

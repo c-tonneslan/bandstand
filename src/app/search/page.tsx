@@ -1,8 +1,24 @@
+import type { Metadata } from "next";
+
 import SearchClient, { type SearchEntry } from "@/components/SearchClient";
 import { series } from "@/data/series";
 import { venues } from "@/data/venues";
 import { addDays, dayLabel, formatHumanDate, todayInPhilly } from "@/lib/dates";
 import { resolveOccurrences } from "@/lib/schedule";
+
+export const metadata: Metadata = {
+  title: "Search — The Bandstand",
+  description:
+    "Search Philadelphia jazz venues, shows, and jam sessions across the next 60 days — filtered as you type.",
+  alternates: { canonical: "/search" },
+  openGraph: {
+    title: "Search — The Bandstand",
+    description: "Find a Philadelphia jazz room, show, or session. Filtered as you type.",
+    url: "/search",
+    type: "website",
+    siteName: "The Bandstand",
+  },
+};
 
 // Everything searchable lives in one flat index built at render time: venues,
 // the next ~60 days of resolved occurrences, and the recurring series. The

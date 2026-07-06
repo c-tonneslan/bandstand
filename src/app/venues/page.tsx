@@ -1,7 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { TagChip } from "@/components/TagChip";
 import { venues } from "@/data/venues";
+
+export const metadata: Metadata = {
+  title: "The Rooms — The Bandstand",
+  description:
+    "Every venue in the bandstand index, grouped by neighborhood: live jazz rooms, jam spots, listening rooms, vinyl bars, and the restaurants that play real jazz on the system.",
+  alternates: { canonical: "/venues" },
+  openGraph: {
+    title: "The Rooms — The Bandstand",
+    description: "Every Philadelphia jazz room in the index, grouped by neighborhood.",
+    url: "/venues",
+    type: "website",
+    siteName: "The Bandstand",
+  },
+};
 
 export default function VenuesPage() {
   // Group by neighborhood for the list rendering.
