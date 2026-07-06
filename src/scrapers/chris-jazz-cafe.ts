@@ -7,6 +7,7 @@
 import { load } from "cheerio";
 
 import type { Event } from "@/data/types";
+import { parseCommaPersonnel, parseDashPersonnel } from "./performers";
 import { FETCH_HEADERS, type Scraper } from "./types";
 
 const VENUE_SLUG = "chris-jazz-cafe";
@@ -104,6 +105,15 @@ export const scrapeChrisJazzCafe: Scraper = async () => {
       })
       .get();
     const firstDesc = descParas.find((p) => p.length > 0) ?? "";
+    const performers = (() => {
+      for (const p of descParas) {
+        const names = parseCommaPersonnel(p);
+        if (names.length) return names;
+        const dashNames = parseDashPersonnel(p);
+        if (dashNames.length) return dashNames;
+      }
+      return [];
+    })();
     const ticketPrice = (() => {
       const priceLine = descParas.find((p) => /^\$\d/.test(p));
       return priceLine ?? undefined;
@@ -153,6 +163,7 @@ export const scrapeChrisJazzCafe: Scraper = async () => {
         startTime,
         endTime,
         name: title,
+        performers: performers.length ? performers : undefined,
         kind,
         sitInPolicy: isJam ? "first-half-then-open" : undefined,
         ticketUrl: `${ROOT}/shows/${first.showId}`,
