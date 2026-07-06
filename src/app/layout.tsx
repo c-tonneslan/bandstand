@@ -58,6 +58,8 @@ const navItems = [
   { href: "/sessions", label: "Jams" },
   { href: "/map", label: "Map" },
   { href: "/venues", label: "Venues" },
+  { href: "/artists", label: "Artists" },
+  { href: "/search", label: "Search" },
   { href: "/submit", label: "Submit" },
   { href: "/about", label: "About" },
 ];
