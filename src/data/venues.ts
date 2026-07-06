@@ -357,6 +357,21 @@ export const venues: Venue[] = [
     tags: ["jazz-on-system", "live-jazz"],
   },
 
+  {
+    slug: "saunders-park-greene",
+    name: "Saunders Park Greene",
+    neighborhood: "Powelton Village",
+    address: "39th St & Powelton Ave, Philadelphia, PA 19104",
+    lat: 39.9614,
+    lng: -75.201,
+    website: "https://www.jazzphiladelphia.org/",
+    blurb:
+      "West Philly park green off Lancaster Ave. Hosts the Lancaster Avenue Jazz & Arts Festival and other neighborhood outdoor programming.",
+    vibe: "Outdoor, daytime, bring a chair.",
+    cover: "Mostly free, festival days ticketed.",
+    tags: ["live-jazz"],
+  },
+
   // -- North Philly --------------------------------------------------------
   {
     slug: "the-yard",

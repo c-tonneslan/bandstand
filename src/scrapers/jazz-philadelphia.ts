@@ -34,7 +34,7 @@ interface TribeResponse {
 function matchVenueSlug(reported: string): string | null {
   if (!reported) return null;
   const norm = (s: string) =>
-    s
+    decodeEntities(s)
       .toLowerCase()
       .replace(/highmark/g, "")
       .replace(/\bthe\b/g, "")
@@ -103,7 +103,9 @@ export const scrapeJazzPhiladelphia: Scraper = async () => {
     for (const e of resp.events) {
       const venueSlug = matchVenueSlug(e.venue?.venue ?? "");
       if (!venueSlug) {
-        warnings.push(`unmatched venue "${e.venue?.venue ?? ""}" for "${e.title}"`);
+        warnings.push(
+          `unmatched venue "${decodeEntities(e.venue?.venue ?? "")}" for "${decodeEntities(e.title)}"`,
+        );
         continue;
       }
       const start = splitDateTime(e.start_date);
