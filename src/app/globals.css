@@ -31,6 +31,7 @@
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --dur: 150ms;
   --dur-slow: 220ms;
+  --shadow-card: 0 4px 16px rgba(26, 24, 23, 0.12);
 }
 
 .dark {
@@ -52,6 +53,8 @@
   --tag-vinyl: #b08a5a;
   --tag-dj: #c1789c;
   --tag-system: #4f9aa0;
+
+  --shadow-card: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
 
 @theme inline {

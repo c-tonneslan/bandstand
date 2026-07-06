@@ -64,6 +64,9 @@ export default function Map({ venues }: Props) {
         center: PHL_CENTER,
         zoom: 11,
         attributionControl: { compact: true },
+        // On touch, require two fingers to pan/zoom so the map doesn't hijack
+        // page scroll now that it only takes 60vh on a phone.
+        cooperativeGestures: true,
       });
       map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), "top-right");
       map.on("load", () => {
@@ -93,26 +96,35 @@ export default function Map({ venues }: Props) {
     const shown = venues.filter((v) => v.tags.some((t) => active.has(t)));
     for (const v of shown) {
       const primary = v.tags[0];
-      const color = TAG_COLOR[primary] ?? "var(--red)";
+      const color = TAG_COLOR[primary] ?? "var(--accent)";
 
-      // Plain div so clicking the marker only toggles the popup; the popup
-      // body still carries a "→ venue page" link for navigation.
+      // 44px transparent hit area wrapping a ~18px themed dot, so the marker is
+      // keyboard-operable and comfortable to tap without inflating the visual.
       const el = document.createElement("div");
       el.setAttribute("role", "button");
-      el.setAttribute("aria-label", v.name);
-      el.style.width = "16px";
-      el.style.height = "16px";
-      el.style.borderRadius = "9999px";
-      el.style.background = color;
-      el.style.border = "2px solid #eceae3";
-      el.style.boxShadow = "0 0 0 1.5px #1a1a1a";
+      el.setAttribute("tabindex", "0");
+      el.setAttribute("aria-label", `${v.name} — show details`);
+      el.style.width = "44px";
+      el.style.height = "44px";
+      el.style.display = "flex";
+      el.style.alignItems = "center";
+      el.style.justifyContent = "center";
       el.style.cursor = "pointer";
+
+      const dot = document.createElement("div");
+      dot.style.width = "18px";
+      dot.style.height = "18px";
+      dot.style.borderRadius = "9999px";
+      dot.style.background = color;
+      dot.style.border = "2px solid var(--background)";
+      dot.style.boxShadow = "0 0 0 1.5px var(--foreground)";
+      el.appendChild(dot);
 
       const popup = new maplibregl.Popup({ offset: 14, closeButton: true, maxWidth: "280px" })
         .setHTML(
-          `<div style="font-family: serif; font-style: italic; font-size: 17px; line-height: 1.2; color: #1a1a1a;">${escapeHtml(v.name)}</div>
-           <div style="font-family: monospace; text-transform: uppercase; font-size: 10px; letter-spacing: 0.18em; color: #6e6c66; margin-top: 4px;">${escapeHtml(v.neighborhood)}</div>
-           <div style="font-size: 12px; margin-top: 8px; color: #1a1a1a; line-height: 1.45;">${escapeHtml(v.blurb)}</div>
+          `<div style="font-family: var(--font-serif), serif; font-style: italic; font-size: 17px; line-height: 1.2; color: var(--foreground);">${escapeHtml(v.name)}</div>
+           <div style="font-family: var(--font-mono), monospace; text-transform: uppercase; font-size: 10px; letter-spacing: 0.18em; color: var(--muted); margin-top: 4px;">${escapeHtml(v.neighborhood)}</div>
+           <div style="font-size: 12px; margin-top: 8px; color: var(--foreground); line-height: 1.45;">${escapeHtml(v.blurb)}</div>
            <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px;">
              ${v.tags
                .map(
@@ -121,13 +133,22 @@ export default function Map({ venues }: Props) {
                )
                .join("")}
            </div>
-           <a href="/venues/${v.slug}" style="display:inline-block; margin-top:10px; font-size:11px; color:#a83a2a; text-decoration:none; letter-spacing:0.18em; text-transform:uppercase;">→ venue page</a>`,
+           <a href="/venues/${v.slug}" style="display:inline-block; margin-top:10px; font-size:11px; color:var(--accent); text-decoration:none; letter-spacing:0.18em; text-transform:uppercase;">→ venue page</a>`,
         );
 
       const marker = new maplibregl.Marker({ element: el })
         .setLngLat([v.lng, v.lat])
         .setPopup(popup)
         .addTo(map);
+
+      // Enter/Space toggle the popup so the marker works without a pointer.
+      el.addEventListener("keydown", (ev) => {
+        if (ev.key === "Enter" || ev.key === " ") {
+          ev.preventDefault();
+          marker.togglePopup();
+        }
+      });
+
       markersRef.current.push(marker);
     }
   }, [venues, active]);
@@ -158,11 +179,18 @@ export default function Map({ venues }: Props) {
               key={t}
               type="button"
               onClick={() => toggle(t)}
-              className="caps rounded-full px-2.5 py-1 border transition"
+              aria-pressed={on}
+              className={`caps inline-flex items-center min-h-11 rounded-full px-3.5 py-2 border transition-[color,background-color] duration-[--dur] ease-[--ease] active:translate-y-px ${
+                on
+                  ? ""
+                  : "hover:bg-[color-mix(in_oklab,var(--tag-x)_10%,transparent)]"
+              }`}
               style={{
                 color: on ? "var(--background)" : TAG_COLOR[t],
                 background: on ? TAG_COLOR[t] : "transparent",
                 borderColor: TAG_COLOR[t],
+                // Feed the tag color into the OFF-state hover mix.
+                ["--tag-x" as string]: TAG_COLOR[t],
               }}
             >
               {TAG_LABEL[t]}
@@ -172,12 +200,13 @@ export default function Map({ venues }: Props) {
       </div>
       <div
         ref={containerRef}
-        className="w-full h-[640px] border-2 border-foreground"
+        className="w-full h-[60vh] md:h-[640px] border-2 border-foreground"
         aria-label="Map of Philly jazz spots"
       />
-      {error && <p className="text-xs text-red">{error}</p>}
-      <p className="text-xs text-muted caps-wide">
-        Click a pin for venue details. Filter chips toggle which categories appear.
+      {error && <p className="text-xs text-accent">{error}</p>}
+      <p className="text-xs text-muted caps">
+        Click or focus a pin and press Enter for venue details. Filter chips toggle
+        which categories appear; the last active chip re-shows every category.
       </p>
     </div>
   );

@@ -22,24 +22,24 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
     <div>
       <Link
         href="/artists"
-        className="caps text-muted hover:text-red"
+        className="caps text-muted hover:text-accent"
       >
         ← The players
       </Link>
-      <h1 className="font-serif italic text-5xl md:text-7xl tracking-tight mt-3">{artist.name}</h1>
-      <p className="caps-wide text-muted mt-3">
+      <h1 className="masthead text-[clamp(2.5rem,6vw,4.5rem)] mt-3">{artist.name}</h1>
+      <p className="caps text-muted mt-3">
         {artist.occurrences.length} {artist.occurrences.length === 1 ? "show" : "shows"} in the next
         60 days
       </p>
 
-      <section className="mt-14">
+      <section className="mt-16">
         <h2 className="font-serif italic text-3xl mb-6 border-b-2 border-foreground/80 pb-2">
           Upcoming
         </h2>
-        <div className="space-y-10">
+        <div className="space-y-12">
           {dates.map((d) => (
             <div key={d}>
-              <h3 className="caps-wide text-red mb-3 border-b border-line pb-1">
+              <h3 className="caps text-accent mb-3 border-b border-line pb-1">
                 {formatHumanDate(d)}
               </h3>
               <div className="divide-y divide-line">

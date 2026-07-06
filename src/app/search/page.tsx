@@ -57,21 +57,19 @@ export default function SearchPage() {
 
   return (
     <div>
-      <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
+      <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-line">
         <div className="md:col-span-9">
-          <p className="caps-wide mb-3">Find a room, a show, a session</p>
-          <h1 className="font-serif italic text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight">
-            Search.
-          </h1>
+          <p className="caps text-muted mb-3">Find a room, a show, a session</p>
+          <h1 className="masthead text-[clamp(3.5rem,11vw,8rem)]">Search.</h1>
         </div>
-        <div className="md:col-span-3 self-end text-xs caps leading-[1.8]">
+        <div className="md:col-span-3 self-end caps text-muted leading-[1.8]">
           <p>{index.length} things indexed,</p>
           <p>venues + shows + jams,</p>
           <p>filtered as you type.</p>
         </div>
       </header>
 
-      <div className="mt-12">
+      <div className="mt-12 max-w-2xl">
         <SearchClient index={index} />
       </div>
     </div>

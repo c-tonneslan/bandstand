@@ -48,8 +48,8 @@ export default function SubmitPage() {
     <div>
       <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
         <div className="md:col-span-9">
-          <p className="caps-wide mb-3">Help the index grow</p>
-          <h1 className="font-serif italic text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight">
+          <p className="caps mb-3">Help the index grow</p>
+          <h1 className="masthead text-[clamp(3rem,9vw,6rem)]">
             Submit a Spot.
           </h1>
         </div>
@@ -60,7 +60,7 @@ export default function SubmitPage() {
         </div>
       </header>
 
-      <p className="font-serif text-lg md:text-xl leading-snug max-w-3xl mt-10 mb-12">
+      <p className="deck max-w-3xl mt-8 mb-16">
         The lowest-confidence entries in the index are the &ldquo;jazz on the system&rdquo; spots, because
         whether a venue is actually playing real jazz versus an algorithm depends on someone
         sitting at the bar last week. If you&rsquo;ve been somewhere good — or somewhere we list that
@@ -69,7 +69,7 @@ export default function SubmitPage() {
 
       <div className="grid md:grid-cols-2 gap-8 md:gap-10">
         <section className="border-2 border-foreground p-6 md:p-8">
-          <p className="caps-wide text-red mb-3">For a new room</p>
+          <p className="caps text-accent mb-3">For a new room</p>
           <h2 className="font-serif italic text-3xl md:text-4xl leading-tight mb-4">
             Add a spot.
           </h2>
@@ -82,14 +82,14 @@ export default function SubmitPage() {
             href={newIssueUrl("Submit a spot: [VENUE NAME]", NEW_VENUE_BODY)}
             target="_blank"
             rel="noreferrer"
-            className="inline-block caps text-background bg-foreground px-4 py-2.5 hover:bg-red transition"
+            className="btn btn-primary"
           >
-            → Open GitHub issue
+            Open GitHub issue
           </a>
         </section>
 
         <section className="border-2 border-foreground p-6 md:p-8">
-          <p className="caps-wide text-red mb-3">For an existing room</p>
+          <p className="caps text-accent mb-3">For an existing room</p>
           <h2 className="font-serif italic text-3xl md:text-4xl leading-tight mb-4">
             Vouch for music.
           </h2>
@@ -102,16 +102,16 @@ export default function SubmitPage() {
             href={newIssueUrl("Vouch: [VENUE NAME] on YYYY-MM-DD", VOUCH_BODY)}
             target="_blank"
             rel="noreferrer"
-            className="inline-block caps text-background bg-foreground px-4 py-2.5 hover:bg-red transition"
+            className="btn btn-primary"
           >
-            → Open GitHub issue
+            Open GitHub issue
           </a>
         </section>
       </div>
 
-      <p className="caps mt-12 text-muted">
+      <p className="caps mt-16 text-muted">
         Don&rsquo;t have GitHub?{" "}
-        <Link href="/about" className="text-red hover:text-foreground">
+        <Link href="/about" className="text-accent hover:text-foreground">
           About →
         </Link>
       </p>

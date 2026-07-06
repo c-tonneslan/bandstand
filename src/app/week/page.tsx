@@ -21,8 +21,8 @@ export default function WeekPage() {
     <div>
       <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
         <div className="md:col-span-9">
-          <p className="caps-wide mb-3">Week of {dayLabelFromYmd(start).slice(0, 3)} {start.slice(5).replace("-", "/")}</p>
-          <h1 className="font-serif italic text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight">
+          <p className="caps mb-3">Week of {dayLabelFromYmd(start).slice(0, 3)} {start.slice(5).replace("-", "/")}</p>
+          <h1 className="masthead text-[clamp(3rem,9vw,6rem)]">
             The Week.
           </h1>
         </div>
@@ -33,7 +33,7 @@ export default function WeekPage() {
         </div>
       </header>
 
-      <div className="mt-12 space-y-14">
+      <div className="mt-8 space-y-12">
         {days.map(({ date, items }) => (
           <section key={date}>
             <DayHeader

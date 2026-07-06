@@ -23,8 +23,8 @@ export default function MapPage() {
     <div>
       <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
         <div className="md:col-span-9">
-          <p className="caps-wide mb-3">Where it lives</p>
-          <h1 className="font-serif italic text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight">
+          <p className="caps mb-3">Where it lives</p>
+          <h1 className="masthead text-[clamp(3rem,12vw,9rem)]">
             The Map.
           </h1>
         </div>

@@ -19,16 +19,22 @@ export const TAG_COLOR: Record<VenueTag, string> = {
 };
 
 export function TagChip({ tag, size = "sm" }: { tag: VenueTag; size?: "sm" | "md" }) {
-  const padding = size === "sm" ? "px-1.5 py-0.5 text-[10px]" : "px-2.5 py-1 text-xs";
+  const color = TAG_COLOR[tag];
+  const padding =
+    size === "sm" ? "px-2 py-0.5 text-[11px] min-h-[22px]" : "px-2.5 py-1 text-xs";
   return (
     <span
       className={`inline-flex items-center gap-1.5 border rounded-full caps ${padding}`}
-      style={{ color: TAG_COLOR[tag], borderColor: TAG_COLOR[tag] }}
+      style={{
+        color,
+        background: `color-mix(in oklab, ${color} 12%, transparent)`,
+        borderColor: `color-mix(in oklab, ${color} 35%, transparent)`,
+      }}
     >
       <span
         aria-hidden
         className="inline-block w-1.5 h-1.5 rounded-full"
-        style={{ background: TAG_COLOR[tag] }}
+        style={{ background: color }}
       />
       {TAG_LABEL[tag]}
     </span>

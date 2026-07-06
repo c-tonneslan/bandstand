@@ -17,8 +17,8 @@ export default function SessionsPage() {
     <div>
       <header className="grid md:grid-cols-12 gap-6 pb-8 border-b border-foreground/30">
         <div className="md:col-span-9">
-          <p className="caps-wide mb-3">For musicians + listeners</p>
-          <h1 className="font-serif italic text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight">
+          <p className="caps mb-3">For musicians + listeners</p>
+          <h1 className="masthead text-[clamp(3rem,9vw,6rem)]">
             Jams.
           </h1>
         </div>
@@ -29,7 +29,7 @@ export default function SessionsPage() {
         </div>
       </header>
 
-      <p className="font-serif text-lg md:text-xl leading-snug max-w-3xl mt-8 mb-12">
+      <p className="deck max-w-3xl mt-8 mb-16">
         Every recurring open session bandstand knows about. The sit-in policy line tells you
         whether to bring your horn, sign up at the door, or just hang and listen.
       </p>
@@ -37,7 +37,7 @@ export default function SessionsPage() {
       {dates.length === 0 ? (
         <p className="text-muted">No jam sessions in the index for the next two weeks.</p>
       ) : (
-        <div className="space-y-14">
+        <div className="space-y-12">
           {dates.map((d) => (
             <section key={d}>
               <DayHeader

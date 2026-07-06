@@ -26,12 +26,12 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
     <div>
       <Link
         href="/venues"
-        className="caps text-muted hover:text-red"
+        className="caps text-muted hover:text-accent"
       >
         ← The rooms
       </Link>
-      <h1 className="font-serif italic text-5xl md:text-7xl tracking-tight mt-3">{venue.name}</h1>
-      <p className="caps-wide text-muted mt-3">
+      <h1 className="masthead text-[clamp(2.5rem,6vw,4.5rem)] mt-3">{venue.name}</h1>
+      <p className="caps text-muted mt-3">
         {venue.address}
         <span className="mx-2">·</span>
         {venue.neighborhood}
@@ -41,35 +41,35 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
           <TagChip key={t} tag={t} size="md" />
         ))}
       </div>
-      <p className="mt-8 max-w-2xl font-serif text-lg leading-snug">{venue.blurb}</p>
+      <p className="deck mt-8 max-w-2xl">{venue.blurb}</p>
       <p className="mt-2 max-w-2xl text-sm text-muted">
         <span className="text-foreground/80">{venue.vibe}</span> · {venue.cover}
       </p>
       <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm caps">
         {venue.website && (
-          <a className="text-red hover:text-foreground" href={venue.website} target="_blank" rel="noreferrer">
+          <a className="text-accent hover:text-foreground" href={venue.website} target="_blank" rel="noreferrer">
             → Website
           </a>
         )}
         {venue.instagram && (
-          <a className="text-red hover:text-foreground" href={venue.instagram} target="_blank" rel="noreferrer">
+          <a className="text-accent hover:text-foreground" href={venue.instagram} target="_blank" rel="noreferrer">
             → Instagram
           </a>
         )}
         <a
-          className="text-red hover:text-foreground"
+          className="text-accent hover:text-foreground"
           href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.address)}`}
           target="_blank"
           rel="noreferrer"
         >
           → Directions
         </a>
-        <a className="text-red hover:text-foreground" href={`/cal/venues/${venue.slug}`}>
+        <a className="text-accent hover:text-foreground" href={`/cal/venues/${venue.slug}`}>
           → Calendar feed
         </a>
       </p>
 
-      <section className="mt-14">
+      <section className="mt-16">
         <h2 className="font-serif italic text-3xl mb-6 border-b-2 border-foreground/80 pb-2">
           Next 30 days
         </h2>
@@ -78,10 +78,10 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
             Nothing indexed for this room in the next 30 days. Check their site directly.
           </p>
         ) : (
-          <div className="space-y-10">
+          <div className="space-y-12">
             {dates.map((d) => (
               <div key={d}>
-                <h3 className="caps-wide text-red mb-3 border-b border-line pb-1">{d}</h3>
+                <h3 className="caps text-accent mb-3 border-b border-line pb-1">{d}</h3>
                 <div className="divide-y divide-line">
                   {(byDate.get(d) ?? []).map((o) => (
                     <OccurrenceCard key={o.id} o={o} />
