@@ -3,25 +3,24 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* cool stone palette: neutral paper, near-black ink, terracotta accent.
-     warm tags pop against the cool background. */
-  --background: #ece9e1;
-  --surface: #f4f2ec;
-  --foreground: #191817;
-  --muted: #57554f;
-  --line: #c9c6bc;
+  /* Midnight Brass — light: warm ivory paper, blue-ink, deep bronze-gold accent. */
+  --background: #f4f1e8;
+  --surface: #fbf9f2;
+  --foreground: #191a1f;
+  --muted: #5b5a52;
+  --line: #d9d5c9;
 
-  --accent: #b4331d;
-  --accent-hover: #8f2717;
-  --accent-emphasis: #d1451f;
+  --accent: #8f6212;
+  --accent-hover: #6d4a0d;
+  --accent-emphasis: #a8791f;
 
   /* aliases retained until the component team migrates text-red/border-red */
   --red: var(--accent);
   --red-soft: var(--accent-hover);
-  --gold: #8a6a1c;
+  --gold: #8f6212;
 
-  --tag-live: #9c3a2e;
-  --tag-jam: #8a6a1c;
+  --tag-live: #a23c2c;
+  --tag-jam: #836420;
   --tag-listening: #3f6a4a;
   --tag-vinyl: #7a5330;
   --tag-dj: #7a3452;
@@ -35,24 +34,25 @@
 }
 
 .dark {
-  --background: #141311;
-  --surface: #1e1c19;
-  --foreground: #ece9e1;
-  --muted: #8f8c82;
-  --line: #33302b;
+  /* Midnight Brass — dark: deep blue-charcoal, warm ivory, brass gold accent. */
+  --background: #14151b;
+  --surface: #1e2029;
+  --foreground: #efe9db;
+  --muted: #9a978c;
+  --line: #2c2e39;
 
-  --accent: #e0552b;
-  --accent-hover: #c4451f;
-  --accent-emphasis: #f26a3a;
+  --accent: #e0a94a;
+  --accent-hover: #c68f30;
+  --accent-emphasis: #f2c266;
 
-  --gold: #c69a3a;
+  --gold: #e0a94a;
 
-  --tag-live: #d1573f;
-  --tag-jam: #c69a3a;
-  --tag-listening: #5c9a63;
-  --tag-vinyl: #b08a5a;
-  --tag-dj: #c1789c;
-  --tag-system: #4f9aa0;
+  --tag-live: #e0715a;
+  --tag-jam: #d99f45;
+  --tag-listening: #7fb07a;
+  --tag-vinyl: #c69a6f;
+  --tag-dj: #cc86a8;
+  --tag-system: #56b0b4;
 
   --shadow-card: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
