@@ -8,6 +8,7 @@
 import { load } from "cheerio";
 
 import type { Event } from "@/data/types";
+import { parseDashPersonnel } from "./performers";
 import { FETCH_HEADERS, type Scraper } from "./types";
 
 const VENUE_SLUG = "south-jazz-kitchen";
@@ -163,6 +164,7 @@ export const scrapeSouthJazzKitchen: Scraper = async () => {
       }
 
       const { cleanTitle, times } = parseTitle(ld.name ?? "");
+      const performers = parseDashPersonnel(ld.description ?? "");
       const dates = rangeOfDates(start, end);
       const ticketUrl = ld.sameAs;
       // Slug from URL path, last non-empty segment.
@@ -184,6 +186,7 @@ export const scrapeSouthJazzKitchen: Scraper = async () => {
           startTime,
           endTime,
           name: cleanTitle,
+          performers: performers.length ? performers : undefined,
           kind: "ticketed",
           ticketUrl,
           notes,
