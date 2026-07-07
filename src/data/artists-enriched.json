@@ -1,0 +1,701 @@
+{
+  "alex-claffy": {
+    "slug": "alex-claffy",
+    "name": "Alex Claffy",
+    "resolvedAt": "2026-07-06T23:56:05.053Z",
+    "mbid": "99265847-0388-4b08-b01f-73cc9a19a834",
+    "confidence": "high",
+    "spotifyId": "6KatJsAhmyLpNjLiu1oW9W",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/6007823"
+      },
+      {
+        "label": "Homepage",
+        "url": "https://www.claffy.me/"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/ClaffyClaffy"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/10159432875925187"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/claffyclaffy/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCNkQFqpCIGOkg5B6DMqbCjQ"
+      }
+    ],
+    "hometown": "Philadelphia"
+  },
+  "andrew-carson": {
+    "slug": "andrew-carson",
+    "name": "Andrew Carson",
+    "resolvedAt": "2026-07-06T23:56:07.793Z",
+    "mbid": "246e014e-d9c1-44c8-9c2f-7c187cc3d70a",
+    "confidence": "high"
+  },
+  "bart-miltenberger": {
+    "slug": "bart-miltenberger",
+    "name": "Bart Miltenberger",
+    "resolvedAt": "2026-07-06T23:56:10.244Z",
+    "confidence": "low"
+  },
+  "behn-gillece": {
+    "slug": "behn-gillece",
+    "name": "Behn Gillece",
+    "resolvedAt": "2026-07-06T23:56:11.468Z",
+    "mbid": "fa8f830a-3226-446e-bb42-77a1f90703cb",
+    "confidence": "high",
+    "spotifyId": "0YyytaIFxrBwVdJkKe8ZrU",
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://behngillece.bandcamp.com/"
+      },
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/3408317"
+      }
+    ]
+  },
+  "ben-cohen": {
+    "slug": "ben-cohen",
+    "name": "Ben Cohen",
+    "resolvedAt": "2026-07-06T23:56:13.953Z",
+    "mbid": "3ad9f24c-2764-4d73-8594-323524d901be",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://bencohen1.bandcamp.com/"
+      },
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/5547523"
+      },
+      {
+        "label": "Homepage",
+        "url": "https://www.bencohenmusic.com/"
+      }
+    ],
+    "hometown": "United States"
+  },
+  "ben-karp": {
+    "slug": "ben-karp",
+    "name": "Ben Karp",
+    "resolvedAt": "2026-07-06T23:56:16.467Z",
+    "mbid": "c670ba14-b02b-4039-816a-4e4bb9fcb12a",
+    "confidence": "high",
+    "hometown": "France"
+  },
+  "bill-saurman": {
+    "slug": "bill-saurman",
+    "name": "Bill Saurman",
+    "resolvedAt": "2026-07-06T23:56:18.937Z",
+    "confidence": "low"
+  },
+  "brian-charette": {
+    "slug": "brian-charette",
+    "name": "Brian Charette",
+    "resolvedAt": "2026-07-06T23:56:20.157Z",
+    "mbid": "a649be65-4d4a-4ff2-be8f-ffb1cc04e1d2",
+    "confidence": "high"
+  },
+  "byron-landham": {
+    "slug": "byron-landham",
+    "name": "Byron Landham",
+    "resolvedAt": "2026-07-06T23:56:22.612Z",
+    "mbid": "2091c1aa-7f4f-472e-b5d4-7116208718db",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/1220521"
+      }
+    ],
+    "genres": [
+      "jazz"
+    ]
+  },
+  "caleb-wheeler-curtis": {
+    "slug": "caleb-wheeler-curtis",
+    "name": "Caleb Wheeler Curtis",
+    "resolvedAt": "2026-07-06T23:56:25.082Z",
+    "confidence": "low"
+  },
+  "chris-farr": {
+    "slug": "chris-farr",
+    "name": "Chris Farr",
+    "resolvedAt": "2026-07-06T23:56:26.298Z",
+    "mbid": "f772ee50-1422-4db5-a303-724b864aa2ad",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/223114"
+      },
+      {
+        "label": "Homepage",
+        "url": "https://chrisfarrmusic.com/"
+      }
+    ],
+    "hometown": "United States"
+  },
+  "chuck-redd": {
+    "slug": "chuck-redd",
+    "name": "Chuck Redd",
+    "resolvedAt": "2026-07-06T23:56:28.767Z",
+    "mbid": "e4a9a411-65d9-46fe-a019-60f72942bc03",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/1228335"
+      },
+      {
+        "label": "Homepage",
+        "url": "http://www.chuckredd.com/"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chuck_Redd"
+      }
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "hometown": "United States",
+    "bio": "Chuck Redd is an American jazz drummer and vibraphonist.",
+    "bioSource": {
+      "title": "Chuck Redd",
+      "url": "https://en.wikipedia.org/wiki/Chuck_Redd",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "dan-mccain": {
+    "slug": "dan-mccain",
+    "name": "Dan McCain",
+    "resolvedAt": "2026-07-06T23:56:32.161Z",
+    "confidence": "low"
+  },
+  "dan-monaghan": {
+    "slug": "dan-monaghan",
+    "name": "Dan Monaghan",
+    "resolvedAt": "2026-07-06T23:56:33.381Z",
+    "mbid": "549f3407-9211-4d1c-b409-8b113de4aaa3",
+    "confidence": "high"
+  },
+  "eli-pace": {
+    "slug": "eli-pace",
+    "name": "Eli Pace",
+    "resolvedAt": "2026-07-06T23:56:35.841Z",
+    "mbid": "7996f0ca-fb8f-4b60-9108-16c5c061a59f",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/1276747"
+      }
+    ]
+  },
+  "gabriel-meyer": {
+    "slug": "gabriel-meyer",
+    "name": "Gabriel Meyer",
+    "resolvedAt": "2026-07-06T23:56:38.319Z",
+    "mbid": "a944af6c-b3a2-43ac-a9ad-9b188a4aff51",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Homepage",
+        "url": "http://www.gabrielmeyerhalevy.com/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/gabrielmeyerhalevy"
+      },
+      {
+        "label": "SoundCloud",
+        "url": "https://soundcloud.com/gabriel-meyer-halevy-1"
+      }
+    ]
+  },
+  "greg-masters": {
+    "slug": "greg-masters",
+    "name": "Greg Masters",
+    "resolvedAt": "2026-07-06T23:56:40.811Z",
+    "mbid": "7630cf3d-0e44-42ac-82b9-37bf6a8d7bf7",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/2088148"
+      }
+    ]
+  },
+  "greg-riley": {
+    "slug": "greg-riley",
+    "name": "Greg Riley",
+    "resolvedAt": "2026-07-06T23:56:43.296Z",
+    "mbid": "d69cea9c-dc07-4165-8efa-c629a41e5352",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/1154179"
+      }
+    ]
+  },
+  "gusten-rudolph": {
+    "slug": "gusten-rudolph",
+    "name": "Gusten Rudolph",
+    "resolvedAt": "2026-07-06T23:56:45.765Z",
+    "confidence": "low"
+  },
+  "hailey-brinnel": {
+    "slug": "hailey-brinnel",
+    "name": "Hailey Brinnel",
+    "resolvedAt": "2026-07-06T23:56:46.985Z",
+    "mbid": "db634b6c-0796-40a9-9395-e2a98ea548fe",
+    "confidence": "high",
+    "spotifyId": "7DnJOqsOYzilcgi4gGQd3d",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/7079046"
+      },
+      {
+        "label": "Homepage",
+        "url": "https://www.haileybrinnel.com/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCSOpelj9Bn3CgsvMXPGRsAw"
+      }
+    ],
+    "genres": [
+      "jazz"
+    ]
+  },
+  "hannah-marks": {
+    "slug": "hannah-marks",
+    "name": "Hannah Marks",
+    "resolvedAt": "2026-07-06T23:56:49.537Z",
+    "mbid": "89a2722b-635f-413f-9dbb-e8e5c91f76a7",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Homepage",
+        "url": "https://www.hannahmarksbass.com/"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/hannahmarks"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/hannahmarksbass"
+      }
+    ]
+  },
+  "jake-miller": {
+    "slug": "jake-miller",
+    "name": "Jake Miller",
+    "resolvedAt": "2026-07-06T23:56:52.080Z",
+    "confidence": "override"
+  },
+  "jesse-deems": {
+    "slug": "jesse-deems",
+    "name": "Jesse Deems",
+    "resolvedAt": "2026-07-06T23:56:52.080Z",
+    "confidence": "low"
+  },
+  "john-petrucelli": {
+    "slug": "john-petrucelli",
+    "name": "John Petrucelli",
+    "resolvedAt": "2026-07-06T23:56:53.358Z",
+    "confidence": "low"
+  },
+  "john-shaddy": {
+    "slug": "john-shaddy",
+    "name": "John Shaddy",
+    "resolvedAt": "2026-07-06T23:56:54.582Z",
+    "confidence": "low"
+  },
+  "jonathan-paik": {
+    "slug": "jonathan-paik",
+    "name": "Jonathan Paik",
+    "resolvedAt": "2026-07-06T23:56:55.797Z",
+    "confidence": "low"
+  },
+  "jordan-berger": {
+    "slug": "jordan-berger",
+    "name": "Jordan Berger",
+    "resolvedAt": "2026-07-06T23:56:57.020Z",
+    "mbid": "c74cd9a5-a78b-4416-8f6b-da80df93e11d",
+    "confidence": "high",
+    "spotifyId": "0Hdzw8vF7muk6crXJAZOxu"
+  },
+  "josh-klamka": {
+    "slug": "josh-klamka",
+    "name": "Josh Klamka",
+    "resolvedAt": "2026-07-06T23:56:59.540Z",
+    "confidence": "low"
+  },
+  "keith-chasin": {
+    "slug": "keith-chasin",
+    "name": "Keith Chasin",
+    "resolvedAt": "2026-07-06T23:57:00.765Z",
+    "confidence": "low"
+  },
+  "ken-fowser": {
+    "slug": "ken-fowser",
+    "name": "Ken Fowser",
+    "resolvedAt": "2026-07-06T23:57:01.996Z",
+    "mbid": "c917dbcd-4aee-4a15-8a0f-7df3c9fa5609",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/4104988"
+      }
+    ]
+  },
+  "kevin-blanke": {
+    "slug": "kevin-blanke",
+    "name": "Kevin Blanke",
+    "resolvedAt": "2026-07-06T23:57:04.476Z",
+    "confidence": "low"
+  },
+  "lee-smith": {
+    "slug": "lee-smith",
+    "name": "Lee Smith",
+    "resolvedAt": "2026-07-06T23:57:05.694Z",
+    "mbid": "675a8969-76d1-4305-842a-4634ed0d36db",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/232097"
+      }
+    ],
+    "genres": [
+      "hip hop"
+    ],
+    "hometown": "United States"
+  },
+  "lonell-johnson": {
+    "slug": "lonell-johnson",
+    "name": "Lonell Johnson",
+    "resolvedAt": "2026-07-06T23:57:08.285Z",
+    "confidence": "low"
+  },
+  "madison-rast": {
+    "slug": "madison-rast",
+    "name": "Madison Rast",
+    "resolvedAt": "2026-07-06T23:57:09.499Z",
+    "mbid": "9d80548d-257d-42b1-af4a-bbcac9bc097f",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/6589381"
+      }
+    ],
+    "hometown": "United States"
+  },
+  "mark-valdes": {
+    "slug": "mark-valdes",
+    "name": "Mark Valdes",
+    "resolvedAt": "2026-07-06T23:57:12.094Z",
+    "confidence": "low"
+  },
+  "matt-miller": {
+    "slug": "matt-miller",
+    "name": "Matt Miller",
+    "resolvedAt": "2026-07-06T23:57:13.311Z",
+    "confidence": "override"
+  },
+  "matthew-rotker-lynn": {
+    "slug": "matthew-rotker-lynn",
+    "name": "Matthew Rotker-Lynn",
+    "resolvedAt": "2026-07-06T23:57:13.311Z",
+    "mbid": "039f6436-fcf0-44a6-a899-05813b595874",
+    "confidence": "high"
+  },
+  "michael-stark": {
+    "slug": "michael-stark",
+    "name": "Michael Stark",
+    "resolvedAt": "2026-07-06T23:57:15.779Z",
+    "mbid": "c0228794-d220-42ca-9fed-660b86ce044c",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/766671"
+      }
+    ],
+    "hometown": "Queens"
+  },
+  "mike-boone": {
+    "slug": "mike-boone",
+    "name": "Mike Boone",
+    "resolvedAt": "2026-07-06T23:57:18.337Z",
+    "mbid": "79bda89b-6d7d-4c41-9c8f-f6d3963db63f",
+    "confidence": "high"
+  },
+  "mike-raymond": {
+    "slug": "mike-raymond",
+    "name": "Mike Raymond",
+    "resolvedAt": "2026-07-06T23:57:20.855Z",
+    "confidence": "low"
+  },
+  "morgan-wallbridge": {
+    "slug": "morgan-wallbridge",
+    "name": "Morgan Wallbridge",
+    "resolvedAt": "2026-07-06T23:57:22.119Z",
+    "confidence": "low"
+  },
+  "nate-hook": {
+    "slug": "nate-hook",
+    "name": "Nate Hook",
+    "resolvedAt": "2026-07-06T23:57:23.343Z",
+    "confidence": "low"
+  },
+  "neil-podgurski": {
+    "slug": "neil-podgurski",
+    "name": "Neil Podgurski",
+    "resolvedAt": "2026-07-06T23:57:24.563Z",
+    "mbid": "92100e7e-464a-4ec6-8042-4072f1097a5f",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/2394144"
+      }
+    ]
+  },
+  "nimrod-speaks": {
+    "slug": "nimrod-speaks",
+    "name": "Nimrod Speaks",
+    "resolvedAt": "2026-07-06T23:57:27.091Z",
+    "mbid": "d66fb851-76fd-49ad-851e-89f8af92faf5",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/2294807"
+      },
+      {
+        "label": "Homepage",
+        "url": "http://www.nimrodspeaks.com/no_flash.php"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/nimrod.speaks"
+      }
+    ],
+    "hometown": "United States"
+  },
+  "olive-mitra": {
+    "slug": "olive-mitra",
+    "name": "Olive Mitra",
+    "resolvedAt": "2026-07-06T23:57:29.570Z",
+    "confidence": "low"
+  },
+  "oliver-mayman": {
+    "slug": "oliver-mayman",
+    "name": "Oliver Mayman",
+    "resolvedAt": "2026-07-06T23:57:30.794Z",
+    "confidence": "low"
+  },
+  "paolo-canarella": {
+    "slug": "paolo-canarella",
+    "name": "Paolo Canarella",
+    "resolvedAt": "2026-07-06T23:57:32.018Z",
+    "confidence": "low"
+  },
+  "paul-briggs": {
+    "slug": "paul-briggs",
+    "name": "Paul Briggs",
+    "resolvedAt": "2026-07-06T23:57:33.253Z",
+    "mbid": "8a954f0e-adcd-45fd-8f2a-ae67109a9dd4",
+    "confidence": "high",
+    "hometown": "Perth"
+  },
+  "peter-bernstein": {
+    "slug": "peter-bernstein",
+    "name": "Peter Bernstein",
+    "resolvedAt": "2026-07-06T23:57:35.803Z",
+    "mbid": "2f38247a-c46e-4302-9e81-6c1c7a32d343",
+    "confidence": "high",
+    "spotifyId": "5vCIoZWrnWUkjCKmtaADQc",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/325997"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Peter_Bernstein_(guitarist)"
+      }
+    ],
+    "genres": [
+      "jazz",
+      "post-bop"
+    ],
+    "hometown": "New York",
+    "bio": "Peter Andrew Bernstein is an American jazz guitarist.",
+    "bioSource": {
+      "title": "Peter Bernstein (guitarist)",
+      "url": "https://en.wikipedia.org/wiki/Peter_Bernstein_(guitarist)",
+      "license": "CC BY-SA 4.0"
+    },
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Concierto_Peter_Berstein%26Mark_Whitfield_Organ_Quartet_at_SanJavier_2022_29.jpg/330px-Concierto_Peter_Berstein%26Mark_Whitfield_Organ_Quartet_at_SanJavier_2022_29.jpg",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peter_Bernstein_(guitarist)",
+      "credit": "Wikimedia Commons"
+    }
+  },
+  "ravi-seenarine": {
+    "slug": "ravi-seenarine",
+    "name": "Ravi Seenarine",
+    "resolvedAt": "2026-07-06T23:57:39.232Z",
+    "confidence": "low"
+  },
+  "russell-gelman": {
+    "slug": "russell-gelman",
+    "name": "Russell Gelman",
+    "resolvedAt": "2026-07-06T23:57:40.453Z",
+    "confidence": "low"
+  },
+  "ryan-tomski": {
+    "slug": "ryan-tomski",
+    "name": "Ryan Tomski",
+    "resolvedAt": "2026-07-06T23:57:41.676Z",
+    "confidence": "low"
+  },
+  "shane-aaserud": {
+    "slug": "shane-aaserud",
+    "name": "Shane Aaserud",
+    "resolvedAt": "2026-07-06T23:57:42.902Z",
+    "confidence": "low"
+  },
+  "susie-meissner": {
+    "slug": "susie-meissner",
+    "name": "Susie Meissner",
+    "resolvedAt": "2026-07-06T23:57:44.122Z",
+    "confidence": "low"
+  },
+  "tim-brey": {
+    "slug": "tim-brey",
+    "name": "Tim Brey",
+    "resolvedAt": "2026-07-06T23:57:45.343Z",
+    "mbid": "03f46c7e-e9ed-43b9-b70d-7dbd4e273579",
+    "confidence": "high",
+    "hometown": "United States"
+  },
+  "tom-lawton": {
+    "slug": "tom-lawton",
+    "name": "Tom Lawton",
+    "resolvedAt": "2026-07-06T23:57:47.806Z",
+    "mbid": "1b0bdb01-a8f1-45a7-abc8-8cd4e7e30715",
+    "confidence": "high"
+  },
+  "tony-miceli": {
+    "slug": "tony-miceli",
+    "name": "Tony Miceli",
+    "resolvedAt": "2026-07-06T23:57:50.576Z",
+    "mbid": "1a206947-26c1-4e72-ac4e-ea27e27d7c7f",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/onymiceli"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tmiceli"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tony_Miceli"
+      }
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "hometown": "Cincinnati",
+    "bio": "Tony Miceli is an American jazz vibraphonist and educator. He was born in Cincinnati, Ohio, and grew up in Willingboro, New Jersey.",
+    "bioSource": {
+      "title": "Tony Miceli",
+      "url": "https://en.wikipedia.org/wiki/Tony_Miceli",
+      "license": "CC BY-SA 4.0"
+    },
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tony_Miceli_and_Vibraphone.jpg/330px-Tony_Miceli_and_Vibraphone.jpg",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tony_Miceli",
+      "credit": "Wikimedia Commons"
+    }
+  },
+  "tyler-henderson": {
+    "slug": "tyler-henderson",
+    "name": "Tyler Henderson",
+    "resolvedAt": "2026-07-06T23:57:54.060Z",
+    "mbid": "49745820-652d-4673-abfc-a7e4226bf8b1",
+    "confidence": "high",
+    "links": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/tylerhendersonm/"
+      }
+    ],
+    "hometown": "Oneonta"
+  },
+  "warren-wolf": {
+    "slug": "warren-wolf",
+    "name": "Warren Wolf",
+    "resolvedAt": "2026-07-06T23:57:56.571Z",
+    "mbid": "d48ef31d-b72c-403c-bef1-c7f606804a27",
+    "confidence": "high",
+    "spotifyId": "3ib2oPht9T5y9kjQm3h1Lu",
+    "links": [
+      {
+        "label": "Discogs",
+        "url": "https://www.discogs.com/artist/660029"
+      },
+      {
+        "label": "Homepage",
+        "url": "http://www.warrenwolfmusic.com/"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Warren_Wolf_(musician)"
+      }
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "hometown": "Baltimore",
+    "bio": "Warren Wolf Jr. is an American jazz vibraphonist and multi-instrumentalist from Baltimore, Maryland. He is on the faculty at Peabody Institute Conservatory of Music and the San Francisco Conservatory of Music.",
+    "bioSource": {
+      "title": "Warren Wolf (musician)",
+      "url": "https://en.wikipedia.org/wiki/Warren_Wolf_(musician)",
+      "license": "CC BY-SA 4.0"
+    },
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Warren_Wolf_in_2024.jpg/330px-Warren_Wolf_in_2024.jpg",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Warren_Wolf_(musician)",
+      "credit": "Wikimedia Commons"
+    }
+  }
+}

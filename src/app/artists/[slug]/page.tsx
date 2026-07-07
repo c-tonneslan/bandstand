@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import ArtistProfile from "@/components/ArtistProfile";
 import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
 import SaveButton from "@/components/SaveButton";
 import { getArtist, listArtists } from "@/lib/artists";
+import { getEnrichedArtist } from "@/lib/enriched";
 import { formatHumanDate } from "@/lib/dates";
 import { musicEventLd } from "@/lib/jsonld";
 import { groupByDate } from "@/lib/schedule";
@@ -38,6 +40,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const artist = getArtist(slug);
   if (!artist) notFound();
 
+  const enriched = getEnrichedArtist(slug);
+
   const byDate = groupByDate(artist.occurrences);
   const dates = Array.from(byDate.keys()).sort();
 
@@ -60,6 +64,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
         {artist.occurrences.length} {artist.occurrences.length === 1 ? "show" : "shows"} in the next
         60 days
       </p>
+
+      {enriched && <ArtistProfile artist={enriched} />}
 
       <section className="mt-16">
         <h2 className="font-serif italic text-3xl mb-6 border-b-2 border-foreground/80 pb-2">

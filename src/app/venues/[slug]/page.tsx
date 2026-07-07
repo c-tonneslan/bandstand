@@ -6,8 +6,10 @@ import JsonLd from "@/components/JsonLd";
 import { OccurrenceCard } from "@/components/OccurrenceCard";
 import SaveButton from "@/components/SaveButton";
 import { TagChip } from "@/components/TagChip";
+import TransitLinks from "@/components/TransitLinks";
 import { venues } from "@/data/venues";
 import { addDays, todayInPhilly } from "@/lib/dates";
+import { getVenueTransit } from "@/lib/enriched";
 import { musicEventLd, musicVenueLd } from "@/lib/jsonld";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
 
@@ -44,6 +46,8 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
   const upcoming = resolveOccurrences({ start, end }).filter((o) => o.venue.slug === slug);
   const byDate = groupByDate(upcoming);
   const dates = Array.from(byDate.keys()).sort();
+
+  const transit = getVenueTransit(slug);
 
   const ld = [musicVenueLd(venue), ...upcoming.map(musicEventLd)];
 
@@ -99,6 +103,8 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
           → Calendar feed
         </a>
       </p>
+
+      <TransitLinks lat={venue.lat} lng={venue.lng} transit={transit} />
 
       <section className="mt-16">
         <h2 className="font-serif italic text-3xl mb-6 border-b-2 border-foreground/80 pb-2">

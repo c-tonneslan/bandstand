@@ -1,0 +1,924 @@
+{
+  "chris-jazz-cafe": {
+    "slug": "chris-jazz-cafe",
+    "stops": [
+      {
+        "name": "Chestnut St & 15th St",
+        "routes": [
+          "9",
+          "21",
+          "42"
+        ],
+        "distMeters": 13
+      },
+      {
+        "name": "15th St & Ranstead St",
+        "routes": [
+          "31"
+        ],
+        "distMeters": 101
+      },
+      {
+        "name": "16th St & Chestnut St",
+        "routes": [
+          "2"
+        ],
+        "distMeters": 126
+      }
+    ]
+  },
+  "south-jazz-kitchen": {
+    "slug": "south-jazz-kitchen",
+    "stops": [
+      {
+        "name": "Broad St & Wallace St",
+        "routes": [
+          "4",
+          "16"
+        ],
+        "distMeters": 92
+      },
+      {
+        "name": "Broad St & Wallace St - FS",
+        "routes": [
+          "4",
+          "16"
+        ],
+        "distMeters": 119
+      },
+      {
+        "name": "Broad St & Ridge Av",
+        "routes": [
+          "4",
+          "16",
+          "B1 OWL"
+        ],
+        "distMeters": 159
+      }
+    ]
+  },
+  "heritage": {
+    "slug": "heritage",
+    "stops": [
+      {
+        "name": "2nd St & Wildley St",
+        "routes": [
+          "5"
+        ],
+        "distMeters": 82
+      },
+      {
+        "name": "2nd St & Poplar St",
+        "routes": [
+          "5"
+        ],
+        "distMeters": 165
+      },
+      {
+        "name": "3rd St & Wildey St",
+        "routes": [
+          "5",
+          "57"
+        ],
+        "distMeters": 173
+      }
+    ]
+  },
+  "solar-myth": {
+    "slug": "solar-myth",
+    "stops": [
+      {
+        "name": "Broad St & Reed  St",
+        "routes": [
+          "4"
+        ],
+        "distMeters": 89
+      },
+      {
+        "name": "Broad St & Dickinson St",
+        "routes": [
+          "4"
+        ],
+        "distMeters": 103
+      },
+      {
+        "name": "Broad St & Reed St",
+        "routes": [
+          "4"
+        ],
+        "distMeters": 120
+      }
+    ]
+  },
+  "time": {
+    "slug": "time",
+    "stops": [
+      {
+        "name": "Walnut St & 13th St",
+        "routes": [
+          "9",
+          "12",
+          "21",
+          "42"
+        ],
+        "distMeters": 67
+      },
+      {
+        "name": "Locust St & 13th St",
+        "routes": [
+          "12"
+        ],
+        "distMeters": 72
+      },
+      {
+        "name": "12th St & Locust St",
+        "routes": [
+          "45"
+        ],
+        "distMeters": 136
+      }
+    ]
+  },
+  "la-rose-jazz-club": {
+    "slug": "la-rose-jazz-club",
+    "stops": [
+      {
+        "name": "Olney Av & 4th St",
+        "routes": [
+          "26"
+        ],
+        "distMeters": 82
+      },
+      {
+        "name": "5th St & Olney Av",
+        "routes": [
+          "47"
+        ],
+        "distMeters": 108
+      },
+      {
+        "name": "Olney Av & 5th St",
+        "routes": [
+          "18",
+          "26"
+        ],
+        "distMeters": 116
+      }
+    ]
+  },
+  "clef-club": {
+    "slug": "clef-club",
+    "stops": [
+      {
+        "name": "16th St & Bainbridge St",
+        "routes": [
+          "2"
+        ],
+        "distMeters": 69
+      },
+      {
+        "name": "17th St & Bainbridge St",
+        "routes": [
+          "2"
+        ],
+        "distMeters": 84
+      },
+      {
+        "name": "South St & 16th St",
+        "routes": [
+          "40"
+        ],
+        "distMeters": 92
+      }
+    ]
+  },
+  "world-cafe-live": {
+    "slug": "world-cafe-live",
+    "stops": [
+      {
+        "name": "Chestnut St & 32nd St",
+        "routes": [
+          "21",
+          "42"
+        ],
+        "distMeters": 39
+      },
+      {
+        "name": "Walnut St & 32nd St - FS",
+        "routes": [
+          "21",
+          "42"
+        ],
+        "distMeters": 152
+      },
+      {
+        "name": "Chestnut St & 31st St",
+        "routes": [
+          "21",
+          "42"
+        ],
+        "distMeters": 157
+      }
+    ]
+  },
+  "kimmel-center-jazz-series": {
+    "slug": "kimmel-center-jazz-series",
+    "stops": [
+      {
+        "name": "Spruce St & 15th St",
+        "routes": [
+          "27"
+        ],
+        "distMeters": 89
+      },
+      {
+        "name": "Broad St & Spruce St",
+        "routes": [
+          "4",
+          "27",
+          "32"
+        ],
+        "distMeters": 90
+      },
+      {
+        "name": "Broad St & Pine St",
+        "routes": [
+          "4",
+          "27",
+          "32"
+        ],
+        "distMeters": 111
+      }
+    ]
+  },
+  "annenberg-center": {
+    "slug": "annenberg-center",
+    "stops": [
+      {
+        "name": "Walnut St & 36th St",
+        "routes": [
+          "21"
+        ],
+        "distMeters": 96
+      },
+      {
+        "name": "Walnut St & 37th St",
+        "routes": [
+          "21"
+        ],
+        "distMeters": 120
+      },
+      {
+        "name": "36th-Sansom",
+        "routes": [
+          "T2",
+          "T3",
+          "T4",
+          "T5"
+        ],
+        "distMeters": 152
+      }
+    ]
+  },
+  "ortliebs": {
+    "slug": "ortliebs",
+    "stops": [
+      {
+        "name": "2nd St & Poplar St",
+        "routes": [
+          "5"
+        ],
+        "distMeters": 125
+      },
+      {
+        "name": "2nd St & Wildley St",
+        "routes": [
+          "5"
+        ],
+        "distMeters": 154
+      },
+      {
+        "name": "3rd St & Poplar St",
+        "routes": [
+          "5",
+          "57"
+        ],
+        "distMeters": 230
+      }
+    ]
+  },
+  "trestle-inn": {
+    "slug": "trestle-inn",
+    "stops": [
+      {
+        "name": "11th St & Ridge Av",
+        "routes": [
+          "23",
+          "61"
+        ],
+        "distMeters": 84
+      },
+      {
+        "name": "11th St & Noble St",
+        "routes": [
+          "23",
+          "61"
+        ],
+        "distMeters": 110
+      },
+      {
+        "name": "11th St & Spring Garden St",
+        "routes": [
+          "23"
+        ],
+        "distMeters": 160
+      }
+    ]
+  },
+  "brewerytown-beats": {
+    "slug": "brewerytown-beats",
+    "stops": [
+      {
+        "name": "Master St & 27th St - FS",
+        "routes": [
+          "7"
+        ],
+        "distMeters": 40
+      },
+      {
+        "name": "Master St & 28th St",
+        "routes": [
+          "7"
+        ],
+        "distMeters": 111
+      },
+      {
+        "name": "27th St & Thompson St",
+        "routes": [
+          "7"
+        ],
+        "distMeters": 201
+      }
+    ]
+  },
+  "bok-bar": {
+    "slug": "bok-bar",
+    "stops": [
+      {
+        "name": "Tasker St & 8th St",
+        "routes": [
+          "29"
+        ],
+        "distMeters": 29
+      },
+      {
+        "name": "8th St & Tasker St",
+        "routes": [
+          "47",
+          "47M"
+        ],
+        "distMeters": 44
+      },
+      {
+        "name": "7th St & Tasker St",
+        "routes": [
+          "47"
+        ],
+        "distMeters": 113
+      }
+    ]
+  },
+  "royal-boucherie": {
+    "slug": "royal-boucherie",
+    "stops": [
+      {
+        "name": "2nd St",
+        "routes": [
+          "L1"
+        ],
+        "distMeters": 58
+      },
+      {
+        "name": "Market St & 2nd St",
+        "routes": [
+          "17",
+          "44",
+          "48",
+          "L1 OWL"
+        ],
+        "distMeters": 62
+      },
+      {
+        "name": "2nd St & Market St",
+        "routes": [
+          "17",
+          "L1 OWL"
+        ],
+        "distMeters": 85
+      }
+    ]
+  },
+  "friday-saturday-sunday": {
+    "slug": "friday-saturday-sunday",
+    "stops": [
+      {
+        "name": "Locust St & 21st St",
+        "routes": [
+          "12"
+        ],
+        "distMeters": 52
+      },
+      {
+        "name": "22nd St & Locust St",
+        "routes": [
+          "7",
+          "12"
+        ],
+        "distMeters": 112
+      },
+      {
+        "name": "22nd St & Spruce St",
+        "routes": [
+          "7",
+          "12"
+        ],
+        "distMeters": 138
+      }
+    ]
+  },
+  "hop-sing-laundromat": {
+    "slug": "hop-sing-laundromat",
+    "stops": [
+      {
+        "name": "11th St & Race St",
+        "routes": [
+          "23",
+          "45",
+          "61"
+        ],
+        "distMeters": 115
+      },
+      {
+        "name": "9th St & Race St",
+        "routes": [
+          "47M"
+        ],
+        "distMeters": 159
+      },
+      {
+        "name": "11th St & Vine St",
+        "routes": [
+          "23",
+          "45",
+          "61"
+        ],
+        "distMeters": 168
+      }
+    ]
+  },
+  "suraya": {
+    "slug": "suraya",
+    "stops": [
+      {
+        "name": "Frankford Av & Oxford St",
+        "routes": [
+          "5",
+          "25"
+        ],
+        "distMeters": 28
+      },
+      {
+        "name": "Frankford Av & Palmer St",
+        "routes": [
+          "5",
+          "25"
+        ],
+        "distMeters": 107
+      },
+      {
+        "name": "Frankford Av & Jefferson St",
+        "routes": [
+          "5",
+          "25"
+        ],
+        "distMeters": 174
+      }
+    ]
+  },
+  "vernick-food-and-drink": {
+    "slug": "vernick-food-and-drink",
+    "stops": [
+      {
+        "name": "Walnut St & 20th St",
+        "routes": [
+          "9",
+          "12",
+          "21",
+          "42"
+        ],
+        "distMeters": 42
+      },
+      {
+        "name": "20th St & Walnut St",
+        "routes": [
+          "17"
+        ],
+        "distMeters": 61
+      },
+      {
+        "name": "19th St & Moravian St - FS",
+        "routes": [
+          "17"
+        ],
+        "distMeters": 101
+      }
+    ]
+  },
+  "cafe-la-maude": {
+    "slug": "cafe-la-maude",
+    "stops": [
+      {
+        "name": "4th St & Poplar St",
+        "routes": [
+          "57"
+        ],
+        "distMeters": 83
+      },
+      {
+        "name": "3rd St & Wildey St",
+        "routes": [
+          "5",
+          "57"
+        ],
+        "distMeters": 110
+      },
+      {
+        "name": "3rd St & Poplar St",
+        "routes": [
+          "5",
+          "57"
+        ],
+        "distMeters": 116
+      }
+    ]
+  },
+  "the-rotunda": {
+    "slug": "the-rotunda",
+    "stops": [
+      {
+        "name": "40th St & Walnut St - FS",
+        "routes": [
+          "30",
+          "40",
+          "LUCYGR",
+          "T2",
+          "T3",
+          "T4",
+          "T5"
+        ],
+        "distMeters": 16
+      },
+      {
+        "name": "Walnut St & 40th St",
+        "routes": [
+          "21",
+          "LUCYGO"
+        ],
+        "distMeters": 39
+      },
+      {
+        "name": "Chestnut St & 40th St",
+        "routes": [
+          "21",
+          "30",
+          "LUCYGO"
+        ],
+        "distMeters": 134
+      }
+    ]
+  },
+  "mann-center": {
+    "slug": "mann-center",
+    "stops": [
+      {
+        "name": "Parkside Av & Wynnefield Av",
+        "routes": [
+          "40"
+        ],
+        "distMeters": 301
+      },
+      {
+        "name": "Wynnefield Av & Parkside Av",
+        "routes": [
+          "40"
+        ],
+        "distMeters": 316
+      },
+      {
+        "name": "Belmont Av & Belmont Mansion Dr",
+        "routes": [
+          "38"
+        ],
+        "distMeters": 327
+      }
+    ]
+  },
+  "bookers-restaurant-bar": {
+    "slug": "bookers-restaurant-bar",
+    "stops": [
+      {
+        "name": "Walnut St & 55th St",
+        "routes": [
+          "21"
+        ],
+        "distMeters": 72
+      },
+      {
+        "name": "Chestnut St & 55th St",
+        "routes": [
+          "21"
+        ],
+        "distMeters": 105
+      },
+      {
+        "name": "Walnut St & 56th St",
+        "routes": [
+          "21"
+        ],
+        "distMeters": 148
+      }
+    ]
+  },
+  "saunders-park-greene": {
+    "slug": "saunders-park-greene",
+    "stops": [
+      {
+        "name": "Lancaster Av & Spring Garden St",
+        "routes": [
+          "T1"
+        ],
+        "distMeters": 87
+      },
+      {
+        "name": "40th St & Spring Garden St",
+        "routes": [
+          "30",
+          "40",
+          "T1"
+        ],
+        "distMeters": 117
+      },
+      {
+        "name": "Spring Garden St & 39th St",
+        "routes": [
+          "43"
+        ],
+        "distMeters": 143
+      }
+    ]
+  },
+  "the-yard": {
+    "slug": "the-yard",
+    "stops": [
+      {
+        "name": "33rd St & Diamond St",
+        "routes": [
+          "32"
+        ],
+        "distMeters": 245
+      },
+      {
+        "name": "33rd St & Norris St",
+        "routes": [
+          "32"
+        ],
+        "distMeters": 296
+      },
+      {
+        "name": "33rd St & Susquehanna Av",
+        "routes": [
+          "32"
+        ],
+        "distMeters": 310
+      }
+    ]
+  },
+  "lou-and-choos-lounge": {
+    "slug": "lou-and-choos-lounge",
+    "stops": [
+      {
+        "name": "29th St & Cumberland St",
+        "routes": [
+          "48"
+        ],
+        "distMeters": 71
+      },
+      {
+        "name": "York St & 29th St",
+        "routes": [
+          "7",
+          "39"
+        ],
+        "distMeters": 104
+      },
+      {
+        "name": "29th St & York St",
+        "routes": [
+          "48"
+        ],
+        "distMeters": 107
+      }
+    ]
+  },
+  "the-met-philadelphia": {
+    "slug": "the-met-philadelphia",
+    "stops": [
+      {
+        "name": "16th St & Girard Av",
+        "routes": [
+          "2"
+        ],
+        "distMeters": 76
+      },
+      {
+        "name": "Girard Av & 16th St",
+        "routes": [
+          "G1"
+        ],
+        "distMeters": 92
+      },
+      {
+        "name": "16th St & Poplar St",
+        "routes": [
+          "2"
+        ],
+        "distMeters": 93
+      }
+    ]
+  },
+  "connies-ric-rac": {
+    "slug": "connies-ric-rac",
+    "stops": [
+      {
+        "name": "8th St & Passyunk Av",
+        "routes": [
+          "47",
+          "47M"
+        ],
+        "distMeters": 45
+      },
+      {
+        "name": "Washington Av & 8th St",
+        "routes": [
+          "64"
+        ],
+        "distMeters": 76
+      },
+      {
+        "name": "8th St & Washington Av",
+        "routes": [
+          "47",
+          "47M"
+        ],
+        "distMeters": 90
+      }
+    ]
+  },
+  "the-dolphin": {
+    "slug": "the-dolphin",
+    "stops": [
+      {
+        "name": "Broad St & Wharton St",
+        "routes": [
+          "4"
+        ],
+        "distMeters": 60
+      },
+      {
+        "name": "Broad St & Reed St",
+        "routes": [
+          "4"
+        ],
+        "distMeters": 118
+      },
+      {
+        "name": "Broad St & Reed  St",
+        "routes": [
+          "4"
+        ],
+        "distMeters": 149
+      }
+    ]
+  },
+  "garage-passyunk": {
+    "slug": "garage-passyunk",
+    "stops": [
+      {
+        "name": "9th St & Ellsworth St",
+        "routes": [
+          "47M"
+        ],
+        "distMeters": 74
+      },
+      {
+        "name": "Washington Av & 9th St",
+        "routes": [
+          "64"
+        ],
+        "distMeters": 126
+      },
+      {
+        "name": "9th St & Washington Av",
+        "routes": [
+          "47M"
+        ],
+        "distMeters": 127
+      }
+    ]
+  },
+  "front-street-cafe": {
+    "slug": "front-street-cafe",
+    "stops": [
+      {
+        "name": "Frankford Av & Master St - FS",
+        "routes": [
+          "5",
+          "25"
+        ],
+        "distMeters": 58
+      },
+      {
+        "name": "Frankford Av & Thompson St",
+        "routes": [
+          "5",
+          "25"
+        ],
+        "distMeters": 117
+      },
+      {
+        "name": "Frankford Av & Jefferson St",
+        "routes": [
+          "5",
+          "25"
+        ],
+        "distMeters": 183
+      }
+    ]
+  },
+  "khyber-pass-pub": {
+    "slug": "khyber-pass-pub",
+    "stops": [
+      {
+        "name": "2nd St",
+        "routes": [
+          "L1"
+        ],
+        "distMeters": 70
+      },
+      {
+        "name": "Market St & 2nd St",
+        "routes": [
+          "17",
+          "44",
+          "48",
+          "L1 OWL"
+        ],
+        "distMeters": 72
+      },
+      {
+        "name": "2nd St & Market St",
+        "routes": [
+          "17",
+          "L1 OWL"
+        ],
+        "distMeters": 94
+      }
+    ]
+  },
+  "the-good-king-tavern": {
+    "slug": "the-good-king-tavern",
+    "stops": [
+      {
+        "name": "7th St & Fitzwater St",
+        "routes": [
+          "47"
+        ],
+        "distMeters": 91
+      },
+      {
+        "name": "7th St & Bainbridge St",
+        "routes": [
+          "47"
+        ],
+        "distMeters": 138
+      },
+      {
+        "name": "South St & 6th St",
+        "routes": [
+          "40"
+        ],
+        "distMeters": 206
+      }
+    ]
+  }
+}
