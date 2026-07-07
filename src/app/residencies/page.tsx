@@ -19,6 +19,8 @@ export const metadata: Metadata = {
 
 // Repertory-style residency view: a recurring series is the headline unit, not a
 // grid of dates. Standing sets lead; anything in its final weeks gets flagged.
+export const dynamic = "force-dynamic";
+
 export default function ResidenciesPage() {
   const all = residencies();
   const standing = all.filter((r) => r.lifecycle === "standing");

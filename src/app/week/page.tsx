@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const dynamic = "force-dynamic";
+
 export default function WeekPage() {
   const start = todayInPhilly();
   const end = addDays(start, 6);

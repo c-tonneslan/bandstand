@@ -28,6 +28,10 @@ const SERIES_LABEL: Record<string, string> = {
   sun: "Sun",
 };
 
+// Rendered per request so "tonight" always reflects the current Philadelphia date,
+// not the date the site was last deployed.
+export const dynamic = "force-dynamic";
+
 export default function TonightPage() {
   const today = todayInPhilly();
   const tomorrow = addDays(today, 1);

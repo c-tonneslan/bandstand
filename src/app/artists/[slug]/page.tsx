@@ -13,6 +13,10 @@ import { formatHumanDate } from "@/lib/dates";
 import { musicEventLd } from "@/lib/jsonld";
 import { groupByDate } from "@/lib/schedule";
 
+// Statically generated, but revalidated hourly so the "upcoming shows" window
+// tracks the current date without a redeploy.
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   return listArtists().map((a) => ({ slug: a.slug }));
 }

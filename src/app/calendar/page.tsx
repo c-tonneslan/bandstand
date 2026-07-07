@@ -22,6 +22,8 @@ export const metadata: Metadata = {
 // or two ahead to navigate into. MonthGrid caps navigation to what's here.
 const HORIZON_DAYS = 70;
 
+export const dynamic = "force-dynamic";
+
 export default function CalendarPage() {
   const start = todayInPhilly();
   const end = addDays(start, HORIZON_DAYS - 1);

@@ -33,6 +33,8 @@ function addedLabel(firstSeen: string, today: string): string {
   return d === 0 ? "Just now" : `Added ${d}d ago`;
 }
 
+export const dynamic = "force-dynamic";
+
 export default function NewPage() {
   const today = todayInPhilly();
   const additions = recentlyAdded();

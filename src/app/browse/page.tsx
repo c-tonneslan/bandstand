@@ -24,6 +24,8 @@ export const metadata: Metadata = {
 // active facets into the URL.
 const HORIZON_DAYS = 42;
 
+export const dynamic = "force-dynamic";
+
 export default function BrowsePage() {
   const start = todayInPhilly();
   const end = addDays(start, HORIZON_DAYS - 1);

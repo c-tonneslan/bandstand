@@ -13,6 +13,8 @@ import { getVenueTransit } from "@/lib/enriched";
 import { musicEventLd, musicVenueLd } from "@/lib/jsonld";
 import { groupByDate, resolveOccurrences } from "@/lib/schedule";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   return venues.map((v) => ({ slug: v.slug }));
 }

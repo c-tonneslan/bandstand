@@ -23,6 +23,8 @@ export const metadata: Metadata = {
 
 // Jam-sessions-only view across the next two weeks. The goal: a musician
 // who wants to sit in somewhere this week can scan this list and walk in.
+export const dynamic = "force-dynamic";
+
 export default function SessionsPage() {
   const start = todayInPhilly();
   const end = addDays(start, 13);
