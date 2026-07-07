@@ -8,6 +8,7 @@ import { OccurrenceCard } from "@/components/OccurrenceCard";
 import SaveButton from "@/components/SaveButton";
 import { getArtist, listArtists } from "@/lib/artists";
 import { getEnrichedArtist } from "@/lib/enriched";
+import { collaboratorsOf } from "@/lib/graph";
 import { formatHumanDate } from "@/lib/dates";
 import { musicEventLd } from "@/lib/jsonld";
 import { groupByDate } from "@/lib/schedule";
@@ -41,6 +42,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   if (!artist) notFound();
 
   const enriched = getEnrichedArtist(slug);
+  const collaborators = collaboratorsOf(slug).slice(0, 8);
 
   const byDate = groupByDate(artist.occurrences);
   const dates = Array.from(byDate.keys()).sort();
@@ -66,6 +68,32 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
       </p>
 
       {enriched && <ArtistProfile artist={enriched} />}
+
+      {collaborators.length > 0 && (
+        <section className="mt-16">
+          <h2 className="font-serif italic text-3xl mb-6 border-b-2 border-foreground/80 pb-2">
+            Often on the same stand
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {collaborators.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/artists/${c.slug}`}
+                className="inline-flex items-baseline gap-2 rounded-full border border-line px-3.5 py-2 hover:border-accent hover:text-accent transition-colors"
+              >
+                <span className="font-serif text-base leading-none">{c.name}</span>
+                <span className="caps text-muted">×{c.shared}</span>
+              </Link>
+            ))}
+          </div>
+          <p className="caps text-muted mt-3">
+            Shared bills, most-played first ·{" "}
+            <Link href="/scene" className="hover:text-accent">
+              see the whole scene
+            </Link>
+          </p>
+        </section>
+      )}
 
       <section className="mt-16">
         <h2 className="font-serif italic text-3xl mb-6 border-b-2 border-foreground/80 pb-2">

@@ -12,6 +12,7 @@ const navItems = [
   { href: "/calendar", label: "Calendar" },
   { href: "/venues", label: "Venues" },
   { href: "/artists", label: "Artists" },
+  { href: "/scene", label: "Scene" },
   { href: "/my", label: "My Nights" },
   { href: "/search", label: "Search" },
   { href: "/submit", label: "Submit" },

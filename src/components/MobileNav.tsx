@@ -17,6 +17,7 @@ const overflow = [
   { href: "/calendar", label: "Calendar" },
   { href: "/venues", label: "Venues" },
   { href: "/artists", label: "Artists" },
+  { href: "/scene", label: "Scene" },
   { href: "/search", label: "Search" },
   { href: "/submit", label: "Submit" },
   { href: "/about", label: "About" },
