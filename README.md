@@ -33,19 +33,17 @@ Current scrapers:
 
 Hand-curated entries live in `src/data/venues.ts`, `src/data/series.ts`, and `src/data/events.ts`. Once a venue has a working scraper, its hand-curated entries are removed so the scraped data is the single source of truth.
 
-## Nightly refresh on Vercel
+## Nightly refresh
 
-The deploy pipeline runs the scraper before `next build` (see `prebuild` in `package.json`), so every fresh deploy bakes in current data.
+`.github/workflows/refresh.yml` runs once a day (09:00 UTC ≈ 4–5 AM ET): it re-runs the
+scrapers (`npm run refresh`), commits the updated `scraped.json` + `first-seen.json` if
+anything changed, and pushes. Vercel's git integration auto-deploys the commit, so the
+listings stay current without a manual deploy — and the committed first-seen ledger keeps
+`/new` (Just Announced) accurate over time. Trigger it by hand anytime with
+`gh workflow run refresh.yml` (or the Actions tab).
 
-To wire up a nightly refresh:
-
-1. Create a Vercel Deploy Hook for the project (Vercel → Project → Settings → Git → Deploy Hooks). Save the URL.
-2. In Vercel project Environment Variables, add:
-   - `CRON_SECRET` — any random string. Vercel Cron sends it as `Authorization: Bearer <secret>`.
-   - `VERCEL_DEPLOY_HOOK_URL` — the URL from step 1.
-3. `vercel.json` already schedules `/api/cron/refresh` at `0 10 * * *` (10:00 UTC ≈ 5–6 AM ET). The route verifies the secret, then POSTs the Deploy Hook, which kicks a fresh build that re-runs the scrapers.
-
-The cron path needs `CRON_SECRET` because Vercel Cron public routes are otherwise reachable by anyone.
+Date-awareness is separate: the date-sensitive pages render per request (`force-dynamic`),
+so "tonight" rolls over at midnight ET on its own even between refreshes.
 
 ## License
 

@@ -1,0 +1,40 @@
+name: Nightly refresh
+
+# Re-scrape the venues once a day, commit the refreshed data, and let Vercel's
+# git integration auto-deploy the result. This keeps the listings current (and
+# the first-seen ledger accumulating) without a manual deploy.
+on:
+  schedule:
+    - cron: "0 9 * * *" # 09:00 UTC ≈ 4–5 AM ET, before the day starts
+  workflow_dispatch: {} # manual trigger
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Scrape venues
+        run: npm run refresh
+      - name: Commit refreshed data
+        run: |
+          git config user.name "Charlie Tonneslan"
+          git config user.email "cst0520@gmail.com"
+          git add src/data/scraped.json src/data/first-seen.json
+          if git diff --cached --quiet; then
+            echo "No data changes — nothing to deploy."
+          else
+            git commit -m "data: nightly refresh"
+            git push
+          fi
