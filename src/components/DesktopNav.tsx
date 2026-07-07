@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useState } from "react";
 
 type Leaf = { href: string; label: string };
 type Group = { label: string; items: Leaf[] };
@@ -56,6 +56,10 @@ function NavLink({ href, label, active }: Leaf & { active: boolean }) {
   );
 }
 
+// Visibility is driven by CSS (group-hover / group-focus-within), not JS state, so
+// travelling from the trigger down to an item can never race a close timer. The
+// panel is a descendant of `.group`, and its `pt-2` bridge sits flush under the
+// trigger, so the hover region is continuous. JS only tracks aria + Escape.
 function Dropdown({
   group,
   isActive,
@@ -64,72 +68,47 @@ function Dropdown({
   isActive: (href: string) => boolean;
 }) {
   const [open, setOpen] = useState(false);
-  const groupRef = useRef<HTMLDivElement>(null);
-  const triggerRef = useRef<HTMLButtonElement>(null);
-  const pathname = usePathname();
   const active = group.items.some((item) => isActive(item.href));
-
-  // Close on route change (adjust state during render, no effect needed).
-  const [prevPath, setPrevPath] = useState(pathname);
-  if (prevPath !== pathname) {
-    setPrevPath(pathname);
-    setOpen(false);
-  }
-
-  // Close on click/tap outside the group.
-  useEffect(() => {
-    if (!open) return;
-    const onPointer = (e: PointerEvent) => {
-      if (!groupRef.current?.contains(e.target as Node)) setOpen(false);
-    };
-    document.addEventListener("pointerdown", onPointer);
-    return () => document.removeEventListener("pointerdown", onPointer);
-  }, [open]);
-
-  const closeAndRefocus = () => {
-    setOpen(false);
-    triggerRef.current?.focus();
-  };
 
   return (
     <div
-      ref={groupRef}
-      className="relative"
+      className="group relative"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
       onFocus={() => setOpen(true)}
       onBlur={(e) => {
-        if (!groupRef.current?.contains(e.relatedTarget as Node)) setOpen(false);
+        if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(false);
       }}
       onKeyDown={(e) => {
-        if (e.key === "Escape" && open) {
-          e.stopPropagation();
-          closeAndRefocus();
+        if (e.key === "Escape") {
+          setOpen(false);
+          (document.activeElement as HTMLElement | null)?.blur();
         }
       }}
     >
       <button
-        ref={triggerRef}
         type="button"
         aria-haspopup="menu"
         aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
         className={`caps inline-flex items-center gap-1 transition-colors ${
           active ? "text-accent underline underline-offset-4" : "hover:text-accent"
         }`}
       >
         {group.label}
-        <span aria-hidden className={`transition-transform ${open ? "rotate-180" : ""}`}>
+        <span
+          aria-hidden
+          className="transition-transform group-hover:rotate-180 group-focus-within:rotate-180"
+        >
           ▾
         </span>
       </button>
 
-      {open && (
-        <div
-          role="menu"
-          aria-label={group.label}
-          className="absolute left-0 top-full z-20 mt-2 min-w-52 rounded-[--radius] border border-line bg-surface p-1.5 shadow-[--shadow-card]"
-        >
+      <div
+        role="menu"
+        aria-label={group.label}
+        className="absolute left-0 top-full z-20 hidden min-w-52 pt-2 group-hover:block group-focus-within:block"
+      >
+        <div className="rounded-[--radius] border border-line bg-surface p-1.5 shadow-[--shadow-card]">
           {group.items.map((item) => {
             const itemActive = isActive(item.href);
             return (
@@ -149,7 +128,7 @@ function Dropdown({
             );
           })}
         </div>
-      )}
+      </div>
     </div>
   );
 }

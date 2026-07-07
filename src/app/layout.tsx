@@ -75,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <div className="grain" aria-hidden />
 
-        <header className="relative z-10 border-b-2 border-foreground">
+        <header className="relative z-30 border-b-2 border-foreground">
           <div className="border-b border-foreground/25 px-6 md:px-10 py-3 flex items-center justify-between gap-4 caps">
             <Link href="/" className="hover:underline underline-offset-4">
               /the-bandstand
