@@ -107,14 +107,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="relative z-10 border-t-2 border-foreground">
           <div className="mx-auto max-w-6xl px-6 md:px-10 py-6 flex items-center justify-between caps text-muted flex-wrap gap-2">
             <span>Built by a listener · hand-curated + scraped · check the venue before you go</span>
-            <a
-              href="https://github.com/c-tonneslan/bandstand"
-              className="hover:text-accent"
-              target="_blank"
-              rel="noreferrer"
-            >
-              github
-            </a>
+            <div className="flex items-center gap-4">
+              <Link href="/submit" className="hover:text-accent">
+                submit
+              </Link>
+              <Link href="/about" className="hover:text-accent">
+                about
+              </Link>
+              <a
+                href="https://github.com/c-tonneslan/bandstand"
+                className="hover:text-accent"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github
+              </a>
+            </div>
           </div>
         </footer>
       </body>
