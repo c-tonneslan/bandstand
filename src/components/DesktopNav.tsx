@@ -5,8 +5,10 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "Tonight" },
+  { href: "/new", label: "Just Announced" },
   { href: "/week", label: "This Week" },
   { href: "/sessions", label: "Jams" },
+  { href: "/residencies", label: "Residencies" },
   { href: "/map", label: "Map" },
   { href: "/browse", label: "Browse" },
   { href: "/calendar", label: "Calendar" },

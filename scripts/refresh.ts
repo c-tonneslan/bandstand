@@ -13,10 +13,34 @@ import { scrapeSquarespaceEvents } from "../src/scrapers/squarespace-events";
 import type { ScrapeResult } from "../src/scrapers/types";
 
 const OUT_PATH = join(import.meta.dirname, "..", "src", "data", "scraped.json");
+const FIRST_SEEN_PATH = join(import.meta.dirname, "..", "src", "data", "first-seen.json");
 
 interface ScrapedFile {
   generatedAt: string;
   byVenue: Record<string, ScrapeResult>;
+}
+
+// Stamp any event id we haven't seen before with now, so genuinely-new shows
+// float to the top of /new. Existing ids keep their original timestamp; we
+// never prune, so an event that drops off a calendar keeps its debut date.
+function updateFirstSeen(byVenue: Record<string, ScrapeResult>) {
+  const ledger: Record<string, string> = existsSync(FIRST_SEEN_PATH)
+    ? JSON.parse(readFileSync(FIRST_SEEN_PATH, "utf-8"))
+    : {};
+  const now = new Date().toISOString();
+  let added = 0;
+  for (const batch of Object.values(byVenue)) {
+    for (const e of batch.events) {
+      if (!(e.id in ledger)) {
+        ledger[e.id] = now;
+        added++;
+      }
+    }
+  }
+  const sorted: Record<string, string> = {};
+  for (const id of Object.keys(ledger).sort()) sorted[id] = ledger[id];
+  writeFileSync(FIRST_SEEN_PATH, JSON.stringify(sorted, null, 2) + "\n");
+  return added;
 }
 
 const scrapers = [
@@ -57,6 +81,9 @@ async function main() {
   writeFileSync(OUT_PATH, JSON.stringify(out, null, 2) + "\n");
   const total = Object.values(byVenue).reduce((n, r) => n + r.events.length, 0);
   console.log(`\nwrote ${total} events across ${Object.keys(byVenue).length} venues -> ${OUT_PATH}`);
+
+  const added = updateFirstSeen(byVenue);
+  console.log(`first-seen: +${added} new ids -> ${FIRST_SEEN_PATH}`);
 }
 
 main().catch((err) => {

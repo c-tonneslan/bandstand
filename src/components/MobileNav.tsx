@@ -12,6 +12,8 @@ const tabs = [
 ];
 
 const overflow = [
+  { href: "/new", label: "Just Announced" },
+  { href: "/residencies", label: "Residencies" },
   { href: "/my", label: "My Nights" },
   { href: "/browse", label: "Browse" },
   { href: "/calendar", label: "Calendar" },
