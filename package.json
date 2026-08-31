@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "maplibre-gl": "^5.24.0",
-    "next": "16.2.6",
+    "next": "16.3.3",
     "qrcode": "^1.5.4",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -26,10 +26,10 @@
     "@types/react-dom": "^19",
     "cheerio": "^1.2.0",
     "eslint": "^9",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "16.3.3",
     "tailwindcss": "^4",
-    "tsx": "^4.22.3",
+    "tsx": "^4.23.12",
     "typescript": "^5",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.11"
   }
 }
