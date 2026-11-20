@@ -1,23 +1,10 @@
 {
-  "generatedAt": "2026-11-19T18:00:18.033Z",
+  "generatedAt": "2026-11-20T17:36:11.233Z",
   "byVenue": {
     "chris-jazz-cafe": {
       "venueSlug": "chris-jazz-cafe",
-      "scrapedAt": "2026-11-19T18:00:13.177Z",
+      "scrapedAt": "2026-11-20T17:36:05.523Z",
       "events": [
-        {
-          "id": "chris-144011-2026-11-19",
-          "venueSlug": "chris-jazz-cafe",
-          "date": "2026-11-19",
-          "startTime": "19:30",
-          "endTime": "22:30",
-          "name": "Dave Posmontier presents Jazz In 3-D",
-          "kind": "ticketed",
-          "ticketUrl": "https://www.chrisjazzcafe.com/shows/388181",
-          "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
-          "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
-        },
         {
           "id": "chris-142601-2026-11-20",
           "venueSlug": "chris-jazz-cafe",
@@ -29,7 +16,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/384859",
           "notes": "Set Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $25 · Dinner & Show package ~ includes 3-course dinner: $100 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $120 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-141264-2026-11-21",
@@ -50,7 +37,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/381899",
           "notes": "Tony Miceli - Vibraphone · Chris Farr - Saxophone · John Swana - Trumpet · Madison Rast - Bass · Dan Monaghan - Drums · Tim Armacost - Saxophone Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146017-2026-11-24",
@@ -63,7 +50,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/392800",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144013-2026-11-25",
@@ -82,7 +69,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388184",
           "notes": "Julian Lee - Vibraphone · Noah Silver - Piano · Kenjiro Matsuki - Bass · Dexter Sales - Drums Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143326-2026-11-27",
@@ -95,7 +82,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/386416",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 (Friday) / $35 (Saturday) · Dinner & Show package ~ includes 3-course dinner: $105 / $110 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 / $130 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143326-2026-11-28",
@@ -108,7 +95,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/386414",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 (Friday) / $35 (Saturday) · Dinner & Show package ~ includes 3-course dinner: $105 / $110 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 / $130 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-145761-2026-12-01",
@@ -126,7 +113,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/392220",
           "notes": "· Gabrielle Murphy, alto saxophone · Orrin Evans, piano · Sunceray Tabler, drums · Jordan McBride, bass Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144016-2026-12-02",
@@ -139,7 +126,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388192",
           "notes": "The Mujica/Ambrose Sextet Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143850-2026-12-03",
@@ -152,7 +139,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387756",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143338-2026-12-04",
@@ -165,7 +152,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/386442",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-141913-2026-12-05",
@@ -185,7 +172,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/383258",
           "notes": "Lucy Wijnands - Vocals · Victor North - Saxophone · Aaron Graves - Piano · Dave Brodie - Bass · Wayne Smith Jr. - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-145762-2026-12-08",
@@ -202,7 +189,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/392222",
           "notes": "Willie Morris, tenor saxophone · Conner Saltzer, drums · Ben O’Neill, guitar · Micah Jones, bass Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143851-2026-12-09",
@@ -215,7 +202,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387758",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143852-2026-12-10",
@@ -228,7 +215,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387760",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143794-2026-12-11",
@@ -241,7 +228,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387627",
           "notes": "A full weekend of shows! Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143794-2026-12-12",
@@ -254,7 +241,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387628",
           "notes": "A full weekend of shows! Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-145763-2026-12-15",
@@ -272,7 +259,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/392224",
           "notes": "Itai Kriss, flute · Joao Bueno, piano · Byron Landham, drums · Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144017-2026-12-16",
@@ -285,7 +272,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388194",
           "notes": "Join Lucas Beltran and the Peter Frank Orchestra as they perform their entire holiday album entitled “Christmas Swings Again!” The album is filled with a variety of styles, unique arrangements, and fantastic vocal stylings from Lucas Beltran. The album was recorded in Philadelphia and features some of Philadelphia’s best jazz musicians Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143849-2026-12-17",
@@ -298,7 +285,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387754",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143798-2026-12-18",
@@ -311,7 +298,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387643",
           "notes": "Admission: Friday = $40, Saturday = $45 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143798-2026-12-19",
@@ -324,7 +311,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387642",
           "notes": "Admission: Friday = $40, Saturday = $45 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-145764-2026-12-22",
@@ -342,7 +329,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/392226",
           "notes": "Deborah Smith, trombone · Luke O’Reilly, piano · Anwar Marshall, drums · Jason Fraticelli, bass Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144018-2026-12-23",
@@ -355,7 +342,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388196",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144019-2026-12-24",
@@ -368,7 +355,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388198",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144020-2026-12-25",
@@ -381,7 +368,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388200",
           "notes": "Merry Christmas and Happy Holidays to all our friends and family!",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144020-2026-12-26",
@@ -394,7 +381,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388201",
           "notes": "Merry Christmas and Happy Holidays to all our friends and family!",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-143848-2026-12-28",
@@ -407,7 +394,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/387752",
           "notes": "A special holiday performance. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-145765-2026-12-29",
@@ -420,7 +407,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/392228",
           "notes": "We Get Requests is an engaging live music night led by Philadelphia trumpeter and GRAMMY-nominated artist Josh Lawrence. Each performance features Lawrence and a rotating trio of some of Philadelphia’s most respected musicians, with special guest artists joining the second set. Audience members can submit song requests in person or online between sets, shaping a spontaneous and memorable evening where the band brings those selections to life on stage. Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144022-2026-12-30",
@@ -433,7 +420,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388204",
           "notes": "Set Times: 7:30pm & 9:30pm* · General Admission ~ a la carte menu: $25 · Dinner & Show package ~ includes 3-course dinner: $100 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $120 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-145630-2026-12-31",
@@ -446,7 +433,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/391930",
           "notes": "Ring in 2027 with your choice of shows! Come early or late and get the best that Chris' has to offer as we say goodbye to 2026 and welcome a new year in 2027. Two sets: 7pm, 9pm, 11pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144021-2027-01-01",
@@ -459,7 +446,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388202",
           "notes": "Wishing all our friends and family a very Happy New Year!",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-144021-2027-01-02",
@@ -472,7 +459,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/388203",
           "notes": "Wishing all our friends and family a very Happy New Year!",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146016-2027-01-12",
@@ -485,7 +472,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/392798",
           "notes": "Set times 7:30pm & 9:00pm Two sets: 7:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146091-2027-01-15",
@@ -498,7 +485,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/393005",
           "notes": "George Colligan, Nicole Glover and Jaleel Shaw Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146419-2027-01-16",
@@ -511,7 +498,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/393765",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $35 · Dinner & Show package ~ includes 3-course dinner: $110 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $130 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146420-2027-01-22",
@@ -524,7 +511,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/393767",
           "notes": "Admission: Friday = $40, Saturday = $45 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146420-2027-01-23",
@@ -537,7 +524,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/393769",
           "notes": "Admission: Friday = $40, Saturday = $45 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146957-2027-01-29",
@@ -555,7 +542,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394847",
           "notes": "Brandon Goldberg - Piano · Peter Washington - Bass · Aaron Kimmel - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146957-2027-01-30",
@@ -573,7 +560,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394845",
           "notes": "Brandon Goldberg - Piano · Peter Washington - Bass · Aaron Kimmel - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146959-2027-02-05",
@@ -586,7 +573,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394850",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146960-2027-02-06",
@@ -599,7 +586,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394852",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $35 · Dinner & Show package ~ includes 3-course dinner: $110 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $130 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146962-2027-02-19",
@@ -612,7 +599,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394855",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146421-2027-02-26",
@@ -625,7 +612,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/393771",
           "notes": "Admission: Friday = $40, Saturday = $45 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146421-2027-02-27",
@@ -638,7 +625,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/393773",
           "notes": "Admission: Friday = $40, Saturday = $45 Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146967-2027-03-05",
@@ -651,7 +638,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394863",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $35 · Dinner & Show package ~ includes 3-course dinner: $110 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $130 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146967-2027-03-06",
@@ -664,7 +651,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394865",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $35 · Dinner & Show package ~ includes 3-course dinner: $110 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $130 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146969-2027-03-12",
@@ -677,7 +664,7 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394868",
           "notes": "Show Times: 7:30pm & 9:30pm · General Admission ~ a la carte menu: $30 · Dinner & Show package ~ includes 3-course dinner: $105 · VIP Dinner & Show package ~ includes 3-course dinner and stage-front seating: $125 · (Beverages not included) Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         },
         {
           "id": "chris-146970-2027-03-13",
@@ -697,28 +684,15 @@
           "ticketUrl": "https://www.chrisjazzcafe.com/shows/394871",
           "notes": "Anthony Hervey - Trumpet · Langston Hughes II - Alto Saxophone · Aayushi Karnik - Guitar · Tyler Bullock - Piano · Jonathan Muir-Cotton - Bass · Tyson Jackson - Drums Two sets: 7:30pm, 9:30pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.177Z"
+          "verifiedAt": "2026-11-20T17:36:05.523Z"
         }
       ],
       "warnings": []
     },
     "south-jazz-kitchen": {
       "venueSlug": "south-jazz-kitchen",
-      "scrapedAt": "2026-11-19T18:00:13.822Z",
+      "scrapedAt": "2026-11-20T17:36:06.202Z",
       "events": [
-        {
-          "id": "south-chris-big-dog-davis-thursday-november-19-presented-by-unscripted-jazz-2026-11-19",
-          "venueSlug": "south-jazz-kitchen",
-          "date": "2026-11-19",
-          "startTime": "19:00",
-          "endTime": "20:30",
-          "name": "CHRIS \"BIG DOG\" DAVIS",
-          "kind": "ticketed",
-          "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
-          "notes": "Showtimes vary by day, see venue.",
-          "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
-        },
         {
           "id": "south-jeff-bradshaw-fri-sat-sun-nov-20-21-22-showtimes-vary-by-day-tickets-on-sale-soon-2026-11-20",
           "venueSlug": "south-jazz-kitchen",
@@ -730,7 +704,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-jeff-bradshaw-fri-sat-sun-nov-20-21-22-showtimes-vary-by-day-tickets-on-sale-soon-2026-11-21",
@@ -743,7 +717,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-jeff-bradshaw-fri-sat-sun-nov-20-21-22-showtimes-vary-by-day-tickets-on-sale-soon-2026-11-22",
@@ -756,7 +730,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-nicole-henry-fri-sat-sun-nov-27-28-29-showtimes-vary-by-day-tickets-on-sale-soon-2026-11-27",
@@ -769,7 +743,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-nicole-henry-fri-sat-sun-nov-27-28-29-showtimes-vary-by-day-tickets-on-sale-soon-2026-11-28",
@@ -782,7 +756,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-nicole-henry-fri-sat-sun-nov-27-28-29-showtimes-vary-by-day-tickets-on-sale-soon-2026-11-29",
@@ -795,7 +769,7 @@
           "ticketUrl": "https://www.exploretock.com/southkitchenandjazzphiladelphia?tock_source=tock&tock_medium=search_nav",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-jj-sansaverino-christmas-concert-presented-by-unscripted-jazz-2026-12-03",
@@ -808,7 +782,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-tammy-mccann-merry-christmas-baby-december-4-5-6-showtimes-vary-by-day-2026-12-04",
@@ -821,7 +795,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13591/2026-12-04",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-tammy-mccann-merry-christmas-baby-december-4-5-6-showtimes-vary-by-day-2026-12-05",
@@ -834,7 +808,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13591/2026-12-04",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-tammy-mccann-merry-christmas-baby-december-4-5-6-showtimes-vary-by-day-2026-12-06",
@@ -847,7 +821,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13591/2026-12-04",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-jazmin-ghent-presented-by-unscripted-jazz-december-10-630pm-900pm-2026-12-10",
@@ -860,7 +834,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Two sets: 6:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-sounds-of-april-randall-the-feeling-of-the-holidays-december-11-12-13-showtimes-vary-by-day-2026-12-11",
@@ -873,7 +847,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13601/2026-12-11",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-sounds-of-april-randall-the-feeling-of-the-holidays-december-11-12-13-showtimes-vary-by-day-2026-12-12",
@@ -886,7 +860,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13601/2026-12-11",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-sounds-of-april-randall-the-feeling-of-the-holidays-december-11-12-13-showtimes-vary-by-day-2026-12-13",
@@ -899,7 +873,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13601/2026-12-11",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-grover-washington-jr-band-tribute-to-grover-washington-presented-by-unscripted-jazz-thursday-december-17-2026-12-17",
@@ -912,7 +886,7 @@
           "ticketUrl": "https://www.exploretock.com/south-unscripted-jazz-philadelphia/",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-carol-riddick-a-holiday-to-remember-dec-18-20-showtimes-vary-by-day-2026-12-18",
@@ -925,7 +899,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13602/2026-12-18",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-carol-riddick-a-holiday-to-remember-dec-18-20-showtimes-vary-by-day-2026-12-19",
@@ -938,7 +912,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13602/2026-12-18",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-carol-riddick-a-holiday-to-remember-dec-18-20-showtimes-vary-by-day-2026-12-20",
@@ -951,7 +925,7 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13602/2026-12-18",
           "notes": "Showtimes vary by day, see venue.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         },
         {
           "id": "south-maya-belardo-v-shayne-frederick-home-for-the-holidays-dec-24-630pm-900pm-2026-12-24",
@@ -964,36 +938,50 @@
           "ticketUrl": "https://south-jazz.turntabletickets.com/p/49918",
           "notes": "Two sets: 6:30pm, 9pm.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:13.822Z"
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
+        },
+        {
+          "id": "south-nasir-dickerson-presents-a-kwanzaa-celebration-experience-bridging-the-black-diaspora-discipline-and-jazz-expression-dec-26-27-showtimes-vary-by-day-2026-12-26",
+          "venueSlug": "south-jazz-kitchen",
+          "date": "2026-12-26",
+          "startTime": "19:00",
+          "endTime": "20:30",
+          "name": "Nasir Dickerson presents A Kwanzaa Celebration Experience: Bridging the Black Diaspora, Discipline, and Jazz Expression",
+          "kind": "ticketed",
+          "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13658/2026-12-26",
+          "notes": "Showtimes vary by day, see venue.",
+          "confidence": "verified",
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
+        },
+        {
+          "id": "south-nasir-dickerson-presents-a-kwanzaa-celebration-experience-bridging-the-black-diaspora-discipline-and-jazz-expression-dec-26-27-showtimes-vary-by-day-2026-12-27",
+          "venueSlug": "south-jazz-kitchen",
+          "date": "2026-12-27",
+          "startTime": "19:00",
+          "endTime": "20:30",
+          "name": "Nasir Dickerson presents A Kwanzaa Celebration Experience: Bridging the Black Diaspora, Discipline, and Jazz Expression",
+          "kind": "ticketed",
+          "ticketUrl": "https://south-jazz.turntabletickets.com/shows/13658/2026-12-26",
+          "notes": "Showtimes vary by day, see venue.",
+          "confidence": "verified",
+          "verifiedAt": "2026-11-20T17:36:06.202Z"
         }
       ],
       "warnings": []
     },
     "jazz-philadelphia": {
       "venueSlug": "jazz-philadelphia",
-      "scrapedAt": "2026-11-19T18:00:14.213Z",
+      "scrapedAt": "2026-11-20T17:36:06.965Z",
       "events": [],
       "warnings": [
+        "unmatched venue \"Community College of Philadelphia, Black Box Theatre\" for \"Dear Listener presented by MaiRane Productions in partnership with CCP Theatre Department\"",
         "jazz-philadelphia: zero events matched a registered venue"
       ]
     },
     "ars-nova": {
       "venueSlug": "ars-nova",
-      "scrapedAt": "2026-11-19T18:00:15.519Z",
+      "scrapedAt": "2026-11-20T17:36:08.216Z",
       "events": [
-        {
-          "id": "an-adam-ofarrills-elephant-2026-11-19",
-          "venueSlug": "solar-myth",
-          "date": "2026-11-19",
-          "startTime": "20:00",
-          "endTime": "22:00",
-          "name": "Adam O'Farrill's ELEPHANT",
-          "kind": "ticketed",
-          "ticketUrl": "https://www.arsnovaworkshop.org/programs/adam-ofarrills-elephant/",
-          "notes": "Ars Nova Workshop presents the esteemed trumpeter Adam O’Farrill with his quartet ELEPHANT at Solar Myth on Thursday, November 19, 2026.",
-          "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:15.519Z"
-        },
         {
           "id": "an-resavoir-2026-11-20",
           "venueSlug": "solar-myth",
@@ -1005,7 +993,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/resavoir/",
           "notes": "Ars Nova Workshop presents Resavoir, the collaborative project led by Chicago producer/composer Will Miller, at Solar Myth on Friday, November 20.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:15.519Z"
+          "verifiedAt": "2026-11-20T17:36:08.216Z"
         },
         {
           "id": "an-jen-shyu-2026-11-21",
@@ -1018,7 +1006,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/jen-shyu/",
           "notes": "Ars Nova Workshop is thrilled to present the boundless vocalist, multi-instrumentalist, dancer, and composer Jen Shyu at Solar Myth on Saturday, November 21, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:15.519Z"
+          "verifiedAt": "2026-11-20T17:36:08.216Z"
         },
         {
           "id": "an-marcus-gilmore-ryoma-takenaga-2026-11-28",
@@ -1031,7 +1019,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/marcus-gilmore-ryoma-takenaga/",
           "notes": "Ars Nova Workshop presents the Philadelphia edition of The Jazz Gallery’s ongoing Mentoring Series, pairing renowned drummer Marcus Gilmore and pianist David Virelles with up-and-coming bassist Ryoma Takenaga, at Sola...",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:15.519Z"
+          "verifiedAt": "2026-11-20T17:36:08.216Z"
         },
         {
           "id": "an-marta-sanchez-2026-12-17",
@@ -1044,7 +1032,7 @@
           "ticketUrl": "https://www.arsnovaworkshop.org/programs/marta-sanchez/",
           "notes": "Please join Ars Nova Workshop for a captivating solo performance by the Spanish-American pianist Marta Sánchez at Solar Myth on Thursday, December 17, 2026.",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:15.519Z"
+          "verifiedAt": "2026-11-20T17:36:08.216Z"
         }
       ],
       "warnings": [
@@ -1053,20 +1041,8 @@
     },
     "squarespace": {
       "venueSlug": "squarespace",
-      "scrapedAt": "2026-11-19T18:00:16.649Z",
+      "scrapedAt": "2026-11-20T17:36:09.498Z",
       "events": [
-        {
-          "id": "sq-khyber-pass-pub-events-sophies-body-doused-soft-no-2026-11-19",
-          "venueSlug": "khyber-pass-pub",
-          "date": "2026-11-19",
-          "startTime": "19:00",
-          "endTime": "23:00",
-          "name": "SOPHIE'S BODY / DOUSED / SOFT NO",
-          "kind": "ticketed",
-          "ticketUrl": "https://khyberpasspub.com/events/sophies-body-doused-soft-no",
-          "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:16.649Z"
-        },
         {
           "id": "sq-khyber-pass-pub-events-toxicity-nu-metal-night-2026-11-20",
           "venueSlug": "khyber-pass-pub",
@@ -1077,7 +1053,7 @@
           "kind": "ticketed",
           "ticketUrl": "https://khyberpasspub.com/events/toxicity-nu-metal-night",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:16.649Z"
+          "verifiedAt": "2026-11-20T17:36:09.498Z"
         },
         {
           "id": "sq-khyber-pass-pub-events-now-ca-lightheaded-mopar-stars-ringtone-2026-11-21",
@@ -1089,7 +1065,7 @@
           "kind": "ticketed",
           "ticketUrl": "https://khyberpasspub.com/events/now-ca-lightheaded-mopar-stars-ringtone",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:16.649Z"
+          "verifiedAt": "2026-11-20T17:36:09.498Z"
         },
         {
           "id": "sq-khyber-pass-pub-events-riot-nerds-8th-annual-goth-nye-dance-party-2026-12-31",
@@ -1102,7 +1078,7 @@
           "ticketUrl": "https://khyberpasspub.com/events/riot-nerds-8th-annual-goth-nye-dance-party",
           "notes": "https://www.eventbrite.com/e/goth-new-years-eve-dance-party-tickets-2003583693763?aff=oddtdtcreator&amp;keep_tld=true",
           "confidence": "verified",
-          "verifiedAt": "2026-11-19T18:00:16.649Z"
+          "verifiedAt": "2026-11-20T17:36:09.498Z"
         }
       ],
       "warnings": []
